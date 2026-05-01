@@ -1114,6 +1114,8 @@ function toggleNaturalSort() {
   naturalDir *= -1;
   sortKey = null; sortDir = 1;
   document.querySelectorAll('.sort-icon').forEach(el => el.textContent = '↕');
+  document.getElementById('mobileSortShort').classList.remove('active');
+  document.getElementById('mobileSortLong').classList.remove('active');
   currentPage = 1;
   updateNaturalSortBtn();
   renderTable();
