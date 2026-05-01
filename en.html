@@ -1083,10 +1083,7 @@ const PAGE_SIZE = 20;
 
 // ── 탭 전환 ──────────────────────────────────────
 function switchTab(name, el) {
-  if (name !== 'predict') {
-    const iframe = document.querySelector('#videoThumbWrap iframe');
-    if (iframe) iframe.src = '';
-  }
+  if (name !== 'predict') resetTab1();
   const leavingSongs = document.getElementById('tab-songs').classList.contains('active');
   if (leavingSongs && name !== 'songs') { resetTab2(); resetSidebarFilters(); }
   document.querySelectorAll('.tab-pane').forEach(p=>p.classList.remove('active'));
