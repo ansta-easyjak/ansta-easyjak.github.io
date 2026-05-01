@@ -4,4 +4,7 @@ __pycache__/
 *.pyc
 dev_notes.txt
 *.xlsx
+*.csv
+*.numbers
 CLAUDE.md
+manifest-dev.json
