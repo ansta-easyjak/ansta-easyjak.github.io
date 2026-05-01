@@ -1,5 +1,5 @@
 // songs.js — Voltage Predictor 곡 데이터 & 모델 파라미터
-// 총 307곡 | R²=0.9714 | MAE=2.56콤보
+// 총 307곡 | R²=0.9713 | MAE=2.56콤보
 // ※ enstars_regression_v3.py 로 자동 생성 — 직접 수정 비권장
 
 const SONGS = [
@@ -275,10 +275,10 @@ const SONGS = [
     "duration": "2:42",
     "etStart": 109,
     "etEnd": 137,
-    "measured": null,
+    "measured": 88,
     "category": "starmaker",
     "video": "https://youtu.be/9f4pZWaulEk",
-    "videoClear": "https://youtu.be/9f4pZWaulEk?t=81",
+    "videoClear": "https://youtu.be/9f4pZWaulEk?t=72",
     "predicted": 90
   },
   {
@@ -1364,7 +1364,7 @@ const SONGS = [
     "category": "starmaker",
     "video": "https://youtu.be/jyJ-xI4rTfA",
     "videoClear": "https://youtu.be/jyJ-xI4rTfA?t=69",
-    "predicted": 101
+    "predicted": 100
   },
   {
     "type": "Glitter",
@@ -2913,7 +2913,7 @@ const SONGS = [
     "category": "cosmic",
     "video": "https://youtu.be/8igMnhpcuh0?si=aSSG9db_pQlY21zp",
     "videoClear": "https://youtu.be/8igMnhpcuh0?t=77",
-    "predicted": 111
+    "predicted": 110
   },
   {
     "type": "Brilliant",
@@ -3213,7 +3213,7 @@ const SONGS = [
     "category": "rhythm_link",
     "video": "https://youtu.be/eoQE_n5ITSU",
     "videoClear": "https://youtu.be/eoQE_n5ITSU?t=78",
-    "predicted": 83
+    "predicted": 82
   },
   {
     "type": "Glitter",
@@ -3282,7 +3282,7 @@ const SONGS = [
     "category": "rhythm_link",
     "video": "https://youtu.be/n4NhuGtil0o",
     "videoClear": "https://youtu.be/n4NhuGtil0o?t=71",
-    "predicted": 66
+    "predicted": 65
   },
   {
     "type": "Brilliant",
@@ -3836,7 +3836,7 @@ const SONGS = [
     "category": "rhythm_link",
     "video": "https://youtu.be/C4CCRKRYMT0?si=9y4q4Y30JaTguMW6",
     "videoClear": "https://youtu.be/C4CCRKRYMT0?t=74",
-    "predicted": 104
+    "predicted": 103
   },
   {
     "type": "Sparkle",
@@ -4043,7 +4043,7 @@ const SONGS = [
     "category": "rhythm_link",
     "video": "https://youtu.be/he5FDcPSM0A",
     "videoClear": "https://youtu.be/he5FDcPSM0A?t=77",
-    "predicted": 104
+    "predicted": 103
   },
   {
     "type": "Brilliant",
@@ -4308,7 +4308,7 @@ const SONGS = [
     "title_ja": "Dear World (マスターピース ver.)",
     "title_ja_reading": "でぃあわーるど  ばーじょん",
     "title_ko": "Dear World (마스터피스 ver)",
-    "title_ko_reading": "디어 월드 마스터피스",
+    "title_ko_reading": "디어 월드 마스터피스 마피",
     "title_en": "Dear World (Masterpiece ver.)",
     "title_en_reading": null,
     "totalNotes": 180,
@@ -5147,7 +5147,7 @@ const SONGS = [
     "category": "new_dimension",
     "video": "https://youtu.be/ZJuXwWlxHlY",
     "videoClear": "https://youtu.be/ZJuXwWlxHlY?t=66",
-    "predicted": 68
+    "predicted": 67
   },
   {
     "type": "Flash",
@@ -5216,7 +5216,7 @@ const SONGS = [
     "category": "new_dimension",
     "video": "https://youtu.be/wU4xQ9hyhcA?si=nrPSlUDVggN3HZL6",
     "videoClear": "https://youtu.be/wU4xQ9hyhcA?t=76",
-    "predicted": 66
+    "predicted": 65
   },
   {
     "type": "Glitter",
@@ -5676,7 +5676,7 @@ const SONGS = [
     "category": "others",
     "video": "https://youtu.be/v6xB4TsnL1k?si=4HFlYuhsvrr4dC-o",
     "videoClear": "https://youtu.be/v6xB4TsnL1k?t=66",
-    "predicted": 84
+    "predicted": 83
   },
   {
     "type": "Sparkle",
@@ -7084,18 +7084,18 @@ const SONGS = [
 ];
 
 const MODEL_PARAMS = {
-  "intercept": -3.0620989903957536,
+  "intercept": -3.0459474825414503,
   "coefs": [
-    0.5335121253633199,
-    -1.7286286962366824,
-    8.232958244402589
+    0.5334994799318479,
+    -1.788733737988392,
+    8.23750977492667
   ],
-  "simpleCoef": 0.5277070329871725,
-  "simpleInt": 2.437559385903185,
+  "simpleCoef": 0.5277119122637192,
+  "simpleInt": 2.431360600356399,
   "safetyMargin": 10,
-  "meanEtStart": 0.48788967204380523,
-  "meanEtEnd": 0.6539855896366975,
-  "trainSize": 181,
-  "r2": 0.9713521990141285,
-  "mae": 2.560514820989606
+  "meanEtStart": 0.48892934542202676,
+  "meanEtEnd": 0.6550525323662377,
+  "trainSize": 182,
+  "r2": 0.9712819224434749,
+  "mae": 2.558504448260149
 };
