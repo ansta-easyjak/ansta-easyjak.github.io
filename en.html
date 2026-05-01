@@ -1142,13 +1142,11 @@ function resetTab2() {
 }
 
 function resetSidebarFilters() {
-  activeType = null; activeDur = 'all'; sortKey = null; sortDir = 1; naturalDir = 1;
+  activeType = null; activeDur = 'all';
   buildTypeChips();
   const durAllBtn = document.querySelector('#durChips .dur-chip');
-  if (durAllBtn) { document.querySelectorAll('.dur-chip').forEach(c=>c.classList.remove('active')); durAllBtn.classList.add('active'); }
-  document.querySelectorAll('.sort-icon').forEach(el => el.textContent = '↕');
+  if (durAllBtn) { document.querySelectorAll('#durChips .dur-chip').forEach(c=>c.classList.remove('active')); durAllBtn.classList.add('active'); }
   document.getElementById('sidebarFilterResetBtn').style.display = 'none';
-  updateNaturalSortBtn();
   currentPage = 1;
   renderTable();
 }
