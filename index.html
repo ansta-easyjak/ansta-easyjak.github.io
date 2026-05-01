@@ -562,6 +562,10 @@ body { font-family: 'Noto Sans KR', 'Noto Sans JP', 'Inter', sans-serif; backgro
           <span style="font-size:11px;color:var(--text-sub)" data-i18n="tableHint">*곡 길이는 풀콤보 기준</span>
         </div>
 
+        <div class="unit-filter-reset-row" style="margin-top:14px">
+          <button class="unit-reset-btn" id="sidebarFilterResetBtn" onclick="resetSidebarFilters()" style="display:none" data-i18n="sidebarFilterReset">필터 해제</button>
+        </div>
+
       </div>
 
       <!-- 테이블 패널 -->
@@ -585,8 +589,8 @@ body { font-family: 'Noto Sans KR', 'Noto Sans JP', 'Inter', sans-serif; backgro
                 </svg>
               </button>
             </div>
-            <button class="reset-btn" onclick="resetTab2()" title="초기화" style="flex-shrink:0;padding:4px 6px">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-4.95"/></svg>
+            <button class="reset-btn" id="naturalSortBtn" onclick="toggleNaturalSort()" title="정방향" style="flex-shrink:0;padding:4px 6px">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="15" y2="6"/><line x1="3" y1="12" x2="11" y2="12"/><line x1="3" y1="18" x2="7" y2="18"/><line x1="18" y1="3" x2="18" y2="21"/><polyline points="15 18 18 21 21 18"/></svg>
             </button>
           </div>
           <div class="unit-filter-panel" id="unitFilterPanel" style="display:none"></div>
@@ -745,7 +749,7 @@ const I18N = {
     videoLabel: '참고 영상', videoCoverNote: '커버송은 영상을 제공하지 않습니다.', videoPlay: '▶ 클릭하여 재생',
     legendClear: '클리어 시작점', legendET: '앙상블 타임 구간',
     sidebarTypeTitle: '곡 속성', sidebarUnitTitle: 'Units', sidebarDurTitle: '곡 길이',
-    typeAll: '전체', unitReset: '전체 해제',
+    typeAll: '전체', unitReset: '전체 해제', sidebarFilterReset: '필터 해제',
     durAll: '전체', durShort: '~ 2:20', durMid1: '2:21 ~ 2:30', durMid2: '2:31 ~ 2:40', durLong: '2:41 ~', durSortShort: '짧은순', durSortLong: '긴순',
     searchModeSong: '곡 검색', searchModeUnit: '유닛 검색',
     tableSearchPlaceholder: '곡 검색...',
@@ -804,7 +808,7 @@ const I18N = {
     videoLabel: '参考動画', videoCoverNote: 'カバー曲は動画を提供していません。', videoPlay: '▶ クリックして再生',
     legendClear: 'クリア開始点', legendET: 'アンサンブルタイム区間',
     sidebarTypeTitle: '曲の属性', sidebarUnitTitle: 'Units', sidebarDurTitle: '曲の長さ',
-    typeAll: '全て', unitReset: '全解除',
+    typeAll: '全て', unitReset: '全選択解除', sidebarFilterReset: 'フィルタリセット',
     durAll: '全て', durShort: '~ 2:20', durMid1: '2:21 ~ 2:30', durMid2: '2:31 ~ 2:40', durLong: '2:41 ~', durSortShort: '短い順', durSortLong: '長い順',
     searchModeSong: '楽曲検索', searchModeUnit: 'ユニット検索',
     tableSearchPlaceholder: '楽曲を検索...',
@@ -1002,6 +1006,7 @@ let activeUnits = null;
 let activeDur = 'all';
 let sortKey = null;
 let sortDir = 1;
+let naturalDir = 1;
 let currentPage = 1;
 let searchMode = 'song';
 const PAGE_SIZE = 20;
@@ -1069,6 +1074,8 @@ function switchTab(name, el) {
     const iframe = document.querySelector('#videoThumbWrap iframe');
     if (iframe) iframe.src = '';
   }
+  const leavingSongs = document.getElementById('tab-songs').classList.contains('active');
+  if (leavingSongs && name !== 'songs') { resetTab2(); resetSidebarFilters(); }
   document.querySelectorAll('.tab-pane').forEach(p=>p.classList.remove('active'));
   document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));
   document.getElementById('tab-'+name).classList.add('active');
@@ -1090,15 +1097,46 @@ function resetTab1() {
   document.getElementById('videoThumbWrap').innerHTML = '';
 }
 
+const SVG_SORT_DOWN = `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="15" y2="6"/><line x1="3" y1="12" x2="11" y2="12"/><line x1="3" y1="18" x2="7" y2="18"/><line x1="18" y1="3" x2="18" y2="21"/><polyline points="15 18 18 21 21 18"/></svg>`;
+const SVG_SORT_UP   = `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="7" y2="6"/><line x1="3" y1="12" x2="11" y2="12"/><line x1="3" y1="18" x2="15" y2="18"/><line x1="18" y1="3" x2="18" y2="21"/><polyline points="15 6 18 3 21 6"/></svg>`;
+
+function toggleNaturalSort() {
+  naturalDir *= -1;
+  sortKey = null; sortDir = 1;
+  document.querySelectorAll('.sort-icon').forEach(el => el.textContent = '↕');
+  currentPage = 1;
+  updateNaturalSortBtn();
+  renderTable();
+}
+
+function updateNaturalSortBtn() {
+  const btn = document.getElementById('naturalSortBtn');
+  if (!btn) return;
+  btn.innerHTML = naturalDir === 1 ? SVG_SORT_DOWN : SVG_SORT_UP;
+  btn.title = naturalDir === 1 ? '정방향' : '역방향';
+}
+
 function resetTab2() {
-  activeType = null; activeUnits = null; activeDur = 'all'; sortKey = null; sortDir = 1; currentPage = 1;
+  activeUnits = null; sortKey = null; sortDir = 1; naturalDir = 1; currentPage = 1;
   document.getElementById('tableSearch').value = '';
   document.getElementById('tableSearchClear').style.display = 'none';
-  buildTypeChips();
+  const sel = document.getElementById('searchModeSelect');
+  if (sel && sel.value !== 'song') { sel.value = 'song'; onSearchModeChange(); }
   resetUnits();
+  document.querySelectorAll('.sort-icon').forEach(el => el.textContent = '↕');
+  updateNaturalSortBtn();
+  renderTable();
+}
+
+function resetSidebarFilters() {
+  activeType = null; activeDur = 'all'; sortKey = null; sortDir = 1; naturalDir = 1;
+  buildTypeChips();
   const durAllBtn = document.querySelector('#durChips .dur-chip');
   if (durAllBtn) { document.querySelectorAll('.dur-chip').forEach(c=>c.classList.remove('active')); durAllBtn.classList.add('active'); }
   document.querySelectorAll('.sort-icon').forEach(el => el.textContent = '↕');
+  document.getElementById('sidebarFilterResetBtn').style.display = 'none';
+  updateNaturalSortBtn();
+  currentPage = 1;
   renderTable();
 }
 
@@ -1434,6 +1472,7 @@ function selectType(t_val, el) {
     btn.style.borderColor = isActive ? c.color : 'transparent';
   });
   currentPage = 1;
+  updateSidebarResetBtn();
   renderTable();
 }
 
@@ -1492,7 +1531,7 @@ function buildUnitFilterPanel() {
   });
   const resetRow = document.createElement('div');
   resetRow.className = 'unit-filter-reset-row';
-  resetRow.innerHTML = `<button class="unit-reset-btn" onclick="resetUnits()" id="unitResetBtn" style="display:none">전체 해제</button>`;
+  resetRow.innerHTML = `<button class="unit-reset-btn" onclick="resetUnits()" id="unitResetBtn">전체 해제</button>`;
   const wrap = document.getElementById('unitFilterPanel');
   wrap.innerHTML = '';
   wrap.appendChild(inner);
@@ -1518,7 +1557,6 @@ function onUnitChange() {
     else checked.add(cb.dataset.unit);
   });
   activeUnits = checked.size > 0 ? checked : null;
-  document.getElementById('unitResetBtn').style.display = checked.size > 0 ? '' : 'none';
   currentPage = 1;
   renderTable();
 }
@@ -1526,7 +1564,6 @@ function onUnitChange() {
 function resetUnits() {
   document.querySelectorAll('.unit-cb').forEach(cb => { cb.checked = false; });
   activeUnits = null;
-  document.getElementById('unitResetBtn').style.display = 'none';
   currentPage = 1;
   renderTable();
 }
@@ -1543,11 +1580,18 @@ function clearTableSearch() {
   renderTable();
 }
 
+function updateSidebarResetBtn() {
+  const isFiltered = activeType !== null || activeDur !== 'all';
+  const btn = document.getElementById('sidebarFilterResetBtn');
+  if (btn) btn.style.display = isFiltered ? '' : 'none';
+}
+
 function setDur(val, el) {
   activeDur = val;
   document.querySelectorAll('.dur-chip').forEach(c=>c.classList.remove('active'));
   el.classList.add('active');
   currentPage = 1;
+  updateSidebarResetBtn();
   renderTable();
 }
 
@@ -1607,6 +1651,8 @@ function renderTable() {
       if (typeof av==='string') return av.localeCompare(bv)*sortDir;
       return (av-bv)*sortDir;
     });
+  } else if (naturalDir === -1) {
+    list.reverse();
   }
 
   const tbody = document.getElementById('songsTableBody');
