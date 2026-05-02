@@ -417,7 +417,7 @@ body { font-family: 'Noto Sans KR', 'Noto Sans JP', 'Inter', sans-serif; backgro
         <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
           <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
         </svg>
-        <input class="search-input" id="searchInput" type="text" placeholder="곡 제목 또는 유닛 검색..." autocomplete="off"
+        <input class="search-input" id="searchInput" type="text" placeholder="곡 제목 검색..." autocomplete="off"
           data-i18n-placeholder="searchPlaceholder"
           oninput="onSearchInput()" onfocus="onSearchFocus()">
         <button class="search-clear" id="searchClear" onclick="clearSearch()">
@@ -581,7 +581,7 @@ body { font-family: 'Noto Sans KR', 'Noto Sans JP', 'Inter', sans-serif; backgro
               <svg class="table-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                 <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
               </svg>
-              <input class="table-search-input" id="tableSearch" type="text" placeholder="곡 검색..."
+              <input class="table-search-input" id="tableSearch" type="text" placeholder="곡 제목 또는 유닛 검색..."
                 data-i18n-placeholder="tableSearchPlaceholder"
                 oninput="currentPage=1;onTableSearchInput()">
               <button class="search-clear" id="tableSearchClear" onclick="clearTableSearch()">
@@ -742,7 +742,7 @@ const I18N = {
     navSub: '앙상블스타즈!! Music · Easy',
     tab1: '클리어 계산', tab2: '악곡 검색', tab3: '안내',
     cardLabel1: '클리어 콤보 시작점 예측',
-    searchPlaceholder: '곡 제목 또는 유닛 검색...',
+    searchPlaceholder: '곡 제목 검색...',
     labelNotes: '총 노트수', labelETStart: 'Ensemble Time 시작콤보', labelETEnd: 'Ensemble Time 종료콤보',
     notesPlaceholder: '예: 161',
     etPlaceholder: '선택사항',
@@ -755,7 +755,7 @@ const I18N = {
     typeAll: '전체', unitReset: '전체 해제', sidebarFilterReset: '필터 해제',
     durAll: '전체', durShort: '~ 2:20', durMid1: '2:21 ~ 2:30', durMid2: '2:31 ~ 2:40', durLong: '2:41 ~', durSortShort: '짧은순', durSortLong: '긴순',
     searchModeSong: '곡 검색', searchModeUnit: '유닛 검색',
-    tableSearchPlaceholder: '곡 검색...',
+    tableSearchPlaceholder: '곡 제목 또는 유닛 검색...',
     tableHint: '*곡 길이는 풀콤보 기준',
     sidebarUnitHint: '유닛 검색은 검색바의 콤보박스에서 선택하세요.',
     colType: '곡 속성', colUnit: '유닛', colTitle: '제목',
@@ -801,7 +801,7 @@ const I18N = {
     navSub: 'あんさんぶるスターズ!! Music · Easy',
     tab1: 'クリア予測', tab2: '楽曲検索', tab3: 'ガイド',
     cardLabel1: 'クリアコンボ予測',
-    searchPlaceholder: '楽曲名またはユニット検索...',
+    searchPlaceholder: '楽曲名を検索...',
     labelNotes: '総ノーツ数', labelETStart: 'ET開始コンボ', labelETEnd: 'ET終了コンボ',
     notesPlaceholder: '例: 161',
     etPlaceholder: '任意',
@@ -814,7 +814,7 @@ const I18N = {
     typeAll: '全て', unitReset: '全選択解除', sidebarFilterReset: 'フィルタリセット',
     durAll: '全て', durShort: '~ 2:20', durMid1: '2:21 ~ 2:30', durMid2: '2:31 ~ 2:40', durLong: '2:41 ~', durSortShort: '短い順', durSortLong: '長い順',
     searchModeSong: '楽曲検索', searchModeUnit: 'ユニット検索',
-    tableSearchPlaceholder: '楽曲を検索...',
+    tableSearchPlaceholder: '楽曲またはユニットを検索...',
     tableHint: '曲の長さはフルコンボ基準',
     sidebarUnitHint: 'ユニット検索は上部検索バーのコンボボックスから選択してください。',
     colType: '属性', colUnit: 'ユニット', colTitle: 'タイトル',
@@ -1007,6 +1007,20 @@ let currentVideoUrl = null;
 let measuredValue = null;
 let predictedValue = null;
 let activeType = null;
+const UNIT_KO_MAP = {
+  '트릭스타':'Trickstar', '피네':'fine', '알칼로이드':'ALKALOID',
+  '에덴':'Eden', '발키리':'Valkyrie',
+  '크레이지비':'Crazy:B', '크비':'Crazy:B',
+  '트윙크':'2wink',
+  '아담':'Adam', '이브':'Eve',
+  '언데드':'UNDEAD', '라비츠':'Ra*bits',
+  '멜로우디어어스':'MDU', '멜로디':'MDU', '멜디':'MDU',
+  '나이츠':'Knights', '스위치':'Switch',
+  '마무':'MaM', '맘':'MaM',
+  '덥페':'DF', '더블페이스':'DF', 'doubleface':'DF',
+  '에스프리':'S-Pri',
+  '진앤아':'J&A',
+};
 let activeUnits = null;
 let activeDur = 'all';
 let sortKey = null;
@@ -1176,8 +1190,7 @@ function renderDropdown(q) {
     normalize(s.title_ja).includes(nq) ||
     (s.title_ja_reading && normalize(s.title_ja_reading).includes(nq)) ||
     (s.title_ko && normalize(s.title_ko).includes(nq)) ||
-    (s.title_ko_reading && normalize(s.title_ko_reading).includes(nq)) ||
-    s.units.some(u => normalize(u).includes(nq))
+    (s.title_ko_reading && normalize(s.title_ko_reading).includes(nq))
   ).slice(0, 12);
 
   if (results.length === 0) {
@@ -1639,7 +1652,8 @@ function renderTable() {
         (s.title_ja_reading && normalize(s.title_ja_reading).includes(q)) ||
         (s.title_ko && normalize(s.title_ko).includes(q)) ||
         (s.title_ko_reading && normalize(s.title_ko_reading).includes(q)) ||
-        s.units.some(u => normalize(u).includes(q));
+        s.units.some(u => normalize(u).includes(q)) ||
+        Object.entries(UNIT_KO_MAP).some(([ko, en]) => ko.includes(q) && s.units.includes(en));
       if (!match) return false;
     }
     return true;
@@ -1789,7 +1803,8 @@ function goPage(p) {
         (s.title_ja_reading && normalize(s.title_ja_reading).includes(q)) ||
         (s.title_ko && normalize(s.title_ko).includes(q)) ||
         (s.title_ko_reading && normalize(s.title_ko_reading).includes(q)) ||
-        s.units.some(u => normalize(u).includes(q));
+        s.units.some(u => normalize(u).includes(q)) ||
+        Object.entries(UNIT_KO_MAP).some(([ko, en]) => ko.includes(q) && s.units.includes(en));
       if (!match) return false;
     }
     return true;
