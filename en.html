@@ -141,7 +141,7 @@ body { font-family: 'Inter', 'Noto Sans JP', sans-serif; background: var(--bg); 
 
 /* Video */
 .video-section { margin-top: 20px; }
-.video-label { font-size: 13px; color: var(--text-sub); font-weight: 500; }
+.video-label { font-size: 14px; color: var(--text-main); font-weight: 500; }
 .video-thumb-wrap { position: relative; border-radius: 10px; overflow: hidden; aspect-ratio: 16/9; background: #111; cursor: pointer; }
 .video-thumb-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; transition: opacity .2s; }
 .video-thumb-wrap:hover img { opacity: 0.82; }
@@ -210,7 +210,7 @@ body { font-family: 'Inter', 'Noto Sans JP', sans-serif; background: var(--bg); 
 .sidebar-section:last-child { margin-bottom: 0; }
 .sidebar-hint { display: flex; align-items: flex-start; gap: 5px; font-size: 14px; font-weight: 700; color: var(--text-sub); line-height: 1.5; }
 .sidebar-hint span { white-space: pre-line; }
-.sidebar-title { font-size: 12px; font-weight: 700; color: var(--text-main); margin-bottom: 10px; }
+.sidebar-title { font-size: 13px; font-weight: 700; color: var(--text-main); margin-bottom: 10px; }
 .type-chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .type-chip { padding: 5px 12px; border-radius: 20px; font-size: 12px; font-weight: 500; border: 1.5px solid transparent; cursor: pointer; transition: all .15s; font-family: inherit; }
 .type-chip.active { border-color: currentColor !important; }
@@ -354,7 +354,7 @@ body { font-family: 'Inter', 'Noto Sans JP', sans-serif; background: var(--bg); 
   }
   .sidebar-hint { display: none; }
   .sidebar-section { margin-bottom: 0; }
-  .sidebar-title { margin-bottom: 6px; font-size: 11px; }
+  .sidebar-title { margin-bottom: 6px; font-size: 12px; }
   .lang-ja .nav-title { font-size: 18px; }
   .dur-sort-mobile { display: flex; gap: 6px; margin-top: 6px; }
 }
@@ -560,7 +560,7 @@ body { font-family: 'Inter', 'Noto Sans JP', sans-serif; background: var(--bg); 
         </div>
 
         <div class="sidebar-section" style="margin-bottom:0">
-          <span style="font-size:11px;color:var(--text-sub)" data-i18n="tableHint">*곡 길이는 풀콤보 기준</span>
+          <span style="font-size:13px;color:var(--text-sub)" data-i18n="tableHint">*곡 길이는 풀콤보 기준</span>
         </div>
 
         <div class="unit-filter-reset-row" style="margin-top:14px">
@@ -789,7 +789,7 @@ const I18N = {
       { badge: 'NOTE', cls: 'badge-note', text: 'This app aims for clears even if you miss up to one note. (Exceptions may apply)' },
       { badge: 'INFO', cls: 'badge-info', text: 'In the <b>Finder tab</b>, reference videos for songs marked <b>Measured</b> start 2 seconds before the clear point; songs marked <b>Predicted</b> start from the middle of the video.' },
       { badge: 'INFO', cls: 'badge-info', text: 'In the <b>Finder tab</b>, reference videos are available for both [Measured/Predicted] songs. In the <b>Song Search tab</b>, video links are only provided for [Measured] songs.' },
-      { badge: 'INFO', cls: 'badge-info', text: 'The total song count shown in the <b>Finder tab</b> is the correct number. The <b>Song Search tab</b> shows one more because Dear World has two versions listed separately.' },
+      { badge: 'INFO', cls: 'badge-info', text: 'The total song count shown in the <b>Finder tab</b> is the correct number. The Song Search tab shows one more because Dear World has two versions listed separately.' },
       { badge: 'INFO', cls: 'badge-info', text: 'In the <b>Song Search tab</b>, hover over a song title (PC) or tap the title (mobile) to preview the album image. (Excluding cover songs)' },
       { badge: 'INFO', cls: 'badge-info', text: 'YouTube comments are highly encouraged. If you know a better clear point, please leave a comment.' },
       { badge: 'NOTE', cls: 'badge-note', text: 'Feel free to share or promote this on other sites.' },
@@ -846,7 +846,7 @@ const I18N = {
       { badge: 'NOTE', cls: 'badge-note', text: 'ここではノート1個を見逃してもクリアできるよう余裕分を設けて計算しています。' },
       { badge: 'INFO', cls: 'badge-info', text: '<b>クリア予測タブ</b>の参考動画は、<b>確認済み</b>表示がある楽曲はクリア地点の2秒前から、<b>予測値</b>表示がある楽曲は動画の中間から再生されます。' },
       { badge: 'INFO', cls: 'badge-info', text: '<b>クリア予測タブ</b>では[確認済み/予測値]の楽曲すべてで参考動画を見ることができ、<b>楽曲検索タブ</b>では[確認済み]の楽曲のみ動画リンクが提供されます。' },
-      { badge: 'INFO', cls: 'badge-info', text: '総楽曲数は<b>クリア予測タブ</b>の表示が正しい数です。<b>楽曲検索タブ</b>はDear Worldが2バージョンで登録されているため、1曲多く表示されます。' },
+      { badge: 'INFO', cls: 'badge-info', text: '総楽曲数は<b>クリア予測タブ</b>の表示が正しい数です。楽曲検索タブはDear Worldが2バージョンで登録されているため、1曲多く表示されます。' },
       { badge: 'INFO', cls: 'badge-info', text: '<b>楽曲検索タブ</b>で曲タイトルにマウスを乗せる(PC)またはタイトルをタップする(モバイル)と、アルバム画像を表示できます。（カバー曲を除く）' },
       { badge: 'INFO', cls: 'badge-info', text: 'YouTubeのコメント欄の活用を強くお勧めします。より良いクリア地点をご存知でしたら、コメントで残してください。' },
       { badge: 'NOTE', cls: 'badge-note', text: '他サイトでの宣伝歓迎です。' },

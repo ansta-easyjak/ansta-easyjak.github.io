@@ -141,7 +141,7 @@ body { font-family: 'Noto Sans KR', 'Noto Sans JP', 'Inter', sans-serif; backgro
 
 /* Video */
 .video-section { margin-top: 20px; }
-.video-label { font-size: 13px; color: var(--text-sub); font-weight: 500; }
+.video-label { font-size: 14px; color: var(--text-main); font-weight: 500; }
 .video-thumb-wrap { position: relative; border-radius: 10px; overflow: hidden; aspect-ratio: 16/9; background: #111; cursor: pointer; }
 .video-thumb-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; transition: opacity .2s; }
 .video-thumb-wrap:hover img { opacity: 0.82; }
@@ -210,7 +210,7 @@ body { font-family: 'Noto Sans KR', 'Noto Sans JP', 'Inter', sans-serif; backgro
 .sidebar-section:last-child { margin-bottom: 0; }
 .sidebar-hint { display: flex; align-items: flex-start; gap: 5px; font-size: 14px; font-weight: 700; color: var(--text-sub); line-height: 1.5; }
 .sidebar-hint span { white-space: pre-line; }
-.sidebar-title { font-size: 12px; font-weight: 700; color: var(--text-main); margin-bottom: 10px; }
+.sidebar-title { font-size: 13px; font-weight: 700; color: var(--text-main); margin-bottom: 10px; }
 .type-chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .type-chip { padding: 5px 12px; border-radius: 20px; font-size: 12px; font-weight: 500; border: 1.5px solid transparent; cursor: pointer; transition: all .15s; font-family: inherit; }
 .type-chip.active { border-color: currentColor !important; }
@@ -354,7 +354,7 @@ body { font-family: 'Noto Sans KR', 'Noto Sans JP', 'Inter', sans-serif; backgro
   }
   .sidebar-hint { display: none; }
   .sidebar-section { margin-bottom: 0; }
-  .sidebar-title { margin-bottom: 6px; font-size: 11px; }
+  .sidebar-title { margin-bottom: 6px; font-size: 12px; }
   .lang-ja .nav-title { font-size: 18px; }
   .dur-sort-mobile { display: flex; gap: 6px; margin-top: 6px; }
 }
@@ -560,7 +560,7 @@ body { font-family: 'Noto Sans KR', 'Noto Sans JP', 'Inter', sans-serif; backgro
         </div>
 
         <div class="sidebar-section" style="margin-bottom:0">
-          <span style="font-size:11px;color:var(--text-sub)" data-i18n="tableHint">*곡 길이는 풀콤보 기준</span>
+          <span style="font-size:13px;color:var(--text-sub)" data-i18n="tableHint">*곡 길이는 풀콤보 기준</span>
         </div>
 
         <div class="unit-filter-reset-row" style="margin-top:14px">
@@ -789,7 +789,7 @@ const I18N = {
       { badge: 'NOTE', cls: 'badge-note', text: '여기서는 노트 1개까지는 놓쳐도 클리어 가능한 것을 지향합니다. (예외인 경우도 있음)' },
       { badge: 'INFO', cls: 'badge-info', text: '<b>클리어 계산 탭</b>의 참고 영상은 <b>확인함</b> 표시가 있는 곡은 클리어 지점 2초 전부터, <b>예측</b> 표시가 있는 곡은 영상 중간부터 시작됩니다.' },
       { badge: 'INFO', cls: 'badge-info', text: '<b>클리어 계산 탭</b>에서는 [확인함/예측] 곡 모두 참고 영상을 볼 수 있고, <b>악곡 검색 탭</b>에서는 [확인함] 곡만 영상 링크가 제공됩니다.' },
-      { badge: 'INFO', cls: 'badge-info', text: '전체 수록곡 수는 <b>클리어 계산 탭</b> 기준이 맞습니다. <b>악곡 검색 탭</b>은 Dear World가 두 버전으로 등록되어 1곡 더 많이 표시됩니다.' },
+      { badge: 'INFO', cls: 'badge-info', text: '전체 수록곡 수는 <b>클리어 계산 탭</b> 기준이 맞습니다. 악곡 검색 탭은 Dear World가 두 버전으로 등록되어 1곡 더 많이 표시됩니다.' },
       { badge: 'INFO', cls: 'badge-info', text: '<b>악곡 검색 탭</b>에서 곡 제목에 마우스를 올리거나(PC) 제목을 터치하면(모바일) 앨범 이미지를 볼 수 있습니다. (커버송 제외)' },
       { badge: 'INFO', cls: 'badge-info', text: '유튜브 댓글 사용 적극 권장합니다. 더 좋은 클리어 지점이 있다면 댓글로 남겨주세요.' },
       { badge: 'NOTE', cls: 'badge-note', text: '🩷 타 사이트에 홍보 환영 🩷' },
@@ -846,7 +846,7 @@ const I18N = {
       { badge: 'NOTE', cls: 'badge-note', text: 'ここではノート1個を見逃してもクリアできるよう余裕分を設けて計算しています。' },
       { badge: 'INFO', cls: 'badge-info', text: '<b>クリア予測タブ</b>の参考動画は、<b>確認済み</b>表示がある楽曲はクリア地点の2秒前から、<b>予測値</b>表示がある楽曲は動画の中間から再生されます。' },
       { badge: 'INFO', cls: 'badge-info', text: '<b>クリア予測タブ</b>では[確認済み/予測値]の楽曲すべてで参考動画を見ることができ、<b>楽曲検索タブ</b>では[確認済み]の楽曲のみ動画リンクが提供されます。' },
-      { badge: 'INFO', cls: 'badge-info', text: '総楽曲数は<b>クリア予測タブ</b>の表示が正しい数です。<b>楽曲検索タブ</b>はDear Worldが2バージョンで登録されているため、1曲多く表示されます。' },
+      { badge: 'INFO', cls: 'badge-info', text: '総楽曲数は<b>クリア予測タブ</b>の表示が正しい数です。楽曲検索タブはDear Worldが2バージョンで登録されているため、1曲多く表示されます。' },
       { badge: 'INFO', cls: 'badge-info', text: '<b>楽曲検索タブ</b>で曲タイトルにマウスを乗せる(PC)またはタイトルをタップする(モバイル)と、アルバム画像を表示できます。（カバー曲を除く）' },
       { badge: 'INFO', cls: 'badge-info', text: 'YouTubeのコメント欄の活用を強くお勧めします。より良いクリア地点をご存知でしたら、コメントで残してください。' },
       { badge: 'NOTE', cls: 'badge-note', text: '他サイトでの宣伝歓迎です。' },
