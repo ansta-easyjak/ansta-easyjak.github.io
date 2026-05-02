@@ -644,7 +644,7 @@ body { font-family: 'Inter', 'Noto Sans JP', sans-serif; background: var(--bg); 
           <span data-i18n="contactTitle">오류 신고 및 문의</span>
         </div>
         <div class="info-text">
-          <p data-i18n="contactText1">예측값 오류, 데이터 누락, 기타 문의사항이 있으시면 아래 이메일로 연락해 주세요.</p>
+          <p data-i18n="contactText1">오류나 불편사항, 또는 문의가 있으시면 아래 링크로 제보해 주세요.</p>
         </div>
         <div class="contact-box">
           <div class="contact-icon">
@@ -654,8 +654,7 @@ body { font-family: 'Inter', 'Noto Sans JP', sans-serif; background: var(--bg); 
             </svg>
           </div>
           <div>
-            <div class="contact-email"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bfc6d0cacdffd8d2ded6d391dcd0d2">[email&#160;protected]</a></div>
-            <div class="contact-text" data-i18n="contactSub">[Voltage Predictor] 문의내용</div>
+            <div class="contact-email"><a id="tallyLink" href="https://tally.so/r/kdOEL1" target="_blank" rel="noopener">Report an Issue</a></div>
           </div>
         </div>
       </div>
@@ -890,6 +889,8 @@ function applyI18n() {
   document.getElementById('langToggleBtn').textContent = t('langToggle');
   document.title = t('navTitle');
   document.body.classList.toggle('lang-ja', currentLang === 'ja');
+  const tallyLink = document.getElementById('tallyLink');
+  if (tallyLink) tallyLink.href = currentLang === 'ja' ? 'https://tally.so/r/Bz87v5' : 'https://tally.so/r/kdOEL1';
   // 공지사항 렌더링
   const notices = t('notices');
   if (Array.isArray(notices)) {
