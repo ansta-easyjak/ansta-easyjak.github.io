@@ -400,7 +400,8 @@ body { font-family: 'Inter', 'Noto Sans JP', sans-serif; background: var(--bg); 
 
     <div class="info-card full" style="margin-bottom:16px; padding:10px 14px;">
       <ul class="notice-list">
-        <li style="padding:0; border:none; align-items:center;"><span class="notice-badge badge-info" style="margin-top:0;">INFO</span><span data-i18n="tab1Notice">커버송과 기간 한정 곡은 영상을 제공하지 않습니다.</span></li>
+        <li><span class="notice-badge badge-info">INFO</span><span data-i18n="tab1Notice">커버송과 기간 한정 곡은 영상을 제공하지 않습니다.</span></li>
+        <li><span class="notice-badge badge-info">INFO</span><span data-i18n="tab1NoticeSearch">한국어/일본어로 영어제목 검색 가능합니다.</span></li>
       </ul>
     </div>
 
@@ -635,7 +636,7 @@ body { font-family: 'Inter', 'Noto Sans JP', sans-serif; background: var(--bg); 
         <ul class="notice-list" id="noticeList"></ul>
       </div>
 
-      <div class="info-card full" style="display:none">
+      <div class="info-card full">
         <div class="info-card-title">
           <svg class="info-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
@@ -764,6 +765,7 @@ const I18N = {
     comboPrefix: '',
     directInput: 'Manual Input', noResult: 'No results found', tableEmpty: 'No results found',
     tab1Notice: 'Cover songs and limited-time songs do not have a reference video.',
+    tab1NoticeSearch: 'You can search English titles using Korean or Japanese.',
     noticeTitle: 'Notices',
     contactTitle: 'Contact & Bug Reports',
     contactText1: 'For prediction errors, missing data, or other inquiries, please reach out via email below.',
@@ -821,6 +823,7 @@ const I18N = {
     errNotes: 'ノーツ数を入力してください', errETDiff: 'ET終了 - 開始コンボの差は最低4以上必要です', comboPrefix: '',
     directInput: '直接入力', noResult: '検索結果がありません', tableEmpty: '検索結果がありません',
     tab1Notice: 'カバー曲・期間限定曲は動画を提供していません。',
+    tab1NoticeSearch: '韓国語・日本語で英語タイトルを検索できます。',
     noticeTitle: 'お知らせ',
     contactTitle: 'エラー報告・お問い合わせ',
     contactText1: '予測値の誤り、データの欠落、その他のお問い合わせは下記メールにご連絡ください。',
