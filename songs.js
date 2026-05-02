@@ -2819,8 +2819,8 @@ const SONGS = [
     "etEnd": 172,
     "measured": null,
     "category": "cosmic",
-    "video": "https://youtu.be/uh5AJBjyjZo",
-    "videoClear": "https://youtu.be/uh5AJBjyjZo?t=79",
+    "video": "https://youtu.be/dfDzkOQXrsE",
+    "videoClear": "https://youtu.be/dfDzkOQXrsE?t=79",
     "predicted": 98
   },
   {
