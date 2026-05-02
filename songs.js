@@ -6792,7 +6792,7 @@ const SONGS = [
     "title_ja": "らびゅ&ピース伝説",
     "title_ja_reading": "らびゅあんどぴーすでんせつ",
     "title_ko": "러브&피스 전설",
-    "title_ko_reading": "러뷰 3번",
+    "title_ko_reading": "러뷰앤드피스 라뷰앤드피스 러브유 3번",
     "title_en": "Lovey & Peace Legend",
     "title_en_reading": "Lavyu & Peace Densetsu",
     "totalNotes": 229,
