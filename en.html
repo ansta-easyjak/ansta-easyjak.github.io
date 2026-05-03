@@ -232,6 +232,7 @@ body { font-family: 'Inter', 'Noto Sans JP', sans-serif; background: var(--bg); 
 .dur-chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .dur-chip { padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 500; border: 1.5px solid var(--border); background: var(--input-bg); color: var(--text-main); cursor: pointer; transition: all .15s; font-family: inherit; }
 .dur-chip.active { background: var(--navy); color: white; border-color: var(--navy); }
+.sort-chip.active { background: #d4effc; color: #0c4a6e; border-color: #d4effc; }
 .table-panel { background: var(--white); border-radius: 14px; border: 0.5px solid var(--border); box-shadow: var(--shadow); overflow: hidden; }
 .table-search-bar { border-bottom: 1px solid var(--border-light); display: flex; flex-direction: column; }
 .table-search-top { display: flex; align-items: center; gap: 10px; padding: 10px 20px; }
@@ -554,13 +555,18 @@ body { font-family: 'Inter', 'Noto Sans JP', sans-serif; background: var(--bg); 
             <button class="dur-chip" onclick="setDur('long',this)" data-i18n="durLong">2:41 ~</button>
           </div>
           <div class="dur-sort-mobile">
-            <button class="dur-chip" id="mobileSortShort" onclick="mobileSortDur(1)" data-i18n="durSortShort">짧은순</button>
-            <button class="dur-chip" id="mobileSortLong" onclick="mobileSortDur(-1)" data-i18n="durSortLong">긴순</button>
+            <button class="dur-chip sort-chip" id="mobileSortShort" onclick="mobileSortDur(1)" data-i18n="durSortShort">짧은순</button>
+            <button class="dur-chip sort-chip" id="mobileSortLong" onclick="mobileSortDur(-1)" data-i18n="durSortLong">긴순</button>
           </div>
         </div>
 
-        <div class="sidebar-section" style="margin-bottom:0">
-          <span style="font-size:13px;color:var(--text-sub)" data-i18n="tableHint">*곡 길이는 풀콤보 기준</span>
+        <div class="sidebar-section">
+          <div class="sidebar-title" data-i18n="sidebarClearTitle">확인 여부</div>
+          <div class="dur-chips" id="clearChips">
+            <button class="dur-chip active" onclick="setClear('all',this)" data-i18n="clearAll">전체</button>
+            <button class="dur-chip" onclick="setClear('yes',this)" data-i18n="clearYes">확인</button>
+            <button class="dur-chip" onclick="setClear('no',this)" data-i18n="clearNo">미확인</button>
+          </div>
         </div>
 
         <div class="unit-filter-reset-row" style="margin-top:14px">
@@ -751,12 +757,12 @@ const I18N = {
     badgeMeasured: 'Measured', badgePredicted: 'Predicted', comboWord: 'combo', comboUnit: ' onwards',
     videoLabel: 'Reference Video', videoCoverNote: 'Cover songs do not have a reference video.', videoPlay: '▶ Click to Play',
     legendClear: 'Clear start point', legendET: 'Ensemble Time range',
-    sidebarTypeTitle: 'Song Type', sidebarUnitTitle: 'Units', sidebarDurTitle: 'Duration',
+    sidebarTypeTitle: 'Song Type', sidebarUnitTitle: 'Units', sidebarDurTitle: 'Duration (full combo)',
     typeAll: 'Every Type', unitReset: 'Clear All', sidebarFilterReset: 'Clear Filters',
     durAll: 'All', durShort: '~ 2:20', durMid1: '2:21 ~ 2:30', durMid2: '2:31 ~ 2:40', durLong: '2:41 ~', durSortShort: 'Shortest', durSortLong: 'Longest',
     searchModeSong: 'Song Search', searchModeUnit: 'Unit Search',
     tableSearchPlaceholder: 'Search by title or unit...',
-    tableHint: 'Duration is based on full combo',
+    sidebarClearTitle: 'Measured', clearAll: 'All', clearYes: 'Measured', clearNo: 'Unmeasured',
     sidebarUnitHint: 'Use the combobox in the search bar to filter by unit.',
     colType: 'Type', colUnit: 'Unit', colTitle: 'Title',
     colNotes: 'Notes', colDur: 'Duration', colClear: 'Clear', colVideo: 'Video',
@@ -810,12 +816,12 @@ const I18N = {
     badgeMeasured: '確認済み', badgePredicted: '予測値', comboWord: 'コンボ', comboUnit: 'から開始',
     videoLabel: '参考動画', videoCoverNote: 'カバー曲は動画を提供していません。', videoPlay: '▶ クリックして再生',
     legendClear: 'クリア開始点', legendET: 'アンサンブルタイム区間',
-    sidebarTypeTitle: '曲の属性', sidebarUnitTitle: 'Units', sidebarDurTitle: '曲の長さ',
+    sidebarTypeTitle: '曲の属性', sidebarUnitTitle: 'Units', sidebarDurTitle: '曲の長さ (full combo)',
     typeAll: '全て', unitReset: '全解除',
     durAll: '全て', durShort: '~ 2:20', durMid1: '2:21 ~ 2:30', durMid2: '2:31 ~ 2:40', durLong: '2:41 ~', durSortShort: '短い順', durSortLong: '長い順',
     searchModeSong: '楽曲検索', searchModeUnit: 'ユニット検索',
     tableSearchPlaceholder: '楽曲またはユニットを検索...',
-    tableHint: '曲の長さはフルコンボ基準',
+    sidebarClearTitle: '確認状況', clearAll: '全て', clearYes: '確認済', clearNo: '未確認',
     sidebarUnitHint: 'ユニット検索は上部検索バーのコンボボックスから選択してください。',
     colType: '属性', colUnit: 'ユニット', colTitle: 'タイトル',
     colNotes: 'ノーツ数', colDur: '曲の長さ', colClear: '開始Cb', colVideo: 'リンク',
@@ -1049,6 +1055,7 @@ const UNIT_JA_MAP = {
 };
 let activeUnits = null;
 let activeDur = 'all';
+let activeClear = 'all';
 let sortKey = null;
 let sortDir = 1;
 let naturalDir = 1;
@@ -1173,10 +1180,12 @@ function resetTab2() {
 }
 
 function resetSidebarFilters() {
-  activeType = null; activeDur = 'all';
+  activeType = null; activeDur = 'all'; activeClear = 'all';
   buildTypeChips();
   const durAllBtn = document.querySelector('#durChips .dur-chip');
   if (durAllBtn) { document.querySelectorAll('#durChips .dur-chip').forEach(c=>c.classList.remove('active')); durAllBtn.classList.add('active'); }
+  const clearAllBtn = document.querySelector('#clearChips .dur-chip');
+  if (clearAllBtn) { document.querySelectorAll('#clearChips .dur-chip').forEach(c=>c.classList.remove('active')); clearAllBtn.classList.add('active'); }
   document.getElementById('sidebarFilterResetBtn').style.display = 'none';
   currentPage = 1;
   renderTable();
@@ -1518,9 +1527,18 @@ function selectType(t_val, el) {
 }
 
 function updateSidebarResetBtn() {
-  const isFiltered = activeType !== null || activeDur !== 'all';
+  const isFiltered = activeType !== null || activeDur !== 'all' || activeClear !== 'all';
   const btn = document.getElementById('sidebarFilterResetBtn');
   if (btn) btn.style.display = isFiltered ? '' : 'none';
+}
+
+function setClear(val, el) {
+  activeClear = val;
+  document.querySelectorAll('#clearChips .dur-chip').forEach(c=>c.classList.remove('active'));
+  el.classList.add('active');
+  currentPage = 1;
+  updateSidebarResetBtn();
+  renderTable();
 }
 
 function buildUnitFilterPanel() {
@@ -1672,6 +1690,8 @@ function renderTable() {
     if (activeDur==='mid1' && (s.durationSec<141||s.durationSec>150)) return false;
     if (activeDur==='mid2' && (s.durationSec<151||s.durationSec>160)) return false;
     if (activeDur==='long' && s.durationSec<161) return false;
+    if (activeClear==='yes' && s.measured==null) return false;
+    if (activeClear==='no' && s.measured!=null) return false;
     if (q) {
       const match =
         normalize(s.title_ja).includes(q) ||
@@ -1825,6 +1845,8 @@ function goPage(p) {
     if (activeDur==='mid1' && (s.durationSec<141||s.durationSec>150)) return false;
     if (activeDur==='mid2' && (s.durationSec<151||s.durationSec>160)) return false;
     if (activeDur==='long' && s.durationSec<161) return false;
+    if (activeClear==='yes' && s.measured==null) return false;
+    if (activeClear==='no' && s.measured!=null) return false;
     if (q) {
       const match =
         normalize(s.title_ja).includes(q) ||
