@@ -540,15 +540,15 @@ def main():
     print("\n─── 메뉴 ───────────────────────────")
     print("  1) songs.js 저장")
     print("  2) CSV 저장")
-    print("  3) 새 곡 예측")
-    print("  4) video_url_clear 채우기")
-    print("  q) 종료")
+    print("  3) video_url_clear 채우기")
+    print("  4) 새 곡 예측")
+    print("  5) 종료")
     print("────────────────────────────────────")
 
     while True:
         try:
-            cmd = input("선택 (1/2/3/4/q): ").strip().lower()
-            if cmd == "q":
+            cmd = input("선택 (1/2/3/4/5): ").strip().lower()
+            if cmd == "5":
                 break
 
             elif cmd == "1":
@@ -568,25 +568,6 @@ def main():
                 print(f"✓ CSV 저장: {csv_out}")
 
             elif cmd == "3":
-                print("\n─── 새 곡 예측 (종료: b) ───")
-                while True:
-                    n_in = input("총 노트수: ").strip()
-                    if n_in.lower() == "b":
-                        break
-                    try:
-                        n = int(n_in)
-                    except ValueError:
-                        print("숫자를 입력해 주세요.")
-                        continue
-                    s_in = input("앙상블 타임 시작 콤보 (없으면 엔터): ").strip()
-                    e_in = input("앙상블 타임 종료 콤보 (없으면 엔터): ").strip()
-                    s = int(s_in) if s_in else None
-                    e = int(e_in) if e_in else None
-                    start_pt, clear, ratio, used = predict_one(result, n, s, e)
-                    print(f"  → 시작점: {start_pt}콤보 ({ratio:.1f}%)")
-                    print(f"  → 클리어: {clear}콤보  (모델: {used})\n")
-
-            elif cmd == "4":
                 api_key = os.getenv("YT_API_KEY", "").strip()
                 if not api_key:
                     api_key = input("YouTube API 키 입력: ").strip()
@@ -614,6 +595,25 @@ def main():
                             save_cols = [c for c in save_cols if c in df_pred.columns]
                             df_pred[save_cols].to_csv(csv_out, index=False, encoding="utf-8-sig")
                             print(f"✓ songs.js / CSV 저장 완료")
+
+            elif cmd == "4":
+                print("\n─── 새 곡 예측 (종료: b) ───")
+                while True:
+                    n_in = input("총 노트수: ").strip()
+                    if n_in.lower() == "b":
+                        break
+                    try:
+                        n = int(n_in)
+                    except ValueError:
+                        print("숫자를 입력해 주세요.")
+                        continue
+                    s_in = input("앙상블 타임 시작 콤보 (없으면 엔터): ").strip()
+                    e_in = input("앙상블 타임 종료 콤보 (없으면 엔터): ").strip()
+                    s = int(s_in) if s_in else None
+                    e = int(e_in) if e_in else None
+                    start_pt, clear, ratio, used = predict_one(result, n, s, e)
+                    print(f"  → 시작점: {start_pt}콤보 ({ratio:.1f}%)")
+                    print(f"  → 클리어: {clear}콤보  (모델: {used})\n")
 
         except KeyboardInterrupt:
             print("\n종료.")
