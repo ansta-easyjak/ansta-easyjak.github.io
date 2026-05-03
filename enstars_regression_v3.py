@@ -509,7 +509,8 @@ def main():
 
     # 미확인 곡 중 video_url_clear가 없으면 duration 절반 지점 URL 자동 생성
     if "video_url_clear" not in df_pred.columns:
-        df_pred["video_url_clear"] = None
+        df_pred["video_url_clear"] = pd.Series(dtype=object, index=df_pred.index)
+    df_pred["video_url_clear"] = df_pred["video_url_clear"].astype(object)
     mask = (
         df_pred["clear_start_measured"].isna()
         & df_pred["video_url"].notna()
@@ -519,7 +520,7 @@ def main():
     df_pred.loc[mask, "video_url_clear"] = df_pred.loc[mask].apply(
         lambda r: calc_midpoint_url(str(r["video_url"]).strip(), parse_duration(r.get("duration"))),
         axis=1,
-    )
+    ).astype(object)
 
     # --export 플래그가 있으면 바로 출력하고 종료
     if do_export:
