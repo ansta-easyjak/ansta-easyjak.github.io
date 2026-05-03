@@ -993,8 +993,8 @@ const SONGS = [
     "etEnd": 135,
     "measured": 133,
     "category": "starmaker",
-    "video": "https://youtu.be/Y1qHQvEATuk?si=rRwJSbZ_y9NlJeG5",
-    "videoClear": "https://youtu.be/Y1qHQvEATuk?t=73",
+    "video": "https://youtu.be/KW_YFT3lX2Q",
+    "videoClear": "https://youtu.be/KW_YFT3lX2Q?t=73",
     "predicted": 125
   },
   {
@@ -1849,8 +1849,8 @@ const SONGS = [
     "etEnd": 83,
     "measured": 114,
     "category": "cosmic",
-    "video": "https://youtu.be/nhGPOGdozZU",
-    "videoClear": "https://youtu.be/nhGPOGdozZU?t=79",
+    "video": "https://youtu.be/_SVfpI3OtVw",
+    "videoClear": "https://youtu.be/_SVfpI3OtVw?t=79",
     "predicted": 116
   },
   {
@@ -5536,8 +5536,8 @@ const SONGS = [
     "etEnd": 94,
     "measured": 68,
     "category": "others",
-    "video": "https://youtu.be/7g4vefHWPvc?si=LivgcBOApU2IiUuq",
-    "videoClear": "https://youtu.be/7g4vefHWPvc?t=64",
+    "video": "https://youtu.be/VXQ8PNTodck",
+    "videoClear": "https://youtu.be/VXQ8PNTodck?t=64",
     "predicted": 65
   },
   {
@@ -6203,8 +6203,8 @@ const SONGS = [
     "etEnd": 147,
     "measured": 91,
     "category": "others",
-    "video": "https://youtu.be/N7I7l6fLAlE?si=slYdJjtLp6zNwFix",
-    "videoClear": "https://youtu.be/N7I7l6fLAlE?t=77",
+    "video": "https://youtu.be/cO7aVA2luvA",
+    "videoClear": "https://youtu.be/cO7aVA2luvA?t=77",
     "predicted": 88
   },
   {
