@@ -3863,13 +3863,13 @@ const SONGS = [
     "title_en": "The・Prettycal Parade♪",
     "title_en_reading": null,
     "totalNotes": 194,
-    "duration": "162:00",
+    "duration": "2:42",
     "etStart": 56,
     "etEnd": 88,
     "measured": null,
     "category": "rhythm_link",
     "video": "https://youtu.be/T89L92U4EFc",
-    "videoClear": "https://youtu.be/T89L92U4EFc?t=4858",
+    "videoClear": "https://youtu.be/T89L92U4EFc?t=79",
     "predicted": 104
   },
   {
