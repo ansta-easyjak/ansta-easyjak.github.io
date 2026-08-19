@@ -1,5 +1,5 @@
 // songs.js — easyjak 곡 데이터 & 모델 파라미터
-// 총 314곡 | R²=0.9727 | MAE=2.47콤보
+// 총 317곡 | R²=0.9727 | MAE=2.47콤보
 // ※ enstars_regression_v3.py 로 자동 생성 — 직접 수정 비권장
 
 const SONGS = [
@@ -1266,6 +1266,28 @@ const SONGS = [
   },
   {
     "type": "Sparkle",
+    "unit": "유성대",
+    "units": [
+      "유성대"
+    ],
+    "title_ja": "BREAK THE NORM",
+    "title_ja_reading": "ぶれいく ざ のーむ",
+    "title_ko": "BREAK THE NORM",
+    "title_ko_reading": "브레이크 더 놈",
+    "title_en": "BREAK THE NORM",
+    "title_en_reading": null,
+    "totalNotes": 177,
+    "duration": "2:46",
+    "etStart": 45,
+    "etEnd": 63,
+    "measured": null,
+    "category": "starmaker",
+    "video": "https://youtu.be/VfAbHbpVTaQ",
+    "videoClear": "https://youtu.be/VfAbHbpVTaQ?t=81",
+    "predicted": 94
+  },
+  {
+    "type": "Sparkle",
     "unit": "ALKALOID",
     "units": [
       "ALKALOID"
@@ -2390,6 +2412,29 @@ const SONGS = [
     "video": "https://youtu.be/Adxx0A2kdjM?si=O5FvfplTEmNM5ozJ",
     "videoClear": "https://youtu.be/Adxx0A2kdjM?t=97",
     "predicted": 73
+  },
+  {
+    "type": "Glitter",
+    "unit": "Valkyrie / MDU",
+    "units": [
+      "Valkyrie",
+      "MDU"
+    ],
+    "title_ja": "Stranger's Sun",
+    "title_ja_reading": "すとれんじゃーず さん",
+    "title_ko": "Stranger's Sun",
+    "title_ko_reading": "스트래인저스썬 스트래인저스선 스트레인저스썬 스트레인저스선",
+    "title_en": "Stranger's Sun",
+    "title_en_reading": null,
+    "totalNotes": 183,
+    "duration": "2:38",
+    "etStart": 115,
+    "etEnd": 153,
+    "measured": null,
+    "category": "cosmic",
+    "video": "https://youtu.be/wAqF2R7phHo",
+    "videoClear": "https://youtu.be/wAqF2R7phHo?t=77",
+    "predicted": 100
   },
   {
     "type": "Flash",
@@ -6914,11 +6959,11 @@ const SONGS = [
     "units": [
       "기타"
     ],
-    "title_ja": "ソロメドレー (こはく·晃牙·忍·弓弦)",
+    "title_ja": "ソロメドレー (こはく·晃牙)",
     "title_ja_reading": "そろめどれー (こはく·こうが·しのぶ·ゆづる)",
-    "title_ko": "솔로 메들리 (코하쿠·코가·시노부·유즈루)",
+    "title_ko": "솔로 메들리 (코하쿠·코가)",
     "title_ko_reading": null,
-    "title_en": "Solo Medley (Kohaku·Koga·Shinobu·Yuzuru)",
+    "title_en": "Solo Medley (Kohaku·Koga)",
     "title_en_reading": null,
     "totalNotes": 202,
     "duration": "2:53",
@@ -6929,6 +6974,28 @@ const SONGS = [
     "video": "https://youtu.be/v2IHIcctpzk",
     "videoClear": "https://youtu.be/v2IHIcctpzk?t=95",
     "predicted": 109
+  },
+  {
+    "type": "Sparkle",
+    "unit": "기타",
+    "units": [
+      "기타"
+    ],
+    "title_ja": "ソロメドレー (真緒·ゆうた)",
+    "title_ja_reading": null,
+    "title_ko": "솔로 메들리 (마오·유우타)",
+    "title_ko_reading": null,
+    "title_en": "Solo Medley (Mao·Yuta)",
+    "title_en_reading": null,
+    "totalNotes": 161,
+    "duration": "2:47",
+    "etStart": 0,
+    "etEnd": 0,
+    "measured": null,
+    "category": "others",
+    "video": "https://youtu.be/x8-wTOVG4Ls",
+    "videoClear": "https://youtu.be/x8-wTOVG4Ls?t=81",
+    "predicted": 87
   }
 ];
 
