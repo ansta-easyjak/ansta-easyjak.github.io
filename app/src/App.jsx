@@ -398,7 +398,8 @@ export function App({ songData }) {
               <div className="my-points-section">
                 {myPoints.map((pt, i) => {
                   const n = Number(pt.value);
-                  const invalid = pt.value !== '' && (!Number.isFinite(n) || n < 1 || n > prediction.parsed.notes);
+                  const maxCombo = prediction.parsed.notes - 1;
+                  const invalid = pt.value !== '' && (!Number.isFinite(n) || n < 1 || n > maxCombo);
                   return (
                   <div key={i} className="my-points-row">
                     <span className="my-points-dot" style={{ background: MY_POINT_COLORS[i] }} />
@@ -407,8 +408,8 @@ export function App({ songData }) {
                       className={invalid ? 'my-points-input invalid' : 'my-points-input'}
                       value={pt.value}
                       min={1}
-                      max={prediction.parsed.notes}
-                      placeholder="콤보"
+                      max={maxCombo}
+                      placeholder={t('result.combo')}
                       onChange={(e) => {
                         const raw = e.target.value;
                         if (raw === '' || (Number(raw) >= 0 && raw.length <= 3)) updateMyPoint(i, 'value', raw);

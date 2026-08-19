@@ -88,7 +88,7 @@ export function ResultBar({ labels, notes, value, etStart, etEnd, customPoints =
 
       {customPoints.map((pt, i) => {
         const v = Number(pt.value);
-        if (!v || !Number.isFinite(v) || v <= 0 || v > safeNotes) return null;
+        if (!v || !Number.isFinite(v) || v <= 0 || v > safeNotes - 1) return null;
         const pct = Math.min(100, Math.max(0, (v / safeNotes) * 100));
         return (
           <div key={i} className="bar-custom-marker" style={{ left: `${pct}%` }}>
