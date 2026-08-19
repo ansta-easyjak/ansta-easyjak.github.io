@@ -105,7 +105,10 @@
     "errors.errETBoth": "ET 시작/종료 콤보를 모두 입력해주세요",
     "errors.errETOrder": "ET 종료 콤보는 시작 콤보보다 커야 합니다",
     "errors.errETDiff": "ET 시작 콤보와 종료 콤보 간격은 4이상이어야 합니다.",
-    "errors.errETMax": "ET 종료 콤보는 총 노트수보다 작아야 합니다"
+    "errors.errETMax": "ET 종료 콤보는 총 노트수보다 작아야 합니다",
+    "myPoints.add": "+ 나의 시작점 추가",
+    "myPoints.memo": "메모",
+    "myPoints.memoWarning": "메모 (캐시 삭제 시 사라짐)"
   },
   "ja": {
     "app.kicker": "React リファクタリングプレビュー",
@@ -213,7 +216,10 @@
     "errors.errETBoth": "ET開始/終了コンボを両方入力してください",
     "errors.errETOrder": "ET終了コンボは開始コンボより大きくしてください",
     "errors.errETDiff": "ET開始と終了の差は4以上必要です。",
-    "errors.errETMax": "ET終了コンボは総ノーツ数より小さくしてください"
+    "errors.errETMax": "ET終了コンボは総ノーツ数より小さくしてください",
+    "myPoints.add": "+ 自分の開始点を追加",
+    "myPoints.memo": "メモ",
+    "myPoints.memoWarning": "メモ（キャッシュ削除で消えます）"
   },
   "en": {
     "app.kicker": "React refactor preview",
@@ -321,6 +327,9 @@
     "errors.errETBoth": "Enter both ET start and ET end combos.",
     "errors.errETOrder": "ET end combo must be greater than ET start combo.",
     "errors.errETDiff": "ET start and end must be at least 4 combos apart.",
-    "errors.errETMax": "ET end combo must be smaller than total notes."
+    "errors.errETMax": "ET end combo must be smaller than total notes.",
+    "myPoints.add": "+ Add custom start",
+    "myPoints.memo": "Note",
+    "myPoints.memoWarning": "Note (cleared with browser data)"
   }
 }

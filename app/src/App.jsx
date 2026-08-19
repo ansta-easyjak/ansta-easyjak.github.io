@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import messages from './data/i18n.json';
 import { ResultBar } from './components/ResultBar.jsx';
 import { InfoTab } from './components/InfoTab.jsx';
@@ -16,6 +16,7 @@ const LOCALE_LABELS = {
   en: 'Eng',
 };
 const TABS = ['predict', 'songs', 'info'];
+const MY_POINT_COLORS = ['#f87171', '#a78bfa', '#34d399'];
 
 function ResetIcon() {
   return (
@@ -105,6 +106,42 @@ export function App({ songData }) {
   const [prediction, setPrediction] = useState(null);
   const [error, setError] = useState(null);
   const [activeTab, setActiveTab] = useState('predict');
+  const [myPoints, setMyPoints] = useState([]);
+
+  useEffect(() => {
+    if (!selectedSong) { setMyPoints([]); return; }
+    try {
+      const raw = JSON.parse(localStorage.getItem(`easyjak-mypoints-${selectedSong.title_ja}`) ?? '[]');
+      const pts = Array.isArray(raw)
+        ? raw.slice(0, 3).map((item) =>
+            typeof item === 'object' && item !== null
+              ? { value: item.value ?? '', note: item.note ?? '' }
+              : { value: String(item), note: '' }
+          )
+        : [];
+      setMyPoints(pts);
+    } catch { setMyPoints([]); }
+  }, [selectedSong]);
+
+  useEffect(() => {
+    if (!selectedSong) return;
+    if (myPoints.length === 0) {
+      localStorage.removeItem(`easyjak-mypoints-${selectedSong.title_ja}`);
+    } else {
+      localStorage.setItem(`easyjak-mypoints-${selectedSong.title_ja}`, JSON.stringify(myPoints));
+    }
+  }, [myPoints, selectedSong]);
+
+  function addMyPoint() {
+    if (myPoints.length >= 3) return;
+    setMyPoints((pts) => [...pts, { value: '', note: '' }]);
+  }
+  function updateMyPoint(i, field, val) {
+    setMyPoints((pts) => pts.map((p, idx) => (idx === i ? { ...p, [field]: val } : p)));
+  }
+  function removeMyPoint(i) {
+    setMyPoints((pts) => pts.filter((_, idx) => idx !== i));
+  }
   const t = useMemo(() => {
     const dictionary = messages[locale] ?? messages.ko;
     return (key) => dictionary[key] ?? messages.ko[key] ?? key;
@@ -355,7 +392,47 @@ export function App({ songData }) {
                 value={prediction.displayValue}
                 etStart={prediction.parsed.etStart}
                 etEnd={prediction.parsed.etEnd}
+                customPoints={myPoints.map((pt, i) => ({ value: pt.value, color: MY_POINT_COLORS[i] }))}
               />
+
+              <div className="my-points-section">
+                {myPoints.map((pt, i) => {
+                  const n = Number(pt.value);
+                  const invalid = pt.value !== '' && (!Number.isFinite(n) || n < 1 || n > prediction.parsed.notes);
+                  return (
+                  <div key={i} className="my-points-row">
+                    <span className="my-points-dot" style={{ background: MY_POINT_COLORS[i] }} />
+                    <input
+                      type="number"
+                      className={invalid ? 'my-points-input invalid' : 'my-points-input'}
+                      value={pt.value}
+                      min={1}
+                      max={prediction.parsed.notes}
+                      placeholder="콤보"
+                      onChange={(e) => {
+                        const raw = e.target.value;
+                        if (raw === '' || (Number(raw) >= 0 && raw.length <= 3)) updateMyPoint(i, 'value', raw);
+                      }}
+                    />
+                    <span className="my-points-sep">·</span>
+                    <input
+                      type="text"
+                      className="my-points-note"
+                      value={pt.note}
+                      maxLength={10}
+                      placeholder={t(i === 0 ? 'myPoints.memoWarning' : 'myPoints.memo')}
+                      onChange={(e) => updateMyPoint(i, 'note', e.target.value)}
+                    />
+                    <button type="button" className="my-points-remove" onClick={() => removeMyPoint(i)}>×</button>
+                  </div>
+                  );
+                })}
+                {myPoints.length < 3 && (
+                  <button type="button" className="my-points-add" onClick={addMyPoint}>
+                    {t('myPoints.add')}
+                  </button>
+                )}
+              </div>
 
               {prediction.resultVideo && (
                 <ResultVideo

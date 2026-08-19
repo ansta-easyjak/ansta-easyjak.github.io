@@ -1161,6 +1161,14 @@ h1 {
   padding: 62px 0 12px;
 }
 
+.bar-section.has-custom {
+  padding-bottom: 12px;
+}
+
+.bar-section.has-custom .bar-legend {
+  margin-top: 44px;
+}
+
 .bar-track {
   display: flex;
   height: 28px;
@@ -1295,6 +1303,131 @@ h1 {
 .legend-dot.et {
   border: 1px solid #d97706;
   background: var(--amber);
+}
+
+.bar-custom-marker {
+  position: absolute;
+  top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.bar-custom-marker-arrow {
+  width: 0;
+  height: 0;
+  border-bottom: 7px solid;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+}
+
+.bar-custom-marker-line {
+  width: 2px;
+  height: 26px;
+}
+
+.bar-custom-marker-label {
+  padding: 2px 7px;
+  border-radius: 3px;
+  border: 1.5px solid;
+  background: var(--bg);
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.my-points-section {
+  margin-top: 2px;
+  padding-top: 10px;
+  border-top: 0.5px solid var(--border-light);
+}
+
+.my-points-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.my-points-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.my-points-input {
+  width: 68px;
+  padding: 4px 6px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-main);
+  background: var(--bg);
+  text-align: center;
+  -moz-appearance: textfield;
+}
+
+.my-points-input.invalid {
+  border-color: #ef4444;
+  color: #ef4444;
+}
+
+.my-points-input::-webkit-inner-spin-button,
+.my-points-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.my-points-sep {
+  color: var(--border);
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.my-points-note {
+  flex: 1;
+  min-width: 0;
+  padding: 4px 6px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 13px;
+  color: var(--text-sub);
+  background: var(--bg);
+}
+
+.my-points-remove {
+  background: none;
+  border: none;
+  color: var(--text-sub);
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+  padding: 0 4px;
+}
+
+.my-points-remove:hover {
+  color: var(--text-main);
+}
+
+.my-points-add {
+  display: block;
+  width: 100%;
+  padding: 6px;
+  background: none;
+  border: 1px dashed var(--border);
+  border-radius: 4px;
+  color: var(--text-sub);
+  font-size: 13px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.my-points-add:hover {
+  border-color: var(--text-sub);
+  color: var(--text-main);
 }
 
 .video-section {
