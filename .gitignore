@@ -5,6 +5,7 @@ __pycache__/
 node_modules/
 app/dist/
 dev_notes.txt
+dev_notes2.md
 *.xlsx
 *.csv
 *.numbers
