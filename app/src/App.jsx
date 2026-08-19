@@ -399,7 +399,8 @@ export function App({ songData }) {
                 {myPoints.map((pt, i) => {
                   const n = Number(pt.value);
                   const maxCombo = prediction.parsed.notes - 1;
-                  const invalid = pt.value !== '' && (!Number.isFinite(n) || n < 1 || n > maxCombo);
+                  const isDuplicate = pt.value !== '' && myPoints.some((p, j) => j !== i && Number(p.value) === n);
+                  const invalid = pt.value !== '' && (!Number.isFinite(n) || n < 1 || n > maxCombo || isDuplicate);
                   return (
                   <div key={i} className="my-points-row">
                     <span className="my-points-dot" style={{ background: MY_POINT_COLORS[i] }} />
