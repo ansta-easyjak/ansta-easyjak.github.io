@@ -3185,7 +3185,7 @@ const SONGS = [
     "measured": 125,
     "category": "cosmic",
     "video": "https://youtu.be/wRB4w80oP7o",
-    "videoClear": null,
+    "videoClear": "https://youtu.be/wRB4w80oP7o?t=92",
     "predicted": 123
   },
   {
@@ -3914,7 +3914,7 @@ const SONGS = [
     "measured": 103,
     "category": "rhythm_link",
     "video": "https://youtu.be/T89L92U4EFc",
-    "videoClear": null,
+    "videoClear": "https://youtu.be/T89L92U4EFc?t=89",
     "predicted": 104
   },
   {
@@ -6994,7 +6994,7 @@ const SONGS = [
     "measured": 81,
     "category": "others",
     "video": "https://youtu.be/x8-wTOVG4Ls",
-    "videoClear": null,
+    "videoClear": "https://youtu.be/x8-wTOVG4Ls?t=77",
     "predicted": 87
   }
 ];
