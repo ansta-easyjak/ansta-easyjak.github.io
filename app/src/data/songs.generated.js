@@ -281,15 +281,15 @@ const SONGS = [
     "title_ko": "(RE)PLAY",
     "title_ko_reading": "리플레이",
     "title_en": "(RE)PLAY",
-    "title_en_reading": null,
+    "title_en_reading": "REPLAY",
     "totalNotes": 185,
     "duration": "2:30",
     "etStart": 62,
     "etEnd": 121,
     "measured": null,
     "category": "starmaker",
-    "video": null,
-    "videoClear": null,
+    "video": "https://youtu.be/48FV5GkTGmY",
+    "videoClear": "https://youtu.be/48FV5GkTGmY?t=73",
     "predicted": 100
   },
   {
@@ -686,8 +686,8 @@ const SONGS = [
     "etEnd": 106,
     "measured": null,
     "category": "starmaker",
-    "video": null,
-    "videoClear": null,
+    "video": "https://youtu.be/9iEPh0Cz1bE",
+    "videoClear": "https://youtu.be/9iEPh0Cz1bE?t=74",
     "predicted": 62
   },
   {
@@ -1106,8 +1106,8 @@ const SONGS = [
     "etEnd": 49,
     "measured": null,
     "category": "starmaker",
-    "video": null,
-    "videoClear": null,
+    "video": "https://youtu.be/RKX4e2IpVtQ",
+    "videoClear": "https://youtu.be/RKX4e2IpVtQ?t=68",
     "predicted": 47
   },
   {
@@ -1482,8 +1482,8 @@ const SONGS = [
     "etEnd": 116,
     "measured": null,
     "category": "starmaker",
-    "video": null,
-    "videoClear": null,
+    "video": "https://youtu.be/0GGe9gMiKtU",
+    "videoClear": "https://youtu.be/0GGe9gMiKtU?t=74",
     "predicted": 76
   },
   {
@@ -2277,8 +2277,8 @@ const SONGS = [
     "etEnd": 100,
     "measured": null,
     "category": "cosmic",
-    "video": null,
-    "videoClear": null,
+    "video": "https://youtu.be/QOeNhBtEWhE",
+    "videoClear": "https://youtu.be/QOeNhBtEWhE?t=82",
     "predicted": 84
   },
   {
@@ -2632,8 +2632,8 @@ const SONGS = [
     "etEnd": 137,
     "measured": null,
     "category": "cosmic",
-    "video": null,
-    "videoClear": null,
+    "video": "https://youtu.be/hGufw0Efk2w",
+    "videoClear": "https://youtu.be/hGufw0Efk2w?t=78",
     "predicted": 99
   },
   {
@@ -3030,8 +3030,8 @@ const SONGS = [
     "etEnd": 55,
     "measured": null,
     "category": "cosmic",
-    "video": null,
-    "videoClear": null,
+    "video": "https://youtu.be/rGOAPSxjKnE",
+    "videoClear": "https://youtu.be/rGOAPSxjKnE?t=80",
     "predicted": 62
   },
   {
