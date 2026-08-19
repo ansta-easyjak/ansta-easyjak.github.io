@@ -108,7 +108,7 @@
     "errors.errETMax": "ET 종료 콤보는 총 노트수보다 작아야 합니다",
     "myPoints.add": "+ 나의 시작점 추가",
     "myPoints.memo": "메모",
-    "myPoints.memoWarning": "메모 (캐시 삭제 시 사라짐)"
+    "myPoints.memoWarning": "메모 · 캐시 삭제시 초기화"
   },
   "ja": {
     "app.kicker": "React リファクタリングプレビュー",
