@@ -1,6 +1,6 @@
 import { useLayoutEffect, useRef, useState } from 'react';
 
-export function ResultBar({ labels, notes, value, etStart, etEnd }) {
+export function ResultBar({ labels, notes, value, etStart, etEnd, customPoints = [] }) {
   const startLabelRef = useRef(null);
   const endLabelRef = useRef(null);
   const [raisedLabel, setRaisedLabel] = useState(null);
@@ -40,8 +40,10 @@ export function ResultBar({ labels, notes, value, etStart, etEnd }) {
     return () => window.cancelAnimationFrame(frameId);
   }, [etEnd, etEndPercent, etStart]);
 
+  const hasCustom = customPoints.some((pt) => Number(pt.value) > 0);
+
   return (
-    <div className="bar-section">
+    <div className={hasCustom ? 'bar-section has-custom' : 'bar-section'}>
       <div className="bar-marker" style={{ left: markerLeft }}>
         <div className="bar-marker-label">Clear: {safeValue || '-'}</div>
         <div className="bar-marker-line" />
@@ -83,6 +85,21 @@ export function ResultBar({ labels, notes, value, etStart, etEnd }) {
           </span>
         ) : null}
       </div>
+
+      {customPoints.map((pt, i) => {
+        const v = Number(pt.value);
+        if (!v || !Number.isFinite(v) || v <= 0 || v > safeNotes) return null;
+        const pct = Math.min(100, Math.max(0, (v / safeNotes) * 100));
+        return (
+          <div key={i} className="bar-custom-marker" style={{ left: `${pct}%` }}>
+            <div className="bar-custom-marker-arrow" style={{ borderBottomColor: pt.color }} />
+            <div className="bar-custom-marker-line" style={{ background: pt.color }} />
+            <div className="bar-custom-marker-label" style={{ color: pt.color, borderColor: pt.color }}>
+              {v}
+            </div>
+          </div>
+        );
+      })}
 
       <div className="bar-legend">
         <div className="legend-item">
