@@ -219,7 +219,7 @@
     "errors.errETMax": "ET終了コンボは総ノーツ数より小さくしてください",
     "myPoints.add": "+ 自分の開始点を追加",
     "myPoints.memo": "メモ",
-    "myPoints.memoWarning": "メモ（キャッシュ削除で消えます）"
+    "myPoints.memoWarning": "メモ · キャッシュ削除で初期化"
   },
   "en": {
     "app.kicker": "React refactor preview",
@@ -330,6 +330,6 @@
     "errors.errETMax": "ET end combo must be smaller than total notes.",
     "myPoints.add": "+ Add custom start",
     "myPoints.memo": "Note",
-    "myPoints.memoWarning": "Note (cleared with browser data)"
+    "myPoints.memoWarning": "Note · lost on cache clear"
   }
 }
