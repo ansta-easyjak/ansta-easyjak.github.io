@@ -1276,10 +1276,10 @@
     "duration": "2:46",
     "etStart": 45,
     "etEnd": 63,
-    "measured": null,
+    "measured": 99,
     "category": "starmaker",
     "video": "https://youtu.be/VfAbHbpVTaQ",
-    "videoClear": "https://youtu.be/VfAbHbpVTaQ?t=81",
+    "videoClear": "https://youtu.be/VfAbHbpVTaQ?t=90",
     "predicted": 94
   },
   {
@@ -2297,7 +2297,7 @@
     "category": "cosmic",
     "video": "https://youtu.be/bziktRLR0iU?si=bvRbJTSwyZpt939H",
     "videoClear": "https://youtu.be/bziktRLR0iU?t=56",
-    "predicted": 70
+    "predicted": 69
   },
   {
     "type": "Flash",
@@ -2426,10 +2426,10 @@
     "duration": "2:38",
     "etStart": 115,
     "etEnd": 153,
-    "measured": null,
+    "measured": 99,
     "category": "cosmic",
     "video": "https://youtu.be/wAqF2R7phHo",
-    "videoClear": "https://youtu.be/wAqF2R7phHo?t=77",
+    "videoClear": "https://youtu.be/wAqF2R7phHo?t=75",
     "predicted": 100
   },
   {
@@ -2784,7 +2784,7 @@
     "category": "cosmic",
     "video": "https://youtu.be/rbswb1AtcMI",
     "videoClear": "https://youtu.be/rbswb1AtcMI?t=75",
-    "predicted": 106
+    "predicted": 105
   },
   {
     "type": "Flash",
@@ -5913,7 +5913,7 @@
     "category": "others",
     "video": "https://youtu.be/kPruu3fcEZI?si=aLbN4tkSZLsuwiuZ",
     "videoClear": "https://youtu.be/kPruu3fcEZI?t=98",
-    "predicted": 91
+    "predicted": 90
   },
   {
     "type": "All",
