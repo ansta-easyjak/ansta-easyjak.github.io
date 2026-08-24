@@ -5344,6 +5344,28 @@
     "predicted": 106
   },
   {
+    "type": "Sparkle",
+    "unit": "DF",
+    "units": [
+      "DF"
+    ],
+    "title_ja": "Secret of Metropolis",
+    "title_ja_reading": null,
+    "title_ko": "Secret of Metropolis",
+    "title_ko_reading": null,
+    "title_en": "Secret of Metropolis",
+    "title_en_reading": null,
+    "totalNotes": 143,
+    "duration": "2:08",
+    "etStart": 49,
+    "etEnd": 65,
+    "measured": null,
+    "category": "new_dimension",
+    "video": "https://youtu.be/Y18TzCkT7tw",
+    "videoClear": "https://youtu.be/Y18TzCkT7tw?t=62",
+    "predicted": 76
+  },
+  {
     "type": "Flash",
     "unit": "S-Pri",
     "units": [

@@ -1,5 +1,5 @@
 // songs.js — easyjak 곡 데이터 & 모델 파라미터
-// 총 317곡 | R²=0.9729 | MAE=2.45콤보
+// 총 318곡 | R²=0.9729 | MAE=2.45콤보
 // ※ enstars_regression_v3.py 로 자동 생성 — 직접 수정 비권장
 
 const SONGS = [
@@ -5346,6 +5346,28 @@ const SONGS = [
     "video": "https://youtu.be/igayZQFSmGY?si=fNzUBk-sJJ79XuMA",
     "videoClear": "https://youtu.be/igayZQFSmGY?t=89",
     "predicted": 106
+  },
+  {
+    "type": "Sparkle",
+    "unit": "DF",
+    "units": [
+      "DF"
+    ],
+    "title_ja": "Secret of Metropolis",
+    "title_ja_reading": null,
+    "title_ko": "Secret of Metropolis",
+    "title_ko_reading": null,
+    "title_en": "Secret of Metropolis",
+    "title_en_reading": null,
+    "totalNotes": 143,
+    "duration": "2:08",
+    "etStart": 49,
+    "etEnd": 65,
+    "measured": null,
+    "category": "new_dimension",
+    "video": "https://youtu.be/Y18TzCkT7tw",
+    "videoClear": "https://youtu.be/Y18TzCkT7tw?t=62",
+    "predicted": 76
   },
   {
     "type": "Flash",
