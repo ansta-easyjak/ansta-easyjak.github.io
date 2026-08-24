@@ -5354,9 +5354,9 @@ const SONGS = [
       "DF"
     ],
     "title_ja": "Secret of Metropolis",
-    "title_ja_reading": null,
+    "title_ja_reading": "しーくれっと おぶ めとろぽりす",
     "title_ko": "Secret of Metropolis",
-    "title_ko_reading": null,
+    "title_ko_reading": "시크릿 오브 메트로폴리스",
     "title_en": "Secret of Metropolis",
     "title_en_reading": null,
     "totalNotes": 143,
