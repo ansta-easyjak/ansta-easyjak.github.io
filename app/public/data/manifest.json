@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "version": "688f26f71d27",
+  "version": "824e54a8b927",
   "files": {
-    "songs": "songs.json?v=688f26f71d27",
-    "model": "model.json?v=688f26f71d27"
+    "songs": "songs.json?v=824e54a8b927",
+    "model": "model.json?v=824e54a8b927"
   },
   "songCount": 318,
   "measuredCount": 202,
