@@ -1,5 +1,5 @@
 // songs.js — easyjak 곡 데이터 & 모델 파라미터
-// 총 318곡 | R²=0.9729 | MAE=2.45콤보
+// 총 318곡 | R²=0.9732 | MAE=2.41콤보
 // ※ enstars_regression_v3.py 로 자동 생성 — 직접 수정 비권장
 
 const SONGS = [
@@ -1391,7 +1391,7 @@ const SONGS = [
     "duration": "2:42",
     "etStart": 113,
     "etEnd": 131,
-    "measured": null,
+    "measured": 94,
     "category": "starmaker",
     "video": "https://youtu.be/We7Dr_l38oY",
     "videoClear": "https://youtu.be/We7Dr_l38oY?t=79",
@@ -1413,10 +1413,10 @@ const SONGS = [
     "duration": "2:35",
     "etStart": 34,
     "etEnd": 59,
-    "measured": null,
+    "measured": 88,
     "category": "starmaker",
     "video": "https://youtu.be/NwtnFztxdJc",
-    "videoClear": "https://youtu.be/NwtnFztxdJc?t=75",
+    "videoClear": "https://youtu.be/NwtnFztxdJc?t=84",
     "predicted": 86
   },
   {
@@ -1480,10 +1480,10 @@ const SONGS = [
     "duration": "2:32",
     "etStart": 100,
     "etEnd": 116,
-    "measured": null,
+    "measured": 76,
     "category": "starmaker",
-    "video": "https://youtu.be/0GGe9gMiKtU",
-    "videoClear": "https://youtu.be/0GGe9gMiKtU?t=74",
+    "video": "https://youtu.be/hhz4GesOcak",
+    "videoClear": "https://youtu.be/hhz4GesOcak?t=76",
     "predicted": 76
   },
   {
@@ -1635,10 +1635,10 @@ const SONGS = [
     "duration": "2:14",
     "etStart": 0,
     "etEnd": 0,
-    "measured": null,
+    "measured": 70,
     "category": "starmaker",
     "video": "https://youtu.be/USUGutMn7-U",
-    "videoClear": "https://youtu.be/USUGutMn7-U?t=65",
+    "videoClear": "https://youtu.be/USUGutMn7-U?t=73",
     "predicted": 69
   },
   {
@@ -1992,7 +1992,7 @@ const SONGS = [
     "category": "cosmic",
     "video": "https://youtu.be/o4WK5110vY4?si=N3thKNrAzMye_HLm",
     "videoClear": "https://youtu.be/o4WK5110vY4?t=66",
-    "predicted": 89
+    "predicted": 90
   },
   {
     "type": "Sparkle",
@@ -2700,7 +2700,7 @@ const SONGS = [
     "category": "cosmic",
     "video": "https://youtu.be/tFLMl6pzBeU",
     "videoClear": "https://youtu.be/tFLMl6pzBeU?t=67",
-    "predicted": 72
+    "predicted": 71
   },
   {
     "type": "Sparkle",
@@ -2788,7 +2788,7 @@ const SONGS = [
     "category": "cosmic",
     "video": "https://youtu.be/rbswb1AtcMI",
     "videoClear": "https://youtu.be/rbswb1AtcMI?t=75",
-    "predicted": 105
+    "predicted": 106
   },
   {
     "type": "Flash",
@@ -3054,7 +3054,7 @@ const SONGS = [
     "category": "cosmic",
     "video": "https://youtu.be/lxzSzDkWGzc?si=6GaDYUesvrfU3tO3",
     "videoClear": "https://youtu.be/lxzSzDkWGzc?t=80",
-    "predicted": 76
+    "predicted": 75
   },
   {
     "type": "Sparkle",
@@ -3760,7 +3760,7 @@ const SONGS = [
     "category": "rhythm_link",
     "video": "https://youtu.be/YY57B6sq98M",
     "videoClear": "https://youtu.be/YY57B6sq98M?t=63",
-    "predicted": 61
+    "predicted": 60
   },
   {
     "type": "Flash",
@@ -4267,7 +4267,7 @@ const SONGS = [
     "category": "rhythm_link",
     "video": "https://youtu.be/-gtAqdLXUnA?si=usSk2BkRptKbsvGo",
     "videoClear": "https://youtu.be/-gtAqdLXUnA?t=89",
-    "predicted": 109
+    "predicted": 108
   },
   {
     "type": "Sparkle",
@@ -5363,10 +5363,10 @@ const SONGS = [
     "duration": "2:08",
     "etStart": 49,
     "etEnd": 65,
-    "measured": null,
+    "measured": 74,
     "category": "new_dimension",
     "video": "https://youtu.be/Y18TzCkT7tw",
-    "videoClear": "https://youtu.be/Y18TzCkT7tw?t=62",
+    "videoClear": "https://youtu.be/Y18TzCkT7tw?t=68",
     "predicted": 76
   },
   {
@@ -7022,19 +7022,19 @@ const SONGS = [
 ];
 
 const MODEL_PARAMS = {
-  "intercept": -2.8900125078326653,
+  "intercept": -2.99627089051927,
   "coefs": [
-    0.5332732108341094,
-    -2.3026202758861816,
-    8.339699769356843
+    0.5334820093733327,
+    -2.2989450609861577,
+    8.434051923487024
   ],
-  "simpleCoef": 0.5275214988426614,
-  "simpleInt": 2.3953862177339005,
-  "meanEtStart": 0.4867898919512606,
-  "meanEtEnd": 0.6535413864673356,
-  "trainSize": 197,
-  "r2": 0.9729333786349553,
-  "mae": 2.4504112650666157
+  "simpleCoef": 0.5277575953045393,
+  "simpleInt": 2.337091269396595,
+  "meanEtStart": 0.486740858329185,
+  "meanEtEnd": 0.6525319694674974,
+  "trainSize": 202,
+  "r2": 0.9731588528700343,
+  "mae": 2.414348939123426
 };
 
 export { SONGS, MODEL_PARAMS };
