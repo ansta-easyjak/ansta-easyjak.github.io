@@ -1,5 +1,5 @@
 // songs.js — easyjak 곡 데이터 & 모델 파라미터
-// 총 318곡 | R²=0.9736 | MAE=2.38콤보
+// 총 319곡 | R²=0.9736 | MAE=2.38콤보
 // ※ enstars_regression_v3.py 로 자동 생성 — 직접 수정 비권장
 
 const SONGS = [
@@ -1662,6 +1662,29 @@ const SONGS = [
     "video": "https://youtu.be/x54i9zUFLAA",
     "videoClear": "https://youtu.be/x54i9zUFLAA?t=84",
     "predicted": 117
+  },
+  {
+    "type": "Flash",
+    "unit": "ALKALOID / Switch",
+    "units": [
+      "ALKALOID",
+      "Switch"
+    ],
+    "title_ja": "E.V.O.L.U.T.I.O.N",
+    "title_ja_reading": "えぼりゅーしょん",
+    "title_ko": "E.V.O.L.U.T.I.O.N",
+    "title_ko_reading": "에볼루션",
+    "title_en": "E.V.O.L.U.T.I.O.N",
+    "title_en_reading": "Evolution",
+    "totalNotes": 174,
+    "duration": "2:34",
+    "etStart": 130,
+    "etEnd": 169,
+    "measured": null,
+    "category": "starmaker",
+    "video": "https://youtu.be/dRiHb224G8A",
+    "videoClear": "https://youtu.be/dRiHb224G8A?t=75",
+    "predicted": 96
   },
   {
     "type": "Glitter",

@@ -352,7 +352,7 @@
     "category": "starmaker",
     "video": "https://youtu.be/PWVmhaaHXII",
     "videoClear": "https://youtu.be/PWVmhaaHXII?t=68",
-    "predicted": 95
+    "predicted": 94
   },
   {
     "type": "Sparkle",
@@ -1660,6 +1660,29 @@
     "predicted": 117
   },
   {
+    "type": "Flash",
+    "unit": "ALKALOID / Switch",
+    "units": [
+      "ALKALOID",
+      "Switch"
+    ],
+    "title_ja": "E.V.O.L.U.T.I.O.N",
+    "title_ja_reading": "えぼりゅーしょん",
+    "title_ko": "E.V.O.L.U.T.I.O.N",
+    "title_ko_reading": "에볼루션",
+    "title_en": "E.V.O.L.U.T.I.O.N",
+    "title_en_reading": "Evolution",
+    "totalNotes": 174,
+    "duration": "2:34",
+    "etStart": 130,
+    "etEnd": 169,
+    "measured": null,
+    "category": "starmaker",
+    "video": "https://youtu.be/dRiHb224G8A",
+    "videoClear": "https://youtu.be/dRiHb224G8A?t=75",
+    "predicted": 96
+  },
+  {
     "type": "Glitter",
     "unit": "Eden",
     "units": [
@@ -1988,7 +2011,7 @@
     "category": "cosmic",
     "video": "https://youtu.be/o4WK5110vY4?si=N3thKNrAzMye_HLm",
     "videoClear": "https://youtu.be/o4WK5110vY4?t=66",
-    "predicted": 90
+    "predicted": 89
   },
   {
     "type": "Sparkle",
@@ -3292,7 +3315,7 @@
     "category": "rhythm_link",
     "video": "https://youtu.be/5ibK0HTyCqE",
     "videoClear": "https://youtu.be/5ibK0HTyCqE?t=56",
-    "predicted": 71
+    "predicted": 70
   },
   {
     "type": "Sparkle",
@@ -5051,10 +5074,10 @@
     "duration": "2:11",
     "etStart": 105,
     "etEnd": 129,
-    "measured": null,
+    "measured": 79,
     "category": "new_dimension",
     "video": "https://youtu.be/1engaOH1-EA",
-    "videoClear": "https://youtu.be/1engaOH1-EA?t=63",
+    "videoClear": "https://youtu.be/1engaOH1-EA?t=57",
     "predicted": 78
   },
   {
@@ -5073,10 +5096,10 @@
     "duration": "2:11",
     "etStart": 75,
     "etEnd": 94,
-    "measured": null,
+    "measured": 70,
     "category": "new_dimension",
     "video": "https://youtu.be/M2SlMp8nDF0",
-    "videoClear": "https://youtu.be/M2SlMp8nDF0?t=63",
+    "videoClear": "https://youtu.be/M2SlMp8nDF0?t=64",
     "predicted": 72
   },
   {
@@ -5095,10 +5118,10 @@
     "duration": "2:13",
     "etStart": 79,
     "etEnd": 105,
-    "measured": null,
+    "measured": 67,
     "category": "new_dimension",
     "video": "https://youtu.be/ZJuXwWlxHlY",
-    "videoClear": "https://youtu.be/ZJuXwWlxHlY?t=64",
+    "videoClear": "https://youtu.be/ZJuXwWlxHlY?t=69",
     "predicted": 67
   },
   {
@@ -5249,10 +5272,10 @@
     "duration": "2:14",
     "etStart": 33,
     "etEnd": 98,
-    "measured": null,
+    "measured": 72,
     "category": "new_dimension",
     "video": "https://youtu.be/agY_LQeBWFI",
-    "videoClear": "https://youtu.be/agY_LQeBWFI?t=65",
+    "videoClear": "https://youtu.be/agY_LQeBWFI?t=60",
     "predicted": 73
   },
   {
@@ -5869,7 +5892,7 @@
     "category": "others",
     "video": "https://youtu.be/VLKIKOYhqlU",
     "videoClear": "https://youtu.be/VLKIKOYhqlU?t=62",
-    "predicted": 55
+    "predicted": 56
   },
   {
     "type": "All",
@@ -5935,7 +5958,7 @@
     "category": "others",
     "video": "https://youtu.be/kPruu3fcEZI?si=aLbN4tkSZLsuwiuZ",
     "videoClear": "https://youtu.be/kPruu3fcEZI?t=98",
-    "predicted": 90
+    "predicted": 91
   },
   {
     "type": "All",
@@ -6353,7 +6376,7 @@
     "category": "others",
     "video": "https://youtu.be/a4l6fwUjuz4",
     "videoClear": "https://youtu.be/a4l6fwUjuz4?t=73",
-    "predicted": 74
+    "predicted": 73
   },
   {
     "type": "All",
