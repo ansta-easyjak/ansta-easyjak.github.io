@@ -1660,6 +1660,29 @@
     "predicted": 117
   },
   {
+    "type": "Flash",
+    "unit": "ALKALOID / Switch",
+    "units": [
+      "ALKALOID",
+      "Switch"
+    ],
+    "title_ja": "E.V.O.L.U.T.I.O.N",
+    "title_ja_reading": "えぼりゅーしょん",
+    "title_ko": "E.V.O.L.U.T.I.O.N",
+    "title_ko_reading": "에볼루션",
+    "title_en": "E.V.O.L.U.T.I.O.N",
+    "title_en_reading": "Evolution",
+    "totalNotes": 174,
+    "duration": "2:34",
+    "etStart": 130,
+    "etEnd": 169,
+    "measured": null,
+    "category": "starmaker",
+    "video": "https://youtu.be/dRiHb224G8A",
+    "videoClear": "https://youtu.be/dRiHb224G8A?t=75",
+    "predicted": 96
+  },
+  {
     "type": "Glitter",
     "unit": "Eden",
     "units": [
