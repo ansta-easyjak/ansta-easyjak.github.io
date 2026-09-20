@@ -1,5 +1,5 @@
 // songs.js — easyjak 곡 데이터 & 모델 파라미터
-// 총 319곡 | R²=0.9736 | MAE=2.38콤보
+// 총 320곡 | R²=0.9736 | MAE=2.38콤보
 // ※ enstars_regression_v3.py 로 자동 생성 — 직접 수정 비권장
 
 const SONGS = [
@@ -3563,6 +3563,28 @@ const SONGS = [
     "video": "https://youtu.be/kkncT21bzKo",
     "videoClear": "https://youtu.be/kkncT21bzKo?t=64",
     "predicted": 113
+  },
+  {
+    "type": "Flash",
+    "unit": "UNDEAD",
+    "units": [
+      "UNDEAD"
+    ],
+    "title_ja": "RAMBLING MOON",
+    "title_ja_reading": "らんぶりんぐ むーん",
+    "title_ko": "RAMBLING MOON",
+    "title_ko_reading": "램블링 문",
+    "title_en": "RAMBLING MOON",
+    "title_en_reading": null,
+    "totalNotes": 120,
+    "duration": "2:44",
+    "etStart": 23,
+    "etEnd": 33,
+    "measured": null,
+    "category": "rhythm_link",
+    "video": "https://youtu.be/fZRrkTgjkqc",
+    "videoClear": "https://youtu.be/fZRrkTgjkqc?t=80",
+    "predicted": 63
   },
   {
     "type": "Brilliant",

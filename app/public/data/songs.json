@@ -3561,6 +3561,28 @@
     "predicted": 113
   },
   {
+    "type": "Flash",
+    "unit": "UNDEAD",
+    "units": [
+      "UNDEAD"
+    ],
+    "title_ja": "RAMBLING MOON",
+    "title_ja_reading": "らんぶりんぐ むーん",
+    "title_ko": "RAMBLING MOON",
+    "title_ko_reading": "램블링 문",
+    "title_en": "RAMBLING MOON",
+    "title_en_reading": null,
+    "totalNotes": 120,
+    "duration": "2:44",
+    "etStart": 23,
+    "etEnd": 33,
+    "measured": null,
+    "category": "rhythm_link",
+    "video": "https://youtu.be/fZRrkTgjkqc",
+    "videoClear": "https://youtu.be/fZRrkTgjkqc?t=80",
+    "predicted": 63
+  },
+  {
     "type": "Brilliant",
     "unit": "Ra*bits",
     "units": [
