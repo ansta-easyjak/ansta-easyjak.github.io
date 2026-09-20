@@ -750,7 +750,7 @@
     "category": "starmaker",
     "video": "https://youtu.be/6LsFhiMT7L8?si=bIVV2vwi9g5MmTm1",
     "videoClear": "https://youtu.be/6LsFhiMT7L8?t=90",
-    "predicted": 93
+    "predicted": 94
   },
   {
     "type": "Glitter",
@@ -1676,10 +1676,10 @@
     "duration": "2:34",
     "etStart": 130,
     "etEnd": 169,
-    "measured": null,
+    "measured": 96,
     "category": "starmaker",
     "video": "https://youtu.be/1scoA8uRTao",
-    "videoClear": "https://youtu.be/1scoA8uRTao?t=75",
+    "videoClear": "https://youtu.be/1scoA8uRTao?t=71",
     "predicted": 96
   },
   {
@@ -3422,10 +3422,10 @@
     "duration": "2:05",
     "etStart": 1,
     "etEnd": 6,
-    "measured": null,
+    "measured": 54,
     "category": "rhythm_link",
     "video": "https://youtu.be/f1QLJm01eJg",
-    "videoClear": "https://youtu.be/f1QLJm01eJg?t=60",
+    "videoClear": "https://youtu.be/f1QLJm01eJg?t=72",
     "predicted": 54
   },
   {
@@ -3466,10 +3466,10 @@
     "duration": "2:15",
     "etStart": 62,
     "etEnd": 88,
-    "measured": null,
+    "measured": 67,
     "category": "rhythm_link",
     "video": "https://youtu.be/gntQ8pC0mnU",
-    "videoClear": "https://youtu.be/gntQ8pC0mnU?t=65",
+    "videoClear": "https://youtu.be/gntQ8pC0mnU?t=70",
     "predicted": 65
   },
   {
@@ -3576,10 +3576,10 @@
     "duration": "2:44",
     "etStart": 23,
     "etEnd": 33,
-    "measured": null,
+    "measured": 62,
     "category": "rhythm_link",
     "video": "https://youtu.be/fZRrkTgjkqc",
-    "videoClear": "https://youtu.be/fZRrkTgjkqc?t=80",
+    "videoClear": "https://youtu.be/fZRrkTgjkqc?t=82",
     "predicted": 63
   },
   {

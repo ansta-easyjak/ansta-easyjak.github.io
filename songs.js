@@ -1,5 +1,5 @@
 // songs.js — easyjak 곡 데이터 & 모델 파라미터
-// 총 320곡 | R²=0.9737 | MAE=2.37콤보
+// 총 320곡 | R²=0.9745 | MAE=2.34콤보
 // ※ enstars_regression_v3.py 로 자동 생성 — 직접 수정 비권장
 
 const SONGS = [
@@ -754,7 +754,7 @@ const SONGS = [
     "category": "starmaker",
     "video": "https://youtu.be/6LsFhiMT7L8?si=bIVV2vwi9g5MmTm1",
     "videoClear": "https://youtu.be/6LsFhiMT7L8?t=90",
-    "predicted": 93
+    "predicted": 94
   },
   {
     "type": "Glitter",
@@ -1680,10 +1680,10 @@ const SONGS = [
     "duration": "2:34",
     "etStart": 130,
     "etEnd": 169,
-    "measured": null,
+    "measured": 96,
     "category": "starmaker",
     "video": "https://youtu.be/1scoA8uRTao",
-    "videoClear": "https://youtu.be/1scoA8uRTao?t=75",
+    "videoClear": "https://youtu.be/1scoA8uRTao?t=71",
     "predicted": 96
   },
   {
@@ -3426,10 +3426,10 @@ const SONGS = [
     "duration": "2:05",
     "etStart": 1,
     "etEnd": 6,
-    "measured": null,
+    "measured": 54,
     "category": "rhythm_link",
     "video": "https://youtu.be/f1QLJm01eJg",
-    "videoClear": "https://youtu.be/f1QLJm01eJg?t=60",
+    "videoClear": "https://youtu.be/f1QLJm01eJg?t=72",
     "predicted": 54
   },
   {
@@ -3470,10 +3470,10 @@ const SONGS = [
     "duration": "2:15",
     "etStart": 62,
     "etEnd": 88,
-    "measured": null,
+    "measured": 67,
     "category": "rhythm_link",
     "video": "https://youtu.be/gntQ8pC0mnU",
-    "videoClear": "https://youtu.be/gntQ8pC0mnU?t=65",
+    "videoClear": "https://youtu.be/gntQ8pC0mnU?t=70",
     "predicted": 65
   },
   {
@@ -3580,10 +3580,10 @@ const SONGS = [
     "duration": "2:44",
     "etStart": 23,
     "etEnd": 33,
-    "measured": null,
+    "measured": 62,
     "category": "rhythm_link",
     "video": "https://youtu.be/fZRrkTgjkqc",
-    "videoClear": "https://youtu.be/fZRrkTgjkqc?t=80",
+    "videoClear": "https://youtu.be/fZRrkTgjkqc?t=82",
     "predicted": 63
   },
   {
@@ -7067,17 +7067,17 @@ const SONGS = [
 ];
 
 const MODEL_PARAMS = {
-  "intercept": -3.0697117590177214,
+  "intercept": -3.082600734344581,
   "coefs": [
-    0.5340270818417635,
-    -1.0601766578970557,
-    7.417436936110737
+    0.5339552185815136,
+    -1.12910977891189,
+    7.511939286943744
   ],
-  "simpleCoef": 0.5283441987094695,
-  "simpleInt": 2.2226284319305023,
-  "meanEtStart": 0.48752511105227553,
-  "meanEtEnd": 0.6571428364661841,
-  "trainSize": 214,
-  "r2": 0.9737374239363285,
-  "mae": 2.3664789315632366
+  "simpleCoef": 0.5295898614881878,
+  "simpleInt": 1.99968710181642,
+  "meanEtStart": 0.48515631807131326,
+  "meanEtEnd": 0.6542551152536501,
+  "trainSize": 218,
+  "r2": 0.9745357943884801,
+  "mae": 2.3351501143268867
 };
