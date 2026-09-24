@@ -1,5 +1,5 @@
 // songs.js — easyjak 곡 데이터 & 모델 파라미터
-// 총 320곡 | R²=0.9744 | MAE=2.33콤보
+// 총 321곡 | R²=0.9744 | MAE=2.33콤보
 // ※ enstars_regression_v3.py 로 자동 생성 — 직접 수정 비권장
 
 const SONGS = [
@@ -5828,8 +5828,8 @@ const SONGS = [
     "etEnd": 109,
     "measured": null,
     "category": "others",
-    "video": "https://youtu.be/YNf88q6C8pI",
-    "videoClear": "https://youtu.be/YNf88q6C8pI?t=83",
+    "video": "https://youtu.be/Ek3XBXfUgNs",
+    "videoClear": "https://youtu.be/Ek3XBXfUgNs?t=83",
     "predicted": 95
   },
   {
@@ -7026,11 +7026,11 @@ const SONGS = [
     "units": [
       "기타"
     ],
-    "title_ja": "ソロメドレー (こはく·晃牙)",
+    "title_ja": "ソロメドレー (こはく·晃牙·忍·弓弦)",
     "title_ja_reading": "そろめどれー (こはく·こうが·しのぶ·ゆづる)",
-    "title_ko": "솔로 메들리 (코하쿠·코가)",
+    "title_ko": "솔로 메들리 (코하쿠·코가·시노부·유즈루)",
     "title_ko_reading": null,
-    "title_en": "Solo Medley (Kohaku·Koga)",
+    "title_en": "Solo Medley (Kohaku·Koga·Shinobu·Yuzuru)",
     "title_en_reading": null,
     "totalNotes": 202,
     "duration": "2:53",
@@ -7048,11 +7048,11 @@ const SONGS = [
     "units": [
       "기타"
     ],
-    "title_ja": "ソロメドレー (真緒·ゆうた)",
-    "title_ja_reading": null,
-    "title_ko": "솔로 메들리 (마오·유우타)",
+    "title_ja": "ソロメドレー (真緒·ゆうた·宙·アドニス)",
+    "title_ja_reading": "そろめどれー (まお·ゆうた·そら·あどにす)",
+    "title_ko": "솔로 메들리 (마오·유우타·소라·아도니스)",
     "title_ko_reading": null,
-    "title_en": "Solo Medley (Mao·Yuta)",
+    "title_en": "Solo Medley (Mao·Yuta·Sora·Adonis)",
     "title_en_reading": null,
     "totalNotes": 161,
     "duration": "2:47",
@@ -7063,6 +7063,28 @@ const SONGS = [
     "video": "https://youtu.be/x8-wTOVG4Ls",
     "videoClear": "https://youtu.be/x8-wTOVG4Ls?t=77",
     "predicted": 87
+  },
+  {
+    "type": "Brilliant",
+    "unit": "기타",
+    "units": [
+      "기타"
+    ],
+    "title_ja": "ソロメドレー (巽·日和·奏汰·零)",
+    "title_ja_reading": "そろめどれー (たつみ·ひより·かなた·れい)",
+    "title_ko": "솔로메들리 (타츠미·히요리·카나타·레이)",
+    "title_ko_reading": null,
+    "title_en": "Solo Medley (Tatsumi·Hiyori·Kanata·Rei)",
+    "title_en_reading": null,
+    "totalNotes": 141,
+    "duration": "2:50",
+    "etStart": 0,
+    "etEnd": 0,
+    "measured": null,
+    "category": "others",
+    "video": "https://youtu.be/G-VoWY_NDgM",
+    "videoClear": "https://youtu.be/G-VoWY_NDgM?t=83",
+    "predicted": 77
   }
 ];
 

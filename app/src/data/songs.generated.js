@@ -1,5 +1,5 @@
 // songs.js — easyjak 곡 데이터 & 모델 파라미터
-// 총 320곡 | R²=0.9745 | MAE=2.34콤보
+// 총 321곡 | R²=0.9744 | MAE=2.33콤보
 // ※ enstars_regression_v3.py 로 자동 생성 — 직접 수정 비권장
 
 const SONGS = [
@@ -143,7 +143,7 @@ const SONGS = [
       "Trickstar"
     ],
     "title_ja": "1st SING-ALONG☆",
-    "title_ja_reading": "しんぐあろんぐ",
+    "title_ja_reading": "ふぁーすと しんぐ あろんぐ",
     "title_ko": "1st SING-ALONG☆",
     "title_ko_reading": "퍼스트 싱어롱",
     "title_en": "1st SING-ALONG☆",
@@ -152,10 +152,10 @@ const SONGS = [
     "duration": "2:19",
     "etStart": 71,
     "etEnd": 90,
-    "measured": null,
+    "measured": 86,
     "category": "starmaker",
     "video": "https://youtu.be/0rr3sSrWT8E",
-    "videoClear": "https://youtu.be/0rr3sSrWT8E?t=67",
+    "videoClear": "https://youtu.be/0rr3sSrWT8E?t=69",
     "predicted": 85
   },
   {
@@ -312,7 +312,7 @@ const SONGS = [
     "category": "starmaker",
     "video": "https://youtu.be/5H7bJ5ANRXU?si=CTWoFM6vJI78uz4D",
     "videoClear": "https://youtu.be/5H7bJ5ANRXU?t=71",
-    "predicted": 60
+    "predicted": 61
   },
   {
     "type": "Glitter",
@@ -1461,7 +1461,7 @@ const SONGS = [
     "category": "starmaker",
     "video": "https://youtu.be/F8_2XfjiPgo",
     "videoClear": "https://youtu.be/F8_2XfjiPgo?t=84",
-    "predicted": 62
+    "predicted": 63
   },
   {
     "type": "Glitter",
@@ -2568,7 +2568,7 @@ const SONGS = [
     "category": "cosmic",
     "video": "https://youtu.be/3r8c7tkPRQQ",
     "videoClear": "https://youtu.be/3r8c7tkPRQQ?t=69",
-    "predicted": 64
+    "predicted": 65
   },
   {
     "type": "Flash",
@@ -3639,17 +3639,17 @@ const SONGS = [
     "title_ja": "メルティ♡キッチン",
     "title_ja_reading": "めるてぃきっちん",
     "title_ko": "멜티♡키친",
-    "title_ko_reading": null,
+    "title_ko_reading": "멜티키친 맬티",
     "title_en": "Melty♡Kitchen",
     "title_en_reading": null,
     "totalNotes": 142,
     "duration": "2:23",
     "etStart": 80,
     "etEnd": 98,
-    "measured": null,
+    "measured": 80,
     "category": "rhythm_link",
     "video": "https://youtu.be/8mBjOa0wztQ",
-    "videoClear": "https://youtu.be/8mBjOa0wztQ?t=69",
+    "videoClear": "https://youtu.be/8mBjOa0wztQ?t=73",
     "predicted": 77
   },
   {
@@ -4796,7 +4796,7 @@ const SONGS = [
     "category": "new_dimension",
     "video": "https://youtu.be/p4Uw0asx5EQ",
     "videoClear": "https://youtu.be/p4Uw0asx5EQ?t=72",
-    "predicted": 79
+    "predicted": 80
   },
   {
     "type": "Flash",
@@ -5828,8 +5828,8 @@ const SONGS = [
     "etEnd": 109,
     "measured": null,
     "category": "others",
-    "video": "https://youtu.be/YNf88q6C8pI",
-    "videoClear": "https://youtu.be/YNf88q6C8pI?t=83",
+    "video": "https://youtu.be/Ek3XBXfUgNs",
+    "videoClear": "https://youtu.be/Ek3XBXfUgNs?t=83",
     "predicted": 95
   },
   {
@@ -7026,11 +7026,11 @@ const SONGS = [
     "units": [
       "기타"
     ],
-    "title_ja": "ソロメドレー (こはく·晃牙)",
+    "title_ja": "ソロメドレー (こはく·晃牙·忍·弓弦)",
     "title_ja_reading": "そろめどれー (こはく·こうが·しのぶ·ゆづる)",
-    "title_ko": "솔로 메들리 (코하쿠·코가)",
+    "title_ko": "솔로 메들리 (코하쿠·코가·시노부·유즈루)",
     "title_ko_reading": null,
-    "title_en": "Solo Medley (Kohaku·Koga)",
+    "title_en": "Solo Medley (Kohaku·Koga·Shinobu·Yuzuru)",
     "title_en_reading": null,
     "totalNotes": 202,
     "duration": "2:53",
@@ -7048,11 +7048,11 @@ const SONGS = [
     "units": [
       "기타"
     ],
-    "title_ja": "ソロメドレー (真緒·ゆうた)",
-    "title_ja_reading": null,
-    "title_ko": "솔로 메들리 (마오·유우타)",
+    "title_ja": "ソロメドレー (真緒·ゆうた·宙·アドニス)",
+    "title_ja_reading": "そろめどれー (まお·ゆうた·そら·あどにす)",
+    "title_ko": "솔로 메들리 (마오·유우타·소라·아도니스)",
     "title_ko_reading": null,
-    "title_en": "Solo Medley (Mao·Yuta)",
+    "title_en": "Solo Medley (Mao·Yuta·Sora·Adonis)",
     "title_en_reading": null,
     "totalNotes": 161,
     "duration": "2:47",
@@ -7063,23 +7063,45 @@ const SONGS = [
     "video": "https://youtu.be/x8-wTOVG4Ls",
     "videoClear": "https://youtu.be/x8-wTOVG4Ls?t=77",
     "predicted": 87
+  },
+  {
+    "type": "Brilliant",
+    "unit": "기타",
+    "units": [
+      "기타"
+    ],
+    "title_ja": "ソロメドレー (巽·日和·奏汰·零)",
+    "title_ja_reading": "そろめどれー (たつみ·ひより·かなた·れい)",
+    "title_ko": "솔로메들리 (타츠미·히요리·카나타·레이)",
+    "title_ko_reading": null,
+    "title_en": "Solo Medley (Tatsumi·Hiyori·Kanata·Rei)",
+    "title_en_reading": null,
+    "totalNotes": 141,
+    "duration": "2:50",
+    "etStart": 0,
+    "etEnd": 0,
+    "measured": null,
+    "category": "others",
+    "video": "https://youtu.be/G-VoWY_NDgM",
+    "videoClear": "https://youtu.be/G-VoWY_NDgM?t=83",
+    "predicted": 77
   }
 ];
 
 const MODEL_PARAMS = {
-  "intercept": -3.082600734344581,
+  "intercept": -2.9920906454174343,
   "coefs": [
-    0.5339552185815136,
-    -1.12910977891189,
-    7.511939286943744
+    0.5336258219912309,
+    -0.9262511792287619,
+    7.334642338807229
   ],
-  "simpleCoef": 0.5295898614881878,
-  "simpleInt": 1.99968710181642,
-  "meanEtStart": 0.48515631807131326,
-  "meanEtEnd": 0.6542551152536501,
-  "trainSize": 218,
-  "r2": 0.9745357943884801,
-  "mae": 2.3351501143268867
+  "simpleCoef": 0.529344037604787,
+  "simpleInt": 2.0565442425579903,
+  "meanEtStart": 0.48537727877819414,
+  "meanEtEnd": 0.6540350129229499,
+  "trainSize": 220,
+  "r2": 0.9744447864281611,
+  "mae": 2.3320863460492616
 };
 
 export { SONGS, MODEL_PARAMS };
