@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "version": "1eeea7717446",
+  "version": "48b677304456",
   "files": {
-    "songs": "songs.json?v=1eeea7717446",
-    "model": "model.json?v=1eeea7717446"
+    "songs": "songs.json?v=48b677304456",
+    "model": "model.json?v=48b677304456"
   },
   "songCount": 321,
-  "measuredCount": 226,
-  "predictedOnlyCount": 95,
+  "measuredCount": 232,
+  "predictedOnlyCount": 89,
   "model": {
-    "trainSize": 226,
-    "r2": 0.9744991498128832,
-    "mae": 2.3177355701238787
+    "trainSize": 232,
+    "r2": 0.9747868248984505,
+    "mae": 2.28381479052214
   }
 }

@@ -1,5 +1,5 @@
 // songs.js — easyjak 곡 데이터 & 모델 파라미터
-// 총 321곡 | R²=0.9745 | MAE=2.32콤보
+// 총 321곡 | R²=0.9748 | MAE=2.28콤보
 // ※ enstars_regression_v3.py 로 자동 생성 — 직접 수정 비권장
 
 const SONGS = [
@@ -67,7 +67,7 @@ const SONGS = [
     "category": "starmaker",
     "video": "https://youtu.be/Iut6Vug6jGs",
     "videoClear": "https://youtu.be/Iut6Vug6jGs?t=67",
-    "predicted": 67
+    "predicted": 66
   },
   {
     "type": "All",
@@ -86,10 +86,10 @@ const SONGS = [
     "duration": "2:35",
     "etStart": 56,
     "etEnd": 74,
-    "measured": null,
+    "measured": 86,
     "category": "starmaker",
     "video": "https://youtu.be/7yRfaPOoFWk",
-    "videoClear": "https://youtu.be/7yRfaPOoFWk?t=75",
+    "videoClear": "https://youtu.be/7yRfaPOoFWk?t=82",
     "predicted": 88
   },
   {
@@ -175,7 +175,7 @@ const SONGS = [
     "duration": "2:41",
     "etStart": 65,
     "etEnd": 71,
-    "measured": null,
+    "measured": 56,
     "category": "starmaker",
     "video": "https://youtu.be/inpADXs4CJk",
     "videoClear": "https://youtu.be/inpADXs4CJk?t=78",
@@ -485,10 +485,10 @@ const SONGS = [
     "duration": "2:39",
     "etStart": 55,
     "etEnd": 83,
-    "measured": null,
+    "measured": 84,
     "category": "starmaker",
     "video": "https://youtu.be/UA9fdW1gOuM",
-    "videoClear": "https://youtu.be/UA9fdW1gOuM?t=77",
+    "videoClear": "https://youtu.be/UA9fdW1gOuM?t=83",
     "predicted": 85
   },
   {
@@ -661,10 +661,10 @@ const SONGS = [
     "duration": "2:21",
     "etStart": 94,
     "etEnd": 129,
-    "measured": null,
+    "measured": 75,
     "category": "starmaker",
     "video": "https://youtu.be/dvqtrOHVmxg",
-    "videoClear": "https://youtu.be/dvqtrOHVmxg?t=68",
+    "videoClear": "https://youtu.be/dvqtrOHVmxg?t=70",
     "predicted": 77
   },
   {
@@ -728,10 +728,10 @@ const SONGS = [
     "duration": "2:26",
     "etStart": 70,
     "etEnd": 90,
-    "measured": null,
+    "measured": 92,
     "category": "starmaker",
     "video": "https://youtu.be/PmAoDJUZAks",
-    "videoClear": "https://youtu.be/PmAoDJUZAks?t=71",
+    "videoClear": "https://youtu.be/PmAoDJUZAks?t=80",
     "predicted": 94
   },
   {
@@ -1461,7 +1461,7 @@ const SONGS = [
     "category": "starmaker",
     "video": "https://youtu.be/F8_2XfjiPgo",
     "videoClear": "https://youtu.be/F8_2XfjiPgo?t=84",
-    "predicted": 62
+    "predicted": 63
   },
   {
     "type": "Glitter",
@@ -2368,7 +2368,7 @@ const SONGS = [
     "category": "cosmic",
     "video": "https://youtu.be/R4DsM3TFwxs?si=x12g6alKsftJT_fe",
     "videoClear": "https://youtu.be/R4DsM3TFwxs?t=100",
-    "predicted": 76
+    "predicted": 77
   },
   {
     "type": "Flash",
@@ -2988,7 +2988,7 @@ const SONGS = [
     "category": "cosmic",
     "video": "https://youtu.be/5TkaZQIhd-w",
     "videoClear": "https://youtu.be/5TkaZQIhd-w?t=67",
-    "predicted": 131
+    "predicted": 130
   },
   {
     "type": "Glitter",
@@ -5188,10 +5188,10 @@ const SONGS = [
     "duration": "2:28",
     "etStart": 69,
     "etEnd": 89,
-    "measured": null,
+    "measured": 79,
     "category": "new_dimension",
     "video": "https://youtu.be/ZJmdrmp4mOw",
-    "videoClear": "https://youtu.be/ZJmdrmp4mOw?t=72",
+    "videoClear": "https://youtu.be/ZJmdrmp4mOw?t=74",
     "predicted": 76
   },
   {
@@ -6534,7 +6534,7 @@ const SONGS = [
     "category": "others",
     "video": "https://youtu.be/VYWclWI1W1g?si=NEk4Szc0tA40feiJ",
     "videoClear": "https://youtu.be/VYWclWI1W1g?t=79",
-    "predicted": 100
+    "predicted": 99
   },
   {
     "type": "Flash",
@@ -6556,7 +6556,7 @@ const SONGS = [
     "category": "others",
     "video": "https://youtu.be/jhxpfIPwugY",
     "videoClear": "https://youtu.be/jhxpfIPwugY?t=82",
-    "predicted": 83
+    "predicted": 84
   },
   {
     "type": "All",
@@ -7089,17 +7089,17 @@ const SONGS = [
 ];
 
 const MODEL_PARAMS = {
-  "intercept": -3.0966140552870343,
+  "intercept": -2.982540574611477,
   "coefs": [
-    0.5340666271379846,
-    -0.408717842054806,
-    6.93572644586623
+    0.5336957145538098,
+    -0.1264994116079686,
+    6.653382324829784
   ],
-  "simpleCoef": 0.5300410826819593,
-  "simpleInt": 1.893288616734793,
-  "meanEtStart": 0.48350831829652896,
-  "meanEtEnd": 0.6531250679708089,
-  "trainSize": 226,
-  "r2": 0.9744991498128832,
-  "mae": 2.3177355701238787
+  "simpleCoef": 0.5296016501108739,
+  "simpleInt": 1.963993236031456,
+  "meanEtStart": 0.4835407202400409,
+  "meanEtEnd": 0.6524056488689317,
+  "trainSize": 232,
+  "r2": 0.9747868248984505,
+  "mae": 2.28381479052214
 };
