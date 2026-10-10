@@ -1,5 +1,5 @@
 // songs.js — easyjak 곡 데이터 & 모델 파라미터
-// 총 322곡 | R²=0.9761 | MAE=2.25콤보
+// 총 322곡 | R²=0.9762 | MAE=2.22콤보
 // ※ enstars_regression_v3.py 로 자동 생성 — 직접 수정 비권장
 
 const SONGS = [
@@ -3563,7 +3563,7 @@ const SONGS = [
     "category": "rhythm_link",
     "video": "https://youtu.be/Qglp9UFV-jE",
     "videoClear": "https://youtu.be/Qglp9UFV-jE?t=73",
-    "predicted": 89
+    "predicted": 88
   },
   {
     "type": "Flash",
@@ -4815,10 +4815,10 @@ const SONGS = [
     "duration": "2:29",
     "etStart": 118,
     "etEnd": 136,
-    "measured": null,
+    "measured": 79,
     "category": "new_dimension",
     "video": "https://youtu.be/p4Uw0asx5EQ",
-    "videoClear": "https://youtu.be/p4Uw0asx5EQ?t=72",
+    "videoClear": "https://youtu.be/p4Uw0asx5EQ?t=70",
     "predicted": 79
   },
   {
@@ -4881,10 +4881,10 @@ const SONGS = [
     "duration": "2:36",
     "etStart": 66,
     "etEnd": 109,
-    "measured": null,
+    "measured": 96,
     "category": "new_dimension",
     "video": "https://youtu.be/CesOYwPy9Ow",
-    "videoClear": "https://youtu.be/CesOYwPy9Ow?t=76",
+    "videoClear": "https://youtu.be/CesOYwPy9Ow?t=73",
     "predicted": 96
   },
   {
@@ -5035,10 +5035,10 @@ const SONGS = [
     "duration": "2:36",
     "etStart": 41,
     "etEnd": 62,
-    "measured": null,
+    "measured": 79,
     "category": "new_dimension",
     "video": "https://youtu.be/Ist9YG28Q2E",
-    "videoClear": "https://youtu.be/Ist9YG28Q2E?t=76",
+    "videoClear": "https://youtu.be/Ist9YG28Q2E?t=89",
     "predicted": 79
   },
   {
@@ -7112,17 +7112,17 @@ const SONGS = [
 ];
 
 const MODEL_PARAMS = {
-  "intercept": -3.5393489336433532,
+  "intercept": -3.5335939110099446,
   "coefs": [
-    0.5382759892562199,
-    0.3995812171843483,
-    5.967924570708919
+    0.5382858752981348,
+    0.36784928132925027,
+    5.978608155316386
   ],
-  "simpleCoef": 0.533909888637142,
-  "simpleInt": 1.2814343553284004,
-  "meanEtStart": 0.4838394852739546,
-  "meanEtEnd": 0.6568235051692117,
-  "trainSize": 260,
-  "r2": 0.9761026617769566,
-  "mae": 2.245606185479799
+  "simpleCoef": 0.5338689119114401,
+  "simpleInt": 1.2871293080345652,
+  "meanEtStart": 0.48392711757286855,
+  "meanEtEnd": 0.6568719006999139,
+  "trainSize": 263,
+  "r2": 0.976157092749857,
+  "mae": 2.223233194451161
 };

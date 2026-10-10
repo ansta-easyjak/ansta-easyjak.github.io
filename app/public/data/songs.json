@@ -3559,7 +3559,7 @@
     "category": "rhythm_link",
     "video": "https://youtu.be/Qglp9UFV-jE",
     "videoClear": "https://youtu.be/Qglp9UFV-jE?t=73",
-    "predicted": 89
+    "predicted": 88
   },
   {
     "type": "Flash",
@@ -4811,10 +4811,10 @@
     "duration": "2:29",
     "etStart": 118,
     "etEnd": 136,
-    "measured": null,
+    "measured": 79,
     "category": "new_dimension",
     "video": "https://youtu.be/p4Uw0asx5EQ",
-    "videoClear": "https://youtu.be/p4Uw0asx5EQ?t=72",
+    "videoClear": "https://youtu.be/p4Uw0asx5EQ?t=70",
     "predicted": 79
   },
   {
@@ -4877,10 +4877,10 @@
     "duration": "2:36",
     "etStart": 66,
     "etEnd": 109,
-    "measured": null,
+    "measured": 96,
     "category": "new_dimension",
     "video": "https://youtu.be/CesOYwPy9Ow",
-    "videoClear": "https://youtu.be/CesOYwPy9Ow?t=76",
+    "videoClear": "https://youtu.be/CesOYwPy9Ow?t=73",
     "predicted": 96
   },
   {
@@ -5031,10 +5031,10 @@
     "duration": "2:36",
     "etStart": 41,
     "etEnd": 62,
-    "measured": null,
+    "measured": 79,
     "category": "new_dimension",
     "video": "https://youtu.be/Ist9YG28Q2E",
-    "videoClear": "https://youtu.be/Ist9YG28Q2E?t=76",
+    "videoClear": "https://youtu.be/Ist9YG28Q2E?t=89",
     "predicted": 79
   },
   {
