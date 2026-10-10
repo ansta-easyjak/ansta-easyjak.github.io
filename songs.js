@@ -1,5 +1,5 @@
 // songs.js — easyjak 곡 데이터 & 모델 파라미터
-// 총 322곡 | R²=0.9764 | MAE=2.24콤보
+// 총 322곡 | R²=0.9761 | MAE=2.25콤보
 // ※ enstars_regression_v3.py 로 자동 생성 — 직접 수정 비권장
 
 const SONGS = [
@@ -286,10 +286,10 @@ const SONGS = [
     "duration": "2:30",
     "etStart": 62,
     "etEnd": 121,
-    "measured": null,
+    "measured": 100,
     "category": "starmaker",
     "video": "https://youtu.be/48FV5GkTGmY",
-    "videoClear": "https://youtu.be/48FV5GkTGmY?t=73",
+    "videoClear": "https://youtu.be/48FV5GkTGmY?t=76",
     "predicted": 100
   },
   {
@@ -1020,7 +1020,7 @@ const SONGS = [
     "category": "starmaker",
     "video": "https://youtu.be/KW_YFT3lX2Q",
     "videoClear": "https://youtu.be/KW_YFT3lX2Q?t=69",
-    "predicted": 125
+    "predicted": 126
   },
   {
     "type": "Glitter",
@@ -1725,11 +1725,11 @@ const SONGS = [
     "duration": "2:34",
     "etStart": 60,
     "etEnd": 103,
-    "measured": null,
+    "measured": 76,
     "category": "cosmic",
     "video": "https://youtu.be/uZ1iXWk1n0I",
-    "videoClear": "https://youtu.be/uZ1iXWk1n0I?t=75",
-    "predicted": 79
+    "videoClear": "https://youtu.be/uZ1iXWk1n0I?t=83",
+    "predicted": 78
   },
   {
     "type": "Sparkle",
@@ -1740,17 +1740,17 @@ const SONGS = [
     "title_ja": "Dance in the Apocalypse",
     "title_ja_reading": "だんすいんざあぽかりぷす",
     "title_ko": "Dance in the Apocalypse",
-    "title_ko_reading": "댄스 인 아포칼립스 댄아포",
+    "title_ko_reading": "댄스 인더아포칼립스 댄아포",
     "title_en": "Dance in the Apocalypse",
     "title_en_reading": null,
     "totalNotes": 183,
     "duration": "2:18",
     "etStart": 120,
     "etEnd": 175,
-    "measured": null,
+    "measured": 98,
     "category": "cosmic",
     "video": "https://youtu.be/3UMqeTDei2Y",
-    "videoClear": "https://youtu.be/3UMqeTDei2Y?t=67",
+    "videoClear": "https://youtu.be/3UMqeTDei2Y?t=66",
     "predicted": 101
   },
   {
@@ -1770,10 +1770,10 @@ const SONGS = [
     "duration": "2:41",
     "etStart": 98,
     "etEnd": 115,
-    "measured": null,
+    "measured": 94,
     "category": "cosmic",
     "video": "https://youtu.be/5usWkedOmnE",
-    "videoClear": "https://youtu.be/5usWkedOmnE?t=78",
+    "videoClear": "https://youtu.be/5usWkedOmnE?t=70",
     "predicted": 94
   },
   {
@@ -1792,10 +1792,10 @@ const SONGS = [
     "duration": "2:27",
     "etStart": 130,
     "etEnd": 166,
-    "measured": null,
+    "measured": 111,
     "category": "cosmic",
     "video": "https://youtu.be/ZdegYGzQP8A",
-    "videoClear": "https://youtu.be/ZdegYGzQP8A?t=71",
+    "videoClear": "https://youtu.be/ZdegYGzQP8A?t=72",
     "predicted": 110
   },
   {
@@ -2391,7 +2391,7 @@ const SONGS = [
     "category": "cosmic",
     "video": "https://youtu.be/R4DsM3TFwxs?si=x12g6alKsftJT_fe",
     "videoClear": "https://youtu.be/R4DsM3TFwxs?t=100",
-    "predicted": 77
+    "predicted": 76
   },
   {
     "type": "Flash",
@@ -2724,7 +2724,7 @@ const SONGS = [
     "category": "cosmic",
     "video": "https://youtu.be/Ru2pSeh79NA",
     "videoClear": "https://youtu.be/Ru2pSeh79NA?t=77",
-    "predicted": 83
+    "predicted": 82
   },
   {
     "type": "Flash",
@@ -2808,10 +2808,10 @@ const SONGS = [
     "duration": "2:24",
     "etStart": 0,
     "etEnd": 0,
-    "measured": 126,
+    "measured": 130,
     "category": "cosmic",
     "video": "https://youtu.be/ESkYSgwUwrQ",
-    "videoClear": "https://youtu.be/ESkYSgwUwrQ?t=78",
+    "videoClear": "https://youtu.be/ESkYSgwUwrQ?t=80",
     "predicted": 117
   },
   {
@@ -2875,10 +2875,10 @@ const SONGS = [
     "duration": "2:16",
     "etStart": 73,
     "etEnd": 92,
-    "measured": null,
+    "measured": 73,
     "category": "cosmic",
     "video": "https://youtu.be/w2ZdiwEa0lQ",
-    "videoClear": "https://youtu.be/w2ZdiwEa0lQ?t=66",
+    "videoClear": "https://youtu.be/w2ZdiwEa0lQ?t=70",
     "predicted": 70
   },
   {
@@ -2897,10 +2897,10 @@ const SONGS = [
     "duration": "2:37",
     "etStart": 49,
     "etEnd": 77,
-    "measured": null,
+    "measured": 96,
     "category": "cosmic",
     "video": "https://youtu.be/ohozYa1RSig",
-    "videoClear": "https://youtu.be/ohozYa1RSig?t=76",
+    "videoClear": "https://youtu.be/ohozYa1RSig?t=87",
     "predicted": 98
   },
   {
@@ -3033,7 +3033,7 @@ const SONGS = [
     "category": "cosmic",
     "video": "https://youtu.be/JXRfwxSW2uM?si=GKeAlZB7lIBj5jc5",
     "videoClear": "https://youtu.be/JXRfwxSW2uM?t=78",
-    "predicted": 72
+    "predicted": 71
   },
   {
     "type": "Flash",
@@ -3074,10 +3074,10 @@ const SONGS = [
     "duration": "2:44",
     "etStart": 27,
     "etEnd": 55,
-    "measured": null,
+    "measured": 56,
     "category": "cosmic",
     "video": "https://youtu.be/rGOAPSxjKnE",
-    "videoClear": "https://youtu.be/rGOAPSxjKnE?t=80",
+    "videoClear": "https://youtu.be/rGOAPSxjKnE?t=88",
     "predicted": 62
   },
   {
@@ -3140,10 +3140,10 @@ const SONGS = [
     "duration": "2:36",
     "etStart": 59,
     "etEnd": 84,
-    "measured": null,
+    "measured": 85,
     "category": "cosmic",
     "video": "https://youtu.be/tFor8QIXJpk",
-    "videoClear": "https://youtu.be/tFor8QIXJpk?t=76",
+    "videoClear": "https://youtu.be/tFor8QIXJpk?t=94",
     "predicted": 79
   },
   {
@@ -3387,7 +3387,7 @@ const SONGS = [
     "category": "rhythm_link",
     "video": "https://youtu.be/jWqlGb2INEM",
     "videoClear": "https://youtu.be/jWqlGb2INEM?t=90",
-    "predicted": 82
+    "predicted": 81
   },
   {
     "type": "Flash",
@@ -4269,7 +4269,7 @@ const SONGS = [
     "category": "rhythm_link",
     "video": "https://youtu.be/aFfUxWHRLsQ",
     "videoClear": "https://youtu.be/aFfUxWHRLsQ?t=81",
-    "predicted": 117
+    "predicted": 116
   },
   {
     "type": "Sparkle",
@@ -4995,7 +4995,7 @@ const SONGS = [
     "category": "new_dimension",
     "video": "https://youtu.be/uSruBdslukc",
     "videoClear": "https://youtu.be/uSruBdslukc?t=57",
-    "predicted": 73
+    "predicted": 72
   },
   {
     "type": "Brilliant",
@@ -7112,17 +7112,17 @@ const SONGS = [
 ];
 
 const MODEL_PARAMS = {
-  "intercept": -3.5822665677523133,
+  "intercept": -3.5393489336433532,
   "coefs": [
-    0.5384193536228842,
-    -0.6889798276657234,
-    6.835779305332109
+    0.5382759892562199,
+    0.3995812171843483,
+    5.967924570708919
   ],
-  "simpleCoef": 0.5333009407377748,
-  "simpleInt": 1.400468272636445,
-  "meanEtStart": 0.48498215266939393,
-  "meanEtEnd": 0.6564650448075897,
-  "trainSize": 251,
-  "r2": 0.9763764506622682,
-  "mae": 2.2449297312201897
+  "simpleCoef": 0.533909888637142,
+  "simpleInt": 1.2814343553284004,
+  "meanEtStart": 0.4838394852739546,
+  "meanEtEnd": 0.6568235051692117,
+  "trainSize": 260,
+  "r2": 0.9761026617769566,
+  "mae": 2.245606185479799
 };

@@ -282,10 +282,10 @@
     "duration": "2:30",
     "etStart": 62,
     "etEnd": 121,
-    "measured": null,
+    "measured": 100,
     "category": "starmaker",
     "video": "https://youtu.be/48FV5GkTGmY",
-    "videoClear": "https://youtu.be/48FV5GkTGmY?t=73",
+    "videoClear": "https://youtu.be/48FV5GkTGmY?t=76",
     "predicted": 100
   },
   {
@@ -1016,7 +1016,7 @@
     "category": "starmaker",
     "video": "https://youtu.be/KW_YFT3lX2Q",
     "videoClear": "https://youtu.be/KW_YFT3lX2Q?t=69",
-    "predicted": 125
+    "predicted": 126
   },
   {
     "type": "Glitter",
@@ -1721,11 +1721,11 @@
     "duration": "2:34",
     "etStart": 60,
     "etEnd": 103,
-    "measured": null,
+    "measured": 76,
     "category": "cosmic",
     "video": "https://youtu.be/uZ1iXWk1n0I",
-    "videoClear": "https://youtu.be/uZ1iXWk1n0I?t=75",
-    "predicted": 79
+    "videoClear": "https://youtu.be/uZ1iXWk1n0I?t=83",
+    "predicted": 78
   },
   {
     "type": "Sparkle",
@@ -1736,17 +1736,17 @@
     "title_ja": "Dance in the Apocalypse",
     "title_ja_reading": "だんすいんざあぽかりぷす",
     "title_ko": "Dance in the Apocalypse",
-    "title_ko_reading": "댄스 인 아포칼립스 댄아포",
+    "title_ko_reading": "댄스 인더아포칼립스 댄아포",
     "title_en": "Dance in the Apocalypse",
     "title_en_reading": null,
     "totalNotes": 183,
     "duration": "2:18",
     "etStart": 120,
     "etEnd": 175,
-    "measured": null,
+    "measured": 98,
     "category": "cosmic",
     "video": "https://youtu.be/3UMqeTDei2Y",
-    "videoClear": "https://youtu.be/3UMqeTDei2Y?t=67",
+    "videoClear": "https://youtu.be/3UMqeTDei2Y?t=66",
     "predicted": 101
   },
   {
@@ -1766,10 +1766,10 @@
     "duration": "2:41",
     "etStart": 98,
     "etEnd": 115,
-    "measured": null,
+    "measured": 94,
     "category": "cosmic",
     "video": "https://youtu.be/5usWkedOmnE",
-    "videoClear": "https://youtu.be/5usWkedOmnE?t=78",
+    "videoClear": "https://youtu.be/5usWkedOmnE?t=70",
     "predicted": 94
   },
   {
@@ -1788,10 +1788,10 @@
     "duration": "2:27",
     "etStart": 130,
     "etEnd": 166,
-    "measured": null,
+    "measured": 111,
     "category": "cosmic",
     "video": "https://youtu.be/ZdegYGzQP8A",
-    "videoClear": "https://youtu.be/ZdegYGzQP8A?t=71",
+    "videoClear": "https://youtu.be/ZdegYGzQP8A?t=72",
     "predicted": 110
   },
   {
@@ -2387,7 +2387,7 @@
     "category": "cosmic",
     "video": "https://youtu.be/R4DsM3TFwxs?si=x12g6alKsftJT_fe",
     "videoClear": "https://youtu.be/R4DsM3TFwxs?t=100",
-    "predicted": 77
+    "predicted": 76
   },
   {
     "type": "Flash",
@@ -2720,7 +2720,7 @@
     "category": "cosmic",
     "video": "https://youtu.be/Ru2pSeh79NA",
     "videoClear": "https://youtu.be/Ru2pSeh79NA?t=77",
-    "predicted": 83
+    "predicted": 82
   },
   {
     "type": "Flash",
@@ -2804,10 +2804,10 @@
     "duration": "2:24",
     "etStart": 0,
     "etEnd": 0,
-    "measured": 126,
+    "measured": 130,
     "category": "cosmic",
     "video": "https://youtu.be/ESkYSgwUwrQ",
-    "videoClear": "https://youtu.be/ESkYSgwUwrQ?t=78",
+    "videoClear": "https://youtu.be/ESkYSgwUwrQ?t=80",
     "predicted": 117
   },
   {
@@ -2871,10 +2871,10 @@
     "duration": "2:16",
     "etStart": 73,
     "etEnd": 92,
-    "measured": null,
+    "measured": 73,
     "category": "cosmic",
     "video": "https://youtu.be/w2ZdiwEa0lQ",
-    "videoClear": "https://youtu.be/w2ZdiwEa0lQ?t=66",
+    "videoClear": "https://youtu.be/w2ZdiwEa0lQ?t=70",
     "predicted": 70
   },
   {
@@ -2893,10 +2893,10 @@
     "duration": "2:37",
     "etStart": 49,
     "etEnd": 77,
-    "measured": null,
+    "measured": 96,
     "category": "cosmic",
     "video": "https://youtu.be/ohozYa1RSig",
-    "videoClear": "https://youtu.be/ohozYa1RSig?t=76",
+    "videoClear": "https://youtu.be/ohozYa1RSig?t=87",
     "predicted": 98
   },
   {
@@ -3029,7 +3029,7 @@
     "category": "cosmic",
     "video": "https://youtu.be/JXRfwxSW2uM?si=GKeAlZB7lIBj5jc5",
     "videoClear": "https://youtu.be/JXRfwxSW2uM?t=78",
-    "predicted": 72
+    "predicted": 71
   },
   {
     "type": "Flash",
@@ -3070,10 +3070,10 @@
     "duration": "2:44",
     "etStart": 27,
     "etEnd": 55,
-    "measured": null,
+    "measured": 56,
     "category": "cosmic",
     "video": "https://youtu.be/rGOAPSxjKnE",
-    "videoClear": "https://youtu.be/rGOAPSxjKnE?t=80",
+    "videoClear": "https://youtu.be/rGOAPSxjKnE?t=88",
     "predicted": 62
   },
   {
@@ -3136,10 +3136,10 @@
     "duration": "2:36",
     "etStart": 59,
     "etEnd": 84,
-    "measured": null,
+    "measured": 85,
     "category": "cosmic",
     "video": "https://youtu.be/tFor8QIXJpk",
-    "videoClear": "https://youtu.be/tFor8QIXJpk?t=76",
+    "videoClear": "https://youtu.be/tFor8QIXJpk?t=94",
     "predicted": 79
   },
   {
@@ -3383,7 +3383,7 @@
     "category": "rhythm_link",
     "video": "https://youtu.be/jWqlGb2INEM",
     "videoClear": "https://youtu.be/jWqlGb2INEM?t=90",
-    "predicted": 82
+    "predicted": 81
   },
   {
     "type": "Flash",
@@ -4265,7 +4265,7 @@
     "category": "rhythm_link",
     "video": "https://youtu.be/aFfUxWHRLsQ",
     "videoClear": "https://youtu.be/aFfUxWHRLsQ?t=81",
-    "predicted": 117
+    "predicted": 116
   },
   {
     "type": "Sparkle",
@@ -4991,7 +4991,7 @@
     "category": "new_dimension",
     "video": "https://youtu.be/uSruBdslukc",
     "videoClear": "https://youtu.be/uSruBdslukc?t=57",
-    "predicted": 73
+    "predicted": 72
   },
   {
     "type": "Brilliant",
