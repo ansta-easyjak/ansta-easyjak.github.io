@@ -463,7 +463,7 @@
     "category": "starmaker",
     "video": "https://youtu.be/M1URZLFtCA0",
     "videoClear": "https://youtu.be/M1URZLFtCA0?t=83",
-    "predicted": 115
+    "predicted": 114
   },
   {
     "type": "Flash",
@@ -2078,7 +2078,7 @@
     "category": "cosmic",
     "video": "https://youtu.be/IgC1fmElkuw",
     "videoClear": "https://youtu.be/IgC1fmElkuw?t=65",
-    "predicted": 115
+    "predicted": 114
   },
   {
     "type": "Sparkle",
@@ -3868,7 +3868,7 @@
     "category": "rhythm_link",
     "video": "https://youtu.be/C4CCRKRYMT0?si=9y4q4Y30JaTguMW6",
     "videoClear": "https://youtu.be/C4CCRKRYMT0?t=74",
-    "predicted": 104
+    "predicted": 103
   },
   {
     "type": "Sparkle",
@@ -4261,10 +4261,10 @@
     "duration": "2:46",
     "etStart": 67,
     "etEnd": 112,
-    "measured": null,
+    "measured": 113,
     "category": "rhythm_link",
     "video": "https://youtu.be/aFfUxWHRLsQ",
-    "videoClear": "https://youtu.be/aFfUxWHRLsQ?t=81",
+    "videoClear": "https://youtu.be/aFfUxWHRLsQ?t=88",
     "predicted": 116
   },
   {

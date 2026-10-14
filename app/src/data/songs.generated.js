@@ -1,5 +1,5 @@
 // songs.js — easyjak 곡 데이터 & 모델 파라미터
-// 총 322곡 | R²=0.9768 | MAE=2.21콤보
+// 총 322곡 | R²=0.9770 | MAE=2.20콤보
 // ※ enstars_regression_v3.py 로 자동 생성 — 직접 수정 비권장
 
 const SONGS = [
@@ -467,7 +467,7 @@ const SONGS = [
     "category": "starmaker",
     "video": "https://youtu.be/M1URZLFtCA0",
     "videoClear": "https://youtu.be/M1URZLFtCA0?t=83",
-    "predicted": 115
+    "predicted": 114
   },
   {
     "type": "Flash",
@@ -2082,7 +2082,7 @@ const SONGS = [
     "category": "cosmic",
     "video": "https://youtu.be/IgC1fmElkuw",
     "videoClear": "https://youtu.be/IgC1fmElkuw?t=65",
-    "predicted": 115
+    "predicted": 114
   },
   {
     "type": "Sparkle",
@@ -3872,7 +3872,7 @@ const SONGS = [
     "category": "rhythm_link",
     "video": "https://youtu.be/C4CCRKRYMT0?si=9y4q4Y30JaTguMW6",
     "videoClear": "https://youtu.be/C4CCRKRYMT0?t=74",
-    "predicted": 104
+    "predicted": 103
   },
   {
     "type": "Sparkle",
@@ -4265,10 +4265,10 @@ const SONGS = [
     "duration": "2:46",
     "etStart": 67,
     "etEnd": 112,
-    "measured": null,
+    "measured": 113,
     "category": "rhythm_link",
     "video": "https://youtu.be/aFfUxWHRLsQ",
-    "videoClear": "https://youtu.be/aFfUxWHRLsQ?t=81",
+    "videoClear": "https://youtu.be/aFfUxWHRLsQ?t=88",
     "predicted": 116
   },
   {
@@ -7112,19 +7112,19 @@ const SONGS = [
 ];
 
 const MODEL_PARAMS = {
-  "intercept": -3.557862893523051,
+  "intercept": -3.546984867810309,
   "coefs": [
-    0.5385493728483521,
-    0.43981925586437776,
-    5.897639734764718
+    0.538465683676629,
+    0.4716343659125998,
+    5.875851520338295
   ],
-  "simpleCoef": 0.533345072682344,
-  "simpleInt": 1.397610262194405,
-  "meanEtStart": 0.48702997573617324,
-  "meanEtEnd": 0.6616892335676714,
-  "trainSize": 268,
-  "r2": 0.9767537833981204,
-  "mae": 2.205463969534496
+  "simpleCoef": 0.5331534491894185,
+  "simpleInt": 1.424323432867638,
+  "meanEtStart": 0.4863197198980557,
+  "meanEtEnd": 0.661109312446916,
+  "trainSize": 269,
+  "r2": 0.9769502248147578,
+  "mae": 2.1986248943216453
 };
 
 export { SONGS, MODEL_PARAMS };
