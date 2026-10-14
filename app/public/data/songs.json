@@ -463,7 +463,7 @@
     "category": "starmaker",
     "video": "https://youtu.be/M1URZLFtCA0",
     "videoClear": "https://youtu.be/M1URZLFtCA0?t=83",
-    "predicted": 114
+    "predicted": 115
   },
   {
     "type": "Flash",
@@ -2078,7 +2078,7 @@
     "category": "cosmic",
     "video": "https://youtu.be/IgC1fmElkuw",
     "videoClear": "https://youtu.be/IgC1fmElkuw?t=65",
-    "predicted": 114
+    "predicted": 115
   },
   {
     "type": "Sparkle",
@@ -2272,10 +2272,10 @@
     "duration": "2:51",
     "etStart": 95,
     "etEnd": 123,
-    "measured": null,
+    "measured": 84,
     "category": "cosmic",
     "video": "https://youtu.be/eUajwplreLU",
-    "videoClear": "https://youtu.be/eUajwplreLU?t=83",
+    "videoClear": "https://youtu.be/eUajwplreLU?t=81",
     "predicted": 83
   },
   {
@@ -2786,7 +2786,7 @@
     "category": "cosmic",
     "video": "https://youtu.be/JP_kc2uh-Zc",
     "videoClear": "https://youtu.be/JP_kc2uh-Zc?t=78",
-    "predicted": 81
+    "predicted": 80
   },
   {
     "type": "Glitter",
@@ -3868,7 +3868,7 @@
     "category": "rhythm_link",
     "video": "https://youtu.be/C4CCRKRYMT0?si=9y4q4Y30JaTguMW6",
     "videoClear": "https://youtu.be/C4CCRKRYMT0?t=74",
-    "predicted": 103
+    "predicted": 104
   },
   {
     "type": "Sparkle",
@@ -4789,10 +4789,10 @@
     "duration": "2:17",
     "etStart": 77,
     "etEnd": 95,
-    "measured": null,
+    "measured": 57,
     "category": "new_dimension",
     "video": "https://youtu.be/YJdlXuDICkw",
-    "videoClear": "https://youtu.be/YJdlXuDICkw?t=66",
+    "videoClear": "https://youtu.be/YJdlXuDICkw?t=75",
     "predicted": 58
   },
   {
@@ -4833,10 +4833,10 @@
     "duration": "2:15",
     "etStart": 61,
     "etEnd": 92,
-    "measured": null,
+    "measured": 61,
     "category": "new_dimension",
     "video": "https://youtu.be/d2wtfp-t1AM",
-    "videoClear": "https://youtu.be/d2wtfp-t1AM?t=65",
+    "videoClear": "https://youtu.be/d2wtfp-t1AM?t=76",
     "predicted": 59
   },
   {
@@ -4899,7 +4899,7 @@
     "duration": "2:13",
     "etStart": 71,
     "etEnd": 95,
-    "measured": null,
+    "measured": 56,
     "category": "new_dimension",
     "video": "https://youtu.be/YXsxrokqrYI",
     "videoClear": "https://youtu.be/YXsxrokqrYI?t=64",
@@ -4987,10 +4987,10 @@
     "duration": "1:58",
     "etStart": 72,
     "etEnd": 125,
-    "measured": null,
+    "measured": 72,
     "category": "new_dimension",
     "video": "https://youtu.be/uSruBdslukc",
-    "videoClear": "https://youtu.be/uSruBdslukc?t=57",
+    "videoClear": "https://youtu.be/uSruBdslukc?t=60",
     "predicted": 72
   },
   {

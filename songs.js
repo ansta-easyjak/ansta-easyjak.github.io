@@ -2279,7 +2279,7 @@ const SONGS = [
     "measured": 84,
     "category": "cosmic",
     "video": "https://youtu.be/eUajwplreLU",
-    "videoClear": "https://youtu.be/eUajwplreLU?t=80",
+    "videoClear": "https://youtu.be/eUajwplreLU?t=81",
     "predicted": 83
   },
   {
