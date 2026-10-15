@@ -5560,13 +5560,13 @@ const SONGS = [
     "title_en": "Nightmare Syndrome♡",
     "title_en_reading": null,
     "totalNotes": 121,
-    "duration": "170:00",
+    "duration": "2:50",
     "etStart": 23,
     "etEnd": 36,
     "measured": null,
     "category": "new_dimension",
     "video": "https://youtu.be/W3HbQiNbasc",
-    "videoClear": "https://youtu.be/W3HbQiNbasc?t=5098",
+    "videoClear": "https://youtu.be/W3HbQiNbasc?t=83",
     "predicted": 63
   },
   {
