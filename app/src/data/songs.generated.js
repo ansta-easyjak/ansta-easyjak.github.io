@@ -1,5 +1,5 @@
 // songs.js — easyjak 곡 데이터 & 모델 파라미터
-// 총 323곡 | R²=0.9771 | MAE=2.18콤보
+// 총 323곡 | R²=0.9774 | MAE=2.16콤보
 // ※ enstars_regression_v3.py 로 자동 생성 — 직접 수정 비권장
 
 const SONGS = [
@@ -1362,17 +1362,17 @@ const SONGS = [
     "title_ja": "Distorted Heart",
     "title_ja_reading": "でぃすとーてっど はーと",
     "title_ko": "Distorted Heart",
-    "title_ko_reading": "디스토티드 하트 디스하트",
+    "title_ko_reading": "디스토티드 하트 디스톨티트하트 디스하트",
     "title_en": "Distorted Heart",
     "title_en_reading": null,
     "totalNotes": 202,
     "duration": "2:28",
     "etStart": 148,
     "etEnd": 156,
-    "measured": null,
+    "measured": 116,
     "category": "starmaker",
     "video": "https://youtu.be/30wieYZHkr0",
-    "videoClear": "https://youtu.be/30wieYZHkr0?t=72",
+    "videoClear": "https://youtu.be/30wieYZHkr0?t=79",
     "predicted": 110
   },
   {
@@ -1547,10 +1547,10 @@ const SONGS = [
     "duration": "2:45",
     "etStart": 26,
     "etEnd": 50,
-    "measured": null,
+    "measured": 76,
     "category": "starmaker",
     "video": "https://youtu.be/BbN3nMbEaNQ",
-    "videoClear": "https://youtu.be/BbN3nMbEaNQ?t=80",
+    "videoClear": "https://youtu.be/BbN3nMbEaNQ?t=94",
     "predicted": 77
   },
   {
@@ -4357,7 +4357,7 @@ const SONGS = [
     "category": "rhythm_link",
     "video": "https://youtu.be/6OgHDJn3iPE?si=MThi_08vZH1ffs7q",
     "videoClear": "https://youtu.be/6OgHDJn3iPE?t=90",
-    "predicted": 98
+    "predicted": 97
   },
   {
     "type": "Sparkle",
@@ -5563,10 +5563,10 @@ const SONGS = [
     "duration": "2:50",
     "etStart": 23,
     "etEnd": 36,
-    "measured": null,
+    "measured": 63,
     "category": "new_dimension",
     "video": "https://youtu.be/W3HbQiNbasc",
-    "videoClear": "https://youtu.be/W3HbQiNbasc?t=83",
+    "videoClear": "https://youtu.be/W3HbQiNbasc?t=87",
     "predicted": 63
   },
   {
@@ -6029,7 +6029,7 @@ const SONGS = [
     "category": "others",
     "video": "https://youtu.be/kPruu3fcEZI?si=aLbN4tkSZLsuwiuZ",
     "videoClear": "https://youtu.be/kPruu3fcEZI?t=98",
-    "predicted": 91
+    "predicted": 90
   },
   {
     "type": "All",
@@ -6975,7 +6975,7 @@ const SONGS = [
     "category": "others",
     "video": "https://youtu.be/_Qnf978dzwo?si=Lf4bo3rkKCNVo8xD",
     "videoClear": "https://youtu.be/_Qnf978dzwo?t=66",
-    "predicted": 105
+    "predicted": 104
   },
   {
     "type": "All",
@@ -7129,24 +7129,24 @@ const SONGS = [
     "category": "others",
     "video": "https://youtu.be/G-VoWY_NDgM",
     "videoClear": "https://youtu.be/G-VoWY_NDgM?t=80",
-    "predicted": 77
+    "predicted": 76
   }
 ];
 
 const MODEL_PARAMS = {
-  "intercept": -3.552625258312588,
+  "intercept": -3.5969857558447558,
   "coefs": [
-    0.5381563948577197,
-    0.7700262255196422,
-    5.774126668841145
+    0.5382694882593136,
+    0.7499795561624079,
+    5.823137069877749
   ],
-  "simpleCoef": 0.5328179139986958,
-  "simpleInt": 1.5007816496157034,
-  "meanEtStart": 0.4863197198980557,
-  "meanEtEnd": 0.661109312446916,
-  "trainSize": 269,
-  "r2": 0.9771215343595464,
-  "mae": 2.1839012825213193
+  "simpleCoef": 0.533420426193114,
+  "simpleInt": 1.3857038138513786,
+  "meanEtStart": 0.48491462972911187,
+  "meanEtEnd": 0.6588703263750496,
+  "trainSize": 272,
+  "r2": 0.9774120708626479,
+  "mae": 2.1638746400401323
 };
 
 export { SONGS, MODEL_PARAMS };
