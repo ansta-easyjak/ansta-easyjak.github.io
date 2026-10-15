@@ -555,14 +555,15 @@ def main():
     print("  1) songs.js 저장")
     print("  2) CSV 저장")
     print("  3) video_url_clear 채우기")
-    print("  4) 새 곡 예측")
-    print("  5) 종료")
+    print("  4) 타임스탬프 변환")
+    print("  5) 새 곡 예측")
+    print("  6) 종료")
     print("────────────────────────────────────")
 
     while True:
         try:
-            cmd = input("선택 (1/2/3/4/5): ").strip().lower()
-            if cmd == "5":
+            cmd = input("선택 (1/2/3/4/5/6): ").strip().lower()
+            if cmd == "6":
                 break
 
             elif cmd == "1":
@@ -611,6 +612,26 @@ def main():
                             print(f"✓ songs.js / CSV 저장 완료")
 
             elif cmd == "4":
+                print("\n─── 타임스탬프 변환 (종료: b) ───")
+                print("  clear 시점 입력 (MM:SS 형식, 예: 01:20)")
+                while True:
+                    raw = input("입력: ").strip()
+                    if raw.lower() == "b":
+                        break
+                    if not raw:
+                        continue
+                    m = re.search(r"(\d{1,2}):(\d{2})", raw)
+                    if not m:
+                        print("  MM:SS 형식을 찾을 수 없습니다. (예: 01:20)")
+                        continue
+                    mm, ss = int(m.group(1)), int(m.group(2))
+                    if ss > 59:
+                        print(f"  초(SS) 값이 {ss}입니다. 0–59 사이여야 합니다.")
+                        continue
+                    t = mm * 60 + ss - 2
+                    print(f"  {mm:02d}:{ss:02d} → ?t={max(0, t)}\n")
+
+            elif cmd == "5":
                 print("\n─── 새 곡 예측 (종료: b) ───")
                 while True:
                     n_in = input("총 노트수: ").strip()

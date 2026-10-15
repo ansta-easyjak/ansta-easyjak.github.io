@@ -392,10 +392,10 @@
     "duration": "2:48",
     "etStart": 95,
     "etEnd": 123,
-    "measured": 84,
+    "measured": 90,
     "category": "starmaker",
     "video": "https://youtu.be/H9vtFwjrQgg",
-    "videoClear": "https://youtu.be/H9vtFwjrQgg?t=74",
+    "videoClear": "https://youtu.be/H9vtFwjrQgg?t=78",
     "predicted": 88
   },
   {
@@ -750,7 +750,7 @@
     "category": "starmaker",
     "video": "https://youtu.be/6LsFhiMT7L8?si=bIVV2vwi9g5MmTm1",
     "videoClear": "https://youtu.be/6LsFhiMT7L8?t=90",
-    "predicted": 93
+    "predicted": 94
   },
   {
     "type": "Glitter",
@@ -2122,7 +2122,7 @@
     "category": "cosmic",
     "video": "https://youtu.be/mxHmoh0IUww?si=WkwyfV92PE5cQnZQ",
     "videoClear": "https://youtu.be/mxHmoh0IUww?t=85",
-    "predicted": 101
+    "predicted": 102
   },
   {
     "type": "Brilliant",
@@ -2166,7 +2166,7 @@
     "category": "cosmic",
     "video": "https://youtu.be/DfrTEOGpWTk",
     "videoClear": "https://youtu.be/DfrTEOGpWTk?t=65",
-    "predicted": 67
+    "predicted": 68
   },
   {
     "type": "Flash",
@@ -4353,7 +4353,7 @@
     "category": "rhythm_link",
     "video": "https://youtu.be/6OgHDJn3iPE?si=MThi_08vZH1ffs7q",
     "videoClear": "https://youtu.be/6OgHDJn3iPE?t=90",
-    "predicted": 97
+    "predicted": 98
   },
   {
     "type": "Sparkle",
@@ -6025,7 +6025,7 @@
     "category": "others",
     "video": "https://youtu.be/kPruu3fcEZI?si=aLbN4tkSZLsuwiuZ",
     "videoClear": "https://youtu.be/kPruu3fcEZI?t=98",
-    "predicted": 90
+    "predicted": 91
   },
   {
     "type": "All",
@@ -6971,7 +6971,7 @@
     "category": "others",
     "video": "https://youtu.be/_Qnf978dzwo?si=Lf4bo3rkKCNVo8xD",
     "videoClear": "https://youtu.be/_Qnf978dzwo?t=66",
-    "predicted": 104
+    "predicted": 105
   },
   {
     "type": "All",
@@ -7125,6 +7125,6 @@
     "category": "others",
     "video": "https://youtu.be/G-VoWY_NDgM",
     "videoClear": "https://youtu.be/G-VoWY_NDgM?t=80",
-    "predicted": 76
+    "predicted": 77
   }
 ]
