@@ -1,5 +1,5 @@
 // songs.js — easyjak 곡 데이터 & 모델 파라미터
-// 총 322곡 | R²=0.9771 | MAE=2.18콤보
+// 총 323곡 | R²=0.9771 | MAE=2.18콤보
 // ※ enstars_regression_v3.py 로 자동 생성 — 직접 수정 비권장
 
 const SONGS = [
@@ -5546,6 +5546,28 @@ const SONGS = [
     "video": "https://youtu.be/e4JWzY_Iki4?si=wYLh8wMhGAsWHKOA",
     "videoClear": "https://youtu.be/e4JWzY_Iki4?t=70",
     "predicted": 91
+  },
+  {
+    "type": "Brilliant",
+    "unit": "S-Pri",
+    "units": [
+      "S-Pri"
+    ],
+    "title_ja": "Nightmare Syndrome♡",
+    "title_ja_reading": null,
+    "title_ko": "Nightmare Syndrome♡",
+    "title_ko_reading": "나이트메어신드롬 나메신",
+    "title_en": "Nightmare Syndrome♡",
+    "title_en_reading": null,
+    "totalNotes": 121,
+    "duration": "170:00",
+    "etStart": 23,
+    "etEnd": 36,
+    "measured": null,
+    "category": "new_dimension",
+    "video": "https://youtu.be/W3HbQiNbasc",
+    "videoClear": "https://youtu.be/W3HbQiNbasc?t=5098",
+    "predicted": 63
   },
   {
     "type": "All",

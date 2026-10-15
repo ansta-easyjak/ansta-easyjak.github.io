@@ -5544,6 +5544,28 @@
     "predicted": 91
   },
   {
+    "type": "Brilliant",
+    "unit": "S-Pri",
+    "units": [
+      "S-Pri"
+    ],
+    "title_ja": "Nightmare Syndrome♡",
+    "title_ja_reading": null,
+    "title_ko": "Nightmare Syndrome♡",
+    "title_ko_reading": "나이트메어신드롬 나메신",
+    "title_en": "Nightmare Syndrome♡",
+    "title_en_reading": null,
+    "totalNotes": 121,
+    "duration": "170:00",
+    "etStart": 23,
+    "etEnd": 36,
+    "measured": null,
+    "category": "new_dimension",
+    "video": "https://youtu.be/W3HbQiNbasc",
+    "videoClear": "https://youtu.be/W3HbQiNbasc?t=5098",
+    "predicted": 63
+  },
+  {
     "type": "All",
     "unit": "주년",
     "units": [
