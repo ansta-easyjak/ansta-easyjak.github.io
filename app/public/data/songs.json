@@ -348,10 +348,10 @@
     "duration": "2:32",
     "etStart": 83,
     "etEnd": 119,
-    "measured": 95,
+    "measured": 99,
     "category": "starmaker",
     "video": "https://youtu.be/PWVmhaaHXII",
-    "videoClear": "https://youtu.be/PWVmhaaHXII?t=68",
+    "videoClear": "https://youtu.be/PWVmhaaHXII?t=71",
     "predicted": 94
   },
   {
@@ -2538,10 +2538,10 @@
     "duration": "2:29",
     "etStart": 104,
     "etEnd": 130,
-    "measured": 87,
+    "measured": 94,
     "category": "cosmic",
     "video": "https://youtu.be/WQYTA2Yr9-s",
-    "videoClear": "https://youtu.be/WQYTA2Yr9-s?t=75",
+    "videoClear": "https://youtu.be/WQYTA2Yr9-s?t=80",
     "predicted": 90
   },
   {
