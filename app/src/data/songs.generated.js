@@ -1,5 +1,5 @@
 // songs.js — easyjak 곡 데이터 & 모델 파라미터
-// 총 324곡 | R²=0.9777 | MAE=2.15콤보
+// 총 324곡 | R²=0.9780 | MAE=2.13콤보
 // ※ enstars_regression_v3.py 로 자동 생성 — 직접 수정 비권장
 
 const SONGS = [
@@ -2144,10 +2144,10 @@ const SONGS = [
     "duration": "2:07",
     "etStart": 97,
     "etEnd": 120,
-    "measured": null,
+    "measured": 71,
     "category": "cosmic",
     "video": "https://youtu.be/ApmEd2mg1rg",
-    "videoClear": "https://youtu.be/ApmEd2mg1rg?t=61",
+    "videoClear": "https://youtu.be/ApmEd2mg1rg?t=58",
     "predicted": 72
   },
   {
@@ -2159,17 +2159,17 @@ const SONGS = [
     "title_ja": "Mémoire Antique",
     "title_ja_reading": "めもわーるあんてぃーく",
     "title_ko": "Mémoire Antique",
-    "title_ko_reading": "메모아르 앙티크 앤티크",
+    "title_ko_reading": "메모아르 앤티크 앙티크",
     "title_en": "Mémoire Antique",
     "title_en_reading": null,
     "totalNotes": 121,
     "duration": "2:15",
     "etStart": 83,
     "etEnd": 113,
-    "measured": null,
+    "measured": 68,
     "category": "cosmic",
     "video": "https://youtu.be/DfrTEOGpWTk",
-    "videoClear": "https://youtu.be/DfrTEOGpWTk?t=65",
+    "videoClear": "https://youtu.be/DfrTEOGpWTk?t=64",
     "predicted": 68
   },
   {
@@ -2210,10 +2210,10 @@ const SONGS = [
     "duration": "2:23",
     "etStart": 165,
     "etEnd": 190,
-    "measured": null,
+    "measured": 109,
     "category": "cosmic",
     "video": "https://youtu.be/_lmEpYzObW4",
-    "videoClear": "https://youtu.be/_lmEpYzObW4?t=69",
+    "videoClear": "https://youtu.be/_lmEpYzObW4?t=71",
     "predicted": 109
   },
   {
@@ -2232,10 +2232,10 @@ const SONGS = [
     "duration": "2:31",
     "etStart": 96,
     "etEnd": 120,
-    "measured": null,
+    "measured": 72,
     "category": "cosmic",
     "video": "https://youtu.be/WTlD5cIB2Ik",
-    "videoClear": "https://youtu.be/WTlD5cIB2Ik?t=73",
+    "videoClear": "https://youtu.be/WTlD5cIB2Ik?t=72",
     "predicted": 71
   },
   {
@@ -2254,10 +2254,10 @@ const SONGS = [
     "duration": "2:26",
     "etStart": 38,
     "etEnd": 50,
-    "measured": null,
+    "measured": 63,
     "category": "cosmic",
     "video": "https://youtu.be/hWqDUrf7pXI",
-    "videoClear": "https://youtu.be/hWqDUrf7pXI?t=71",
+    "videoClear": "https://youtu.be/hWqDUrf7pXI?t=84",
     "predicted": 65
   },
   {
@@ -2321,10 +2321,10 @@ const SONGS = [
     "duration": "2:49",
     "etStart": 58,
     "etEnd": 100,
-    "measured": null,
+    "measured": 86,
     "category": "cosmic",
     "video": "https://youtu.be/QOeNhBtEWhE",
-    "videoClear": "https://youtu.be/QOeNhBtEWhE?t=82",
+    "videoClear": "https://youtu.be/QOeNhBtEWhE?t=91",
     "predicted": 84
   },
   {
@@ -2724,7 +2724,7 @@ const SONGS = [
     "category": "cosmic",
     "video": "https://youtu.be/Ru2pSeh79NA",
     "videoClear": "https://youtu.be/Ru2pSeh79NA?t=77",
-    "predicted": 82
+    "predicted": 83
   },
   {
     "type": "Flash",
@@ -3033,7 +3033,7 @@ const SONGS = [
     "category": "cosmic",
     "video": "https://youtu.be/JXRfwxSW2uM?si=GKeAlZB7lIBj5jc5",
     "videoClear": "https://youtu.be/JXRfwxSW2uM?t=78",
-    "predicted": 71
+    "predicted": 72
   },
   {
     "type": "Flash",
@@ -4995,7 +4995,7 @@ const SONGS = [
     "category": "new_dimension",
     "video": "https://youtu.be/uSruBdslukc",
     "videoClear": "https://youtu.be/uSruBdslukc?t=60",
-    "predicted": 72
+    "predicted": 73
   },
   {
     "type": "Brilliant",
@@ -5246,11 +5246,11 @@ const SONGS = [
       "MaM"
     ],
     "title_ja": "ラスト・ページ",
-    "title_ja_reading": "らすと・ぺーじ",
-    "title_ko": "라스트 페이지",
-    "title_ko_reading": null,
-    "title_en": "Last Page",
-    "title_en_reading": null,
+    "title_ja_reading": "らすとぺーじ",
+    "title_ko": "라스트・페이지",
+    "title_ko_reading": "라스트페이지",
+    "title_en": "Last・Page",
+    "title_en_reading": "LastPage",
     "totalNotes": 101,
     "duration": "2:31",
     "etStart": 45,
@@ -5258,7 +5258,7 @@ const SONGS = [
     "measured": 58,
     "category": "new_dimension",
     "video": "https://youtu.be/vp8eb2MxLA4",
-    "videoClear": null,
+    "videoClear": "https://youtu.be/vp8eb2MxLA4?t=72",
     "predicted": 57
   },
   {
@@ -7156,19 +7156,19 @@ const SONGS = [
 ];
 
 const MODEL_PARAMS = {
-  "intercept": -3.6131286445579605,
+  "intercept": -3.6554138142660406,
   "coefs": [
-    0.5381535751440042,
-    0.5898290616833343,
-    6.03337011095717
+    0.538309870617318,
+    0.5733973644368876,
+    6.095675588815803
   ],
-  "simpleCoef": 0.532928535286927,
-  "simpleInt": 1.4969644832959972,
-  "meanEtStart": 0.48476023727705825,
-  "meanEtEnd": 0.660052780152418,
-  "trainSize": 273,
-  "r2": 0.9777100250207804,
-  "mae": 2.153448597221973
+  "simpleCoef": 0.5330242025436752,
+  "simpleInt": 1.5173005546658658,
+  "meanEtStart": 0.4878351774458579,
+  "meanEtEnd": 0.6633507285651312,
+  "trainSize": 279,
+  "r2": 0.9780225045275623,
+  "mae": 2.131730400679907
 };
 
 export { SONGS, MODEL_PARAMS };
