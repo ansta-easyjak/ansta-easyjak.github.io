@@ -573,7 +573,7 @@
     "category": "starmaker",
     "video": "https://youtu.be/Yg6LdDOISS0",
     "videoClear": "https://youtu.be/Yg6LdDOISS0?t=60",
-    "predicted": 77
+    "predicted": 78
   },
   {
     "type": "Sparkle",
@@ -3956,7 +3956,7 @@
     "category": "rhythm_link",
     "video": "https://youtu.be/R7FmVIDgs_w",
     "videoClear": "https://youtu.be/R7FmVIDgs_w?t=88",
-    "predicted": 103
+    "predicted": 104
   },
   {
     "type": "Flash",
@@ -4085,10 +4085,10 @@
     "duration": "2:35",
     "etStart": 129,
     "etEnd": 147,
-    "measured": null,
+    "measured": 105,
     "category": "rhythm_link",
     "video": "https://youtu.be/he5FDcPSM0A",
-    "videoClear": "https://youtu.be/he5FDcPSM0A?t=75",
+    "videoClear": "https://youtu.be/he5FDcPSM0A?t=66",
     "predicted": 104
   },
   {
@@ -4151,10 +4151,10 @@
     "duration": "2:18",
     "etStart": 50,
     "etEnd": 70,
-    "measured": null,
+    "measured": 62,
     "category": "rhythm_link",
     "video": "https://youtu.be/6vOOvEC5UuY",
-    "videoClear": "https://youtu.be/6vOOvEC5UuY?t=67",
+    "videoClear": "https://youtu.be/6vOOvEC5UuY?t=66",
     "predicted": 62
   },
   {
@@ -4217,10 +4217,10 @@
     "duration": "2:43",
     "etStart": 50,
     "etEnd": 66,
-    "measured": null,
+    "measured": 83,
     "category": "rhythm_link",
     "video": "https://youtu.be/7RDXl5wOMws",
-    "videoClear": "https://youtu.be/7RDXl5wOMws?t=79",
+    "videoClear": "https://youtu.be/7RDXl5wOMws?t=95",
     "predicted": 83
   },
   {
@@ -4239,10 +4239,10 @@
     "duration": "2:40",
     "etStart": 86,
     "etEnd": 111,
-    "measured": null,
+    "measured": 80,
     "category": "rhythm_link",
     "video": "https://youtu.be/x-y_XarZa0U",
-    "videoClear": "https://youtu.be/x-y_XarZa0U?t=78",
+    "videoClear": "https://youtu.be/x-y_XarZa0U?t=76",
     "predicted": 77
   },
   {
@@ -4991,7 +4991,7 @@
     "category": "new_dimension",
     "video": "https://youtu.be/uSruBdslukc",
     "videoClear": "https://youtu.be/uSruBdslukc?t=60",
-    "predicted": 73
+    "predicted": 72
   },
   {
     "type": "Brilliant",
@@ -5801,10 +5801,10 @@
     "duration": "2:20",
     "etStart": 0,
     "etEnd": 0,
-    "measured": null,
+    "measured": 84,
     "category": "others",
     "video": "https://youtu.be/2089xo_zO_k",
-    "videoClear": "https://youtu.be/2089xo_zO_k?t=68",
+    "videoClear": "https://youtu.be/2089xo_zO_k?t=69",
     "predicted": 87
   },
   {
