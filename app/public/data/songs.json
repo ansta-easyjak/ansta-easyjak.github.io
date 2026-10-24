@@ -5236,6 +5236,28 @@
     "predicted": 65
   },
   {
+    "type": "Brilliant",
+    "unit": "MaM",
+    "units": [
+      "MaM"
+    ],
+    "title_ja": "ラスト・ページ",
+    "title_ja_reading": "らすと・ぺーじ",
+    "title_ko": "라스트 페이지",
+    "title_ko_reading": null,
+    "title_en": "Last Page",
+    "title_en_reading": null,
+    "totalNotes": 101,
+    "duration": "2:31",
+    "etStart": 45,
+    "etEnd": 97,
+    "measured": null,
+    "category": "new_dimension",
+    "video": "https://youtu.be/vp8eb2MxLA4",
+    "videoClear": "https://youtu.be/vp8eb2MxLA4?t=73",
+    "predicted": 57
+  },
+  {
     "type": "Glitter",
     "unit": "MaM",
     "units": [

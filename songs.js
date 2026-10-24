@@ -1,5 +1,5 @@
 // songs.js — easyjak 곡 데이터 & 모델 파라미터
-// 총 323곡 | R²=0.9775 | MAE=2.16콤보
+// 총 324곡 | R²=0.9775 | MAE=2.16콤보
 // ※ enstars_regression_v3.py 로 자동 생성 — 직접 수정 비권장
 
 const SONGS = [
@@ -5238,6 +5238,28 @@ const SONGS = [
     "video": "https://youtu.be/wU4xQ9hyhcA?si=nrPSlUDVggN3HZL6",
     "videoClear": "https://youtu.be/wU4xQ9hyhcA?t=76",
     "predicted": 65
+  },
+  {
+    "type": "Brilliant",
+    "unit": "MaM",
+    "units": [
+      "MaM"
+    ],
+    "title_ja": "ラスト・ページ",
+    "title_ja_reading": "らすと・ぺーじ",
+    "title_ko": "라스트 페이지",
+    "title_ko_reading": null,
+    "title_en": "Last Page",
+    "title_en_reading": null,
+    "totalNotes": 101,
+    "duration": "2:31",
+    "etStart": 45,
+    "etEnd": 97,
+    "measured": null,
+    "category": "new_dimension",
+    "video": "https://youtu.be/vp8eb2MxLA4",
+    "videoClear": "https://youtu.be/vp8eb2MxLA4?t=73",
+    "predicted": 57
   },
   {
     "type": "Glitter",
