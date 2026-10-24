@@ -1237,7 +1237,7 @@
     "category": "starmaker",
     "video": "https://youtu.be/C6glaT_nRp4?si=a-270axm7x7O3utV",
     "videoClear": "https://youtu.be/C6glaT_nRp4?t=88",
-    "predicted": 79
+    "predicted": 78
   },
   {
     "type": "Brilliant",
@@ -5251,10 +5251,10 @@
     "duration": "2:31",
     "etStart": 45,
     "etEnd": 97,
-    "measured": null,
+    "measured": 58,
     "category": "new_dimension",
     "video": "https://youtu.be/vp8eb2MxLA4",
-    "videoClear": "https://youtu.be/vp8eb2MxLA4?t=73",
+    "videoClear": null,
     "predicted": 57
   },
   {
@@ -5959,7 +5959,7 @@
     "category": "others",
     "video": "https://youtu.be/dTkCfe33heY",
     "videoClear": "https://youtu.be/dTkCfe33heY?t=62",
-    "predicted": 78
+    "predicted": 79
   },
   {
     "type": "Glitter",
