@@ -14,7 +14,6 @@ import { getUnitName, TYPE_COLOR, UNIT_FILTER_GROUPS } from '../lib/unitCatalog.
 
 const TYPE_FILTERS = [null, 'All', 'Sparkle', 'Brilliant', 'Glitter', 'Flash'];
 const DURATION_FILTERS = ['all', 'short', 'mid1', 'mid2', 'long'];
-const CLEAR_FILTERS = ['all', 'yes', 'no'];
 const SORT_KEYS = ['type', 'unit', 'totalNotes', 'durationSec', 'predicted'];
 const DESKTOP_THUMBNAIL_SIZE = 294;
 const DESKTOP_THUMBNAIL_GAP = 18;
@@ -429,11 +428,9 @@ export function SongTableTab({ songs, locale, t }) {
         <div className="sidebar-section">
           <div className="sidebar-title">{t('sidebar.clearTitle')}</div>
           <div className="filter-chip-grid">
-            {CLEAR_FILTERS.map((clear) => (
-              <ToggleButton key={clear} active={filterState.clear === clear} onClick={() => patchFilterState({ clear })}>
-                {t(`clear.${clear}`)}
-              </ToggleButton>
-            ))}
+            <ToggleButton active={filterState.clear === 'no'} onClick={() => patchFilterState({ clear: filterState.clear === 'no' ? 'all' : 'no' })}>
+              {t('clear.no')}
+            </ToggleButton>
           </div>
         </div>
 
