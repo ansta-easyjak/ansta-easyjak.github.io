@@ -3029,7 +3029,7 @@
     "category": "cosmic",
     "video": "https://youtu.be/JXRfwxSW2uM?si=GKeAlZB7lIBj5jc5",
     "videoClear": "https://youtu.be/JXRfwxSW2uM?t=78",
-    "predicted": 72
+    "predicted": 71
   },
   {
     "type": "Flash",
@@ -3162,7 +3162,7 @@
     "category": "cosmic",
     "video": "https://youtu.be/C853sWzXfWI?si=ad2MiORPV0daDFAR",
     "videoClear": "https://youtu.be/C853sWzXfWI?t=76",
-    "predicted": 118
+    "predicted": 119
   },
   {
     "type": "Flash",
@@ -4019,10 +4019,10 @@
     "duration": "2:30",
     "etStart": 43,
     "etEnd": 68,
-    "measured": null,
+    "measured": 69,
     "category": "rhythm_link",
     "video": "https://youtu.be/rwd6TBO4UL8",
-    "videoClear": "https://youtu.be/rwd6TBO4UL8?t=73",
+    "videoClear": "https://youtu.be/rwd6TBO4UL8?t=86",
     "predicted": 71
   },
   {

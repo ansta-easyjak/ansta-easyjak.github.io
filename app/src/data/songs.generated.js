@@ -1,5 +1,5 @@
 // songs.js — easyjak 곡 데이터 & 모델 파라미터
-// 총 324곡 | R²=0.9781 | MAE=2.11콤보
+// 총 324곡 | R²=0.9781 | MAE=2.12콤보
 // ※ enstars_regression_v3.py 로 자동 생성 — 직접 수정 비권장
 
 const SONGS = [
@@ -3033,7 +3033,7 @@ const SONGS = [
     "category": "cosmic",
     "video": "https://youtu.be/JXRfwxSW2uM?si=GKeAlZB7lIBj5jc5",
     "videoClear": "https://youtu.be/JXRfwxSW2uM?t=78",
-    "predicted": 72
+    "predicted": 71
   },
   {
     "type": "Flash",
@@ -3166,7 +3166,7 @@ const SONGS = [
     "category": "cosmic",
     "video": "https://youtu.be/C853sWzXfWI?si=ad2MiORPV0daDFAR",
     "videoClear": "https://youtu.be/C853sWzXfWI?t=76",
-    "predicted": 118
+    "predicted": 119
   },
   {
     "type": "Flash",
@@ -4023,10 +4023,10 @@ const SONGS = [
     "duration": "2:30",
     "etStart": 43,
     "etEnd": 68,
-    "measured": null,
+    "measured": 69,
     "category": "rhythm_link",
     "video": "https://youtu.be/rwd6TBO4UL8",
-    "videoClear": "https://youtu.be/rwd6TBO4UL8?t=73",
+    "videoClear": "https://youtu.be/rwd6TBO4UL8?t=86",
     "predicted": 71
   },
   {
@@ -7156,19 +7156,19 @@ const SONGS = [
 ];
 
 const MODEL_PARAMS = {
-  "intercept": -3.629008764349848,
+  "intercept": -3.70946050185907,
   "coefs": [
-    0.5381599046445009,
-    0.7055930535196744,
-    6.007445929107773
+    0.5384318213069794,
+    0.7670063639458404,
+    6.001137175621157
   ],
-  "simpleCoef": 0.533085638904917,
-  "simpleInt": 1.5120265319309993,
-  "meanEtStart": 0.4879755845279279,
-  "meanEtEnd": 0.6629257185127125,
-  "trainSize": 285,
-  "r2": 0.9781188050881857,
-  "mae": 2.1134464342851538
+  "simpleCoef": 0.5334331894078159,
+  "simpleInt": 1.4408628245123083,
+  "meanEtStart": 0.4873588530153764,
+  "meanEtEnd": 0.6623577502616864,
+  "trainSize": 286,
+  "r2": 0.9780956091360878,
+  "mae": 2.117285649929567
 };
 
 export { SONGS, MODEL_PARAMS };
