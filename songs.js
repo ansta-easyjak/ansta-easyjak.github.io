@@ -1,5 +1,5 @@
 // songs.js — easyjak 곡 데이터 & 모델 파라미터
-// 총 324곡 | R²=0.9781 | MAE=2.12콤보
+// 총 324곡 | R²=0.9781 | MAE=2.11콤보
 // ※ enstars_regression_v3.py 로 자동 생성 — 직접 수정 비권장
 
 const SONGS = [
@@ -4045,10 +4045,10 @@ const SONGS = [
     "duration": "2:32",
     "etStart": 58,
     "etEnd": 82,
-    "measured": null,
+    "measured": 74,
     "category": "rhythm_link",
     "video": "https://youtu.be/OZ7KKezqPpw",
-    "videoClear": "https://youtu.be/OZ7KKezqPpw?t=74",
+    "videoClear": "https://youtu.be/OZ7KKezqPpw?t=67",
     "predicted": 73
   },
   {
@@ -7156,17 +7156,17 @@ const SONGS = [
 ];
 
 const MODEL_PARAMS = {
-  "intercept": -3.638722465192032,
+  "intercept": -3.629008764349848,
   "coefs": [
-    0.5381967185680805,
-    0.7054783674516922,
-    6.010370852338006
+    0.5381599046445009,
+    0.7055930535196744,
+    6.007445929107773
   ],
-  "simpleCoef": 0.5330848108811501,
-  "simpleInt": 1.5122005741657745,
-  "meanEtStart": 0.48820767885356053,
-  "meanEtEnd": 0.6631520752751356,
-  "trainSize": 284,
-  "r2": 0.9780837839263483,
-  "mae": 2.1191847365576058
+  "simpleCoef": 0.533085638904917,
+  "simpleInt": 1.5120265319309993,
+  "meanEtStart": 0.4879755845279279,
+  "meanEtEnd": 0.6629257185127125,
+  "trainSize": 285,
+  "r2": 0.9781188050881857,
+  "mae": 2.1134464342851538
 };

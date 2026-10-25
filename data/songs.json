@@ -4041,10 +4041,10 @@
     "duration": "2:32",
     "etStart": 58,
     "etEnd": 82,
-    "measured": null,
+    "measured": 74,
     "category": "rhythm_link",
     "video": "https://youtu.be/OZ7KKezqPpw",
-    "videoClear": "https://youtu.be/OZ7KKezqPpw?t=74",
+    "videoClear": "https://youtu.be/OZ7KKezqPpw?t=67",
     "predicted": 73
   },
   {
