@@ -4001,10 +4001,10 @@ const SONGS = [
     "duration": "2:23",
     "etStart": 119,
     "etEnd": 181,
-    "measured": 119,
+    "measured": 112,
     "category": "rhythm_link",
     "video": "https://youtu.be/4TBgCN7XyMY",
-    "videoClear": "https://youtu.be/4TBgCN7XyMY?t=83",
+    "videoClear": "https://youtu.be/4TBgCN7XyMY?t=70",
     "predicted": 110
   },
   {
