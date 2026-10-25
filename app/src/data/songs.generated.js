@@ -352,10 +352,10 @@ const SONGS = [
     "duration": "2:32",
     "etStart": 83,
     "etEnd": 119,
-    "measured": 99,
+    "measured": 95,
     "category": "starmaker",
     "video": "https://youtu.be/PWVmhaaHXII",
-    "videoClear": "https://youtu.be/PWVmhaaHXII?t=71",
+    "videoClear": "https://youtu.be/PWVmhaaHXII?t=68",
     "predicted": 94
   },
   {
@@ -4004,7 +4004,7 @@ const SONGS = [
     "measured": 112,
     "category": "rhythm_link",
     "video": "https://youtu.be/4TBgCN7XyMY",
-    "videoClear": "https://youtu.be/4TBgCN7XyMY?t=70",
+    "videoClear": "https://youtu.be/4TBgCN7XyMY?t=69",
     "predicted": 110
   },
   {
