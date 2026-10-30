@@ -377,7 +377,7 @@ export function App({ songData }) {
                     </p>
                   )}
                 </div>
-                {resultMode !== 'measured' && <span className="result-mode-badge predicted">{t('clear.no')}</span>}
+                {resultMode !== 'measured' && <span className={`result-mode-badge ${resultMode}`}>{t(`result.${resultMode}`)}</span>}
               </div>
 
               <div className="combo-display">
