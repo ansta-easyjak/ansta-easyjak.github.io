@@ -1,5 +1,5 @@
 // songs.js — easyjak 곡 데이터 & 모델 파라미터
-// 총 324곡 | R²=0.9787 | MAE=2.10콤보
+// 총 324곡 | R²=0.9787 | MAE=2.09콤보
 // ※ enstars_regression_v3.py 로 자동 생성 — 직접 수정 비권장
 
 const SONGS = [
@@ -6458,17 +6458,17 @@ const SONGS = [
     "title_ja": "両片思いの交差点で、君にまた逢いたくて",
     "title_ja_reading": "りょうかたおもいのこうさてんで、きみにまたあいたくて",
     "title_ko": "양방향 짝사랑의 교차점에서, 너와 다시 만나고 싶어서",
-    "title_ko_reading": "교차로 러브스크럼블",
+    "title_ko_reading": "교차로 러브스크램블",
     "title_en": "At Love's Crossroads, I Wanna See U Again",
     "title_en_reading": "Ryokataomoi no Kosaten de, Kimi ni Mata Aitakute",
     "totalNotes": 131,
     "duration": "2:30",
     "etStart": 87,
     "etEnd": 127,
-    "measured": null,
+    "measured": 74,
     "category": "others",
     "video": "https://youtu.be/a4l6fwUjuz4",
-    "videoClear": "https://youtu.be/a4l6fwUjuz4?t=73",
+    "videoClear": "https://youtu.be/a4l6fwUjuz4?t=65",
     "predicted": 73
   },
   {
@@ -7156,17 +7156,17 @@ const SONGS = [
 ];
 
 const MODEL_PARAMS = {
-  "intercept": -3.555479828378836,
+  "intercept": -3.557792482388976,
   "coefs": [
-    0.5379319061213793,
-    0.3739809847979622,
-    6.240443156462357
+    0.5378857162621217,
+    0.3426104784568012,
+    6.2812457676953395
   ],
-  "simpleCoef": 0.5329197437545692,
-  "simpleInt": 1.5753125898035307,
-  "meanEtStart": 0.48894797307530913,
-  "meanEtEnd": 0.6649078328921666,
-  "trainSize": 301,
-  "r2": 0.9786526072708508,
-  "mae": 2.097024514356156
+  "simpleCoef": 0.5327196863116954,
+  "simpleInt": 1.6158197535902445,
+  "meanEtStart": 0.4895691580552,
+  "meanEtEnd": 0.6659878251473538,
+  "trainSize": 302,
+  "r2": 0.9786745170794019,
+  "mae": 2.0929042573912393
 };
