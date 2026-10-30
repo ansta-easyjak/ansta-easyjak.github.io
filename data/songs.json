@@ -883,7 +883,7 @@
     "category": "starmaker",
     "video": "https://youtu.be/lccnCROEjuA",
     "videoClear": "https://youtu.be/lccnCROEjuA?t=92",
-    "predicted": 139
+    "predicted": 138
   },
   {
     "type": "Flash",
@@ -6197,10 +6197,10 @@
     "duration": "2:11",
     "etStart": 0,
     "etEnd": 0,
-    "measured": null,
+    "measured": 85,
     "category": "others",
     "video": "https://youtu.be/NpPSuXsfWfE",
-    "videoClear": "https://youtu.be/NpPSuXsfWfE?t=63",
+    "videoClear": "https://youtu.be/NpPSuXsfWfE?t=71",
     "predicted": 87
   },
   {

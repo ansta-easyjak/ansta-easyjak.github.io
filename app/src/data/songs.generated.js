@@ -887,7 +887,7 @@ const SONGS = [
     "category": "starmaker",
     "video": "https://youtu.be/lccnCROEjuA",
     "videoClear": "https://youtu.be/lccnCROEjuA?t=92",
-    "predicted": 139
+    "predicted": 138
   },
   {
     "type": "Flash",
@@ -6201,10 +6201,10 @@ const SONGS = [
     "duration": "2:11",
     "etStart": 0,
     "etEnd": 0,
-    "measured": null,
+    "measured": 85,
     "category": "others",
     "video": "https://youtu.be/NpPSuXsfWfE",
-    "videoClear": "https://youtu.be/NpPSuXsfWfE?t=63",
+    "videoClear": "https://youtu.be/NpPSuXsfWfE?t=71",
     "predicted": 87
   },
   {
@@ -7156,19 +7156,19 @@ const SONGS = [
 ];
 
 const MODEL_PARAMS = {
-  "intercept": -3.5499612490571764,
+  "intercept": -3.555479828378836,
   "coefs": [
-    0.5379354349568752,
-    0.373653759914555,
-    6.240791819226215
+    0.5379319061213793,
+    0.3739809847979622,
+    6.240443156462357
   ],
-  "simpleCoef": 0.532923081940363,
-  "simpleInt": 1.580922277502168,
+  "simpleCoef": 0.5329197437545692,
+  "simpleInt": 1.5753125898035307,
   "meanEtStart": 0.48894797307530913,
   "meanEtEnd": 0.6649078328921666,
-  "trainSize": 300,
-  "r2": 0.9786840068206529,
-  "mae": 2.097828234135578
+  "trainSize": 301,
+  "r2": 0.9786526072708508,
+  "mae": 2.097024514356156
 };
 
 export { SONGS, MODEL_PARAMS };
