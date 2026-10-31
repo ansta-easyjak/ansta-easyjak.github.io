@@ -1,5 +1,5 @@
 // songs.js — easyjak 곡 데이터 & 모델 파라미터
-// 총 325곡 | R²=0.9792 | MAE=2.07콤보
+// 총 325곡 | R²=0.9793 | MAE=2.06콤보
 // ※ enstars_regression_v3.py 로 자동 생성 — 직접 수정 비권장
 
 const SONGS = [
@@ -577,7 +577,7 @@ const SONGS = [
     "category": "starmaker",
     "video": "https://youtu.be/Yg6LdDOISS0",
     "videoClear": "https://youtu.be/Yg6LdDOISS0?t=60",
-    "predicted": 78
+    "predicted": 77
   },
   {
     "type": "Sparkle",
@@ -905,10 +905,10 @@ const SONGS = [
     "duration": "2:35",
     "etStart": 58,
     "etEnd": 98,
-    "measured": null,
+    "measured": 93,
     "category": "starmaker",
     "video": "https://youtu.be/BJsz4o9CUnY",
-    "videoClear": "https://youtu.be/BJsz4o9CUnY?t=75",
+    "videoClear": "https://youtu.be/BJsz4o9CUnY?t=72",
     "predicted": 92
   },
   {
@@ -944,12 +944,12 @@ const SONGS = [
     "title_ko": "SUPER NOVA REVOLU5TAR",
     "title_ko_reading": "슈퍼노바 레볼루스타",
     "title_en": "SUPER NOVA REVOLU5TAR",
-    "title_en_reading": "REVOLUSTAR",
+    "title_en_reading": "SUPER NOVA REVOLUSTAR",
     "totalNotes": 136,
     "duration": "2:24",
     "etStart": 94,
     "etEnd": 130,
-    "measured": null,
+    "measured": 75,
     "category": "starmaker",
     "video": "https://youtu.be/l4KzCeYOhjU",
     "videoClear": "https://youtu.be/l4KzCeYOhjU?t=70",
@@ -993,10 +993,10 @@ const SONGS = [
     "duration": "2:37",
     "etStart": 155,
     "etEnd": 168,
-    "measured": null,
+    "measured": 102,
     "category": "starmaker",
     "video": "https://youtu.be/HxL_jT44kEQ",
-    "videoClear": "https://youtu.be/HxL_jT44kEQ?t=76",
+    "videoClear": "https://youtu.be/HxL_jT44kEQ?t=75",
     "predicted": 101
   },
   {
@@ -7179,17 +7179,17 @@ const SONGS = [
 ];
 
 const MODEL_PARAMS = {
-  "intercept": -3.532731009267991,
+  "intercept": -3.534815350998798,
   "coefs": [
-    0.5376157832149002,
-    0.2943954219444221,
-    6.3141732892366775
+    0.5377169395000915,
+    0.29462383985406015,
+    6.297627837638657
   ],
-  "simpleCoef": 0.5324103358876419,
-  "simpleInt": 1.6462584702244953,
-  "meanEtStart": 0.48941676095824127,
-  "meanEtEnd": 0.6657889956367805,
-  "trainSize": 306,
-  "r2": 0.97923165454094,
-  "mae": 2.0674004477314574
+  "simpleCoef": 0.5325279928640195,
+  "simpleInt": 1.6409994565996016,
+  "meanEtStart": 0.49082331446221905,
+  "meanEtEnd": 0.6673392704898151,
+  "trainSize": 309,
+  "r2": 0.9792777225423623,
+  "mae": 2.0570037392729827
 };

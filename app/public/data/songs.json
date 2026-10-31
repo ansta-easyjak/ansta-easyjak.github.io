@@ -573,7 +573,7 @@
     "category": "starmaker",
     "video": "https://youtu.be/Yg6LdDOISS0",
     "videoClear": "https://youtu.be/Yg6LdDOISS0?t=60",
-    "predicted": 78
+    "predicted": 77
   },
   {
     "type": "Sparkle",
@@ -901,10 +901,10 @@
     "duration": "2:35",
     "etStart": 58,
     "etEnd": 98,
-    "measured": null,
+    "measured": 93,
     "category": "starmaker",
     "video": "https://youtu.be/BJsz4o9CUnY",
-    "videoClear": "https://youtu.be/BJsz4o9CUnY?t=75",
+    "videoClear": "https://youtu.be/BJsz4o9CUnY?t=72",
     "predicted": 92
   },
   {
@@ -940,12 +940,12 @@
     "title_ko": "SUPER NOVA REVOLU5TAR",
     "title_ko_reading": "슈퍼노바 레볼루스타",
     "title_en": "SUPER NOVA REVOLU5TAR",
-    "title_en_reading": "REVOLUSTAR",
+    "title_en_reading": "SUPER NOVA REVOLUSTAR",
     "totalNotes": 136,
     "duration": "2:24",
     "etStart": 94,
     "etEnd": 130,
-    "measured": null,
+    "measured": 75,
     "category": "starmaker",
     "video": "https://youtu.be/l4KzCeYOhjU",
     "videoClear": "https://youtu.be/l4KzCeYOhjU?t=70",
@@ -989,10 +989,10 @@
     "duration": "2:37",
     "etStart": 155,
     "etEnd": 168,
-    "measured": null,
+    "measured": 102,
     "category": "starmaker",
     "video": "https://youtu.be/HxL_jT44kEQ",
-    "videoClear": "https://youtu.be/HxL_jT44kEQ?t=76",
+    "videoClear": "https://youtu.be/HxL_jT44kEQ?t=75",
     "predicted": 101
   },
   {
