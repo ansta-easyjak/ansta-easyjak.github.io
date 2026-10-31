@@ -1328,8 +1328,8 @@ const SONGS = [
     "etEnd": 138,
     "measured": null,
     "category": "starmaker",
-    "video": null,
-    "videoClear": null,
+    "video": "https://youtu.be/SuJGwrUncmI",
+    "videoClear": "https://youtu.be/SuJGwrUncmI?t=83",
     "predicted": 94
   },
   {
