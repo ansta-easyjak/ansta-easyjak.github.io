@@ -573,7 +573,7 @@
     "category": "starmaker",
     "video": "https://youtu.be/Yg6LdDOISS0",
     "videoClear": "https://youtu.be/Yg6LdDOISS0?t=60",
-    "predicted": 77
+    "predicted": 78
   },
   {
     "type": "Sparkle",
@@ -981,8 +981,8 @@
     ],
     "title_ja": "メテオ・スクランブル☆流星隊!",
     "title_ja_reading": "めておすくらんぶるりゅうせいたい",
-    "title_ko": "메테오·스크럼블☆유성대!",
-    "title_ko_reading": null,
+    "title_ko": "메테오·스크램블☆유성대!",
+    "title_ko_reading": "스크렘블 스크럼블",
     "title_en": "Meteor Scramble☆RYUSEITAI!",
     "title_en_reading": null,
     "totalNotes": 184,
@@ -5736,10 +5736,10 @@
     "duration": "2:32",
     "etStart": 79,
     "etEnd": 130,
-    "measured": null,
+    "measured": 124,
     "category": "others",
     "video": "https://youtu.be/FljS1CxWt6U",
-    "videoClear": "https://youtu.be/FljS1CxWt6U?t=74",
+    "videoClear": "https://youtu.be/FljS1CxWt6U?t=66",
     "predicted": 126
   },
   {
@@ -6477,7 +6477,7 @@
     "title_ja": "両片思いの交差点で、君にまた逢いたくて",
     "title_ja_reading": "りょうかたおもいのこうさてんで、きみにまたあいたくて",
     "title_ko": "양방향 짝사랑의 교차점에서, 너와 다시 만나고 싶어서",
-    "title_ko_reading": "교차로 러브스크램블",
+    "title_ko_reading": "교차로 러브스크램블 러브스크럼블",
     "title_en": "At Love's Crossroads, I Wanna See U Again",
     "title_en_reading": "Ryokataomoi no Kosaten de, Kimi ni Mata Aitakute",
     "totalNotes": 131,

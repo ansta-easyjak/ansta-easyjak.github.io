@@ -1,5 +1,5 @@
 // songs.js — easyjak 곡 데이터 & 모델 파라미터
-// 총 325곡 | R²=0.9789 | MAE=2.07콤보
+// 총 325곡 | R²=0.9792 | MAE=2.07콤보
 // ※ enstars_regression_v3.py 로 자동 생성 — 직접 수정 비권장
 
 const SONGS = [
@@ -577,7 +577,7 @@ const SONGS = [
     "category": "starmaker",
     "video": "https://youtu.be/Yg6LdDOISS0",
     "videoClear": "https://youtu.be/Yg6LdDOISS0?t=60",
-    "predicted": 77
+    "predicted": 78
   },
   {
     "type": "Sparkle",
@@ -985,8 +985,8 @@ const SONGS = [
     ],
     "title_ja": "メテオ・スクランブル☆流星隊!",
     "title_ja_reading": "めておすくらんぶるりゅうせいたい",
-    "title_ko": "메테오·스크럼블☆유성대!",
-    "title_ko_reading": null,
+    "title_ko": "메테오·스크램블☆유성대!",
+    "title_ko_reading": "스크렘블 스크럼블",
     "title_en": "Meteor Scramble☆RYUSEITAI!",
     "title_en_reading": null,
     "totalNotes": 184,
@@ -5740,10 +5740,10 @@ const SONGS = [
     "duration": "2:32",
     "etStart": 79,
     "etEnd": 130,
-    "measured": null,
+    "measured": 124,
     "category": "others",
     "video": "https://youtu.be/FljS1CxWt6U",
-    "videoClear": "https://youtu.be/FljS1CxWt6U?t=74",
+    "videoClear": "https://youtu.be/FljS1CxWt6U?t=66",
     "predicted": 126
   },
   {
@@ -6481,7 +6481,7 @@ const SONGS = [
     "title_ja": "両片思いの交差点で、君にまた逢いたくて",
     "title_ja_reading": "りょうかたおもいのこうさてんで、きみにまたあいたくて",
     "title_ko": "양방향 짝사랑의 교차점에서, 너와 다시 만나고 싶어서",
-    "title_ko_reading": "교차로 러브스크램블",
+    "title_ko_reading": "교차로 러브스크램블 러브스크럼블",
     "title_en": "At Love's Crossroads, I Wanna See U Again",
     "title_en_reading": "Ryokataomoi no Kosaten de, Kimi ni Mata Aitakute",
     "totalNotes": 131,
@@ -7179,19 +7179,19 @@ const SONGS = [
 ];
 
 const MODEL_PARAMS = {
-  "intercept": -3.545646906375879,
+  "intercept": -3.532731009267991,
   "coefs": [
-    0.5377021056535597,
-    0.26718251375072327,
-    6.3346235446319525
+    0.5376157832149002,
+    0.2943954219444221,
+    6.3141732892366775
   ],
-  "simpleCoef": 0.53256581235916,
-  "simpleInt": 1.6239771546211017,
-  "meanEtStart": 0.489954468144881,
-  "meanEtEnd": 0.6661840746061667,
-  "trainSize": 305,
-  "r2": 0.9789331906694346,
-  "mae": 2.0732259381237195
+  "simpleCoef": 0.5324103358876419,
+  "simpleInt": 1.6462584702244953,
+  "meanEtStart": 0.48941676095824127,
+  "meanEtEnd": 0.6657889956367805,
+  "trainSize": 306,
+  "r2": 0.97923165454094,
+  "mae": 2.0674004477314574
 };
 
 export { SONGS, MODEL_PARAMS };
