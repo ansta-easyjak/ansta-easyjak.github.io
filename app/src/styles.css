@@ -2160,7 +2160,7 @@ h1 {
     flex: 0 0 118px;
     width: 118px;
     padding: 0 6px;
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .table-search-wrap {
@@ -2169,7 +2169,7 @@ h1 {
 
   .table-search-input {
     height: 36px;
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .song-search-input {
