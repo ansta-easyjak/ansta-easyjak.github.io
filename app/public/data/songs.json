@@ -573,7 +573,7 @@
     "category": "starmaker",
     "video": "https://youtu.be/Yg6LdDOISS0",
     "videoClear": "https://youtu.be/Yg6LdDOISS0?t=60",
-    "predicted": 78
+    "predicted": 77
   },
   {
     "type": "Sparkle",
@@ -2787,7 +2787,7 @@
     "category": "cosmic",
     "video": "https://youtu.be/VFlMY2s2bZw",
     "videoClear": "https://youtu.be/VFlMY2s2bZw?t=83",
-    "predicted": 97
+    "predicted": 98
   },
   {
     "type": "Flash",
@@ -3979,7 +3979,7 @@
     "category": "rhythm_link",
     "video": "https://youtu.be/R7FmVIDgs_w",
     "videoClear": "https://youtu.be/R7FmVIDgs_w?t=88",
-    "predicted": 104
+    "predicted": 103
   },
   {
     "type": "Flash",
@@ -4068,7 +4068,7 @@
     "category": "rhythm_link",
     "video": "https://youtu.be/OZ7KKezqPpw",
     "videoClear": "https://youtu.be/OZ7KKezqPpw?t=67",
-    "predicted": 74
+    "predicted": 73
   },
   {
     "type": "Sparkle",
@@ -5648,10 +5648,10 @@
     "duration": "2:39",
     "etStart": 58,
     "etEnd": 70,
-    "measured": null,
+    "measured": 45,
     "category": "others",
     "video": "https://youtu.be/-Ozz5e7WmKo",
-    "videoClear": "https://youtu.be/-Ozz5e7WmKo?t=77",
+    "videoClear": "https://youtu.be/-Ozz5e7WmKo?t=80",
     "predicted": 45
   },
   {
@@ -5982,7 +5982,7 @@
     "category": "others",
     "video": "https://youtu.be/dTkCfe33heY",
     "videoClear": "https://youtu.be/dTkCfe33heY?t=62",
-    "predicted": 79
+    "predicted": 78
   },
   {
     "type": "Glitter",
@@ -6000,10 +6000,10 @@
     "duration": "2:09",
     "etStart": 73,
     "etEnd": 92,
-    "measured": null,
+    "measured": 54,
     "category": "others",
     "video": "https://youtu.be/VLKIKOYhqlU",
-    "videoClear": "https://youtu.be/VLKIKOYhqlU?t=62",
+    "videoClear": "https://youtu.be/VLKIKOYhqlU?t=64",
     "predicted": 55
   },
   {
@@ -6110,10 +6110,10 @@
     "duration": "2:39",
     "etStart": 115,
     "etEnd": 158,
-    "measured": null,
+    "measured": 92,
     "category": "others",
     "video": "https://youtu.be/OSctDdTFMT0",
-    "videoClear": "https://youtu.be/OSctDdTFMT0?t=77",
+    "videoClear": "https://youtu.be/OSctDdTFMT0?t=80",
     "predicted": 93
   },
   {
