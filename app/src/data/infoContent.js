@@ -15,17 +15,7 @@ export const NOTICE_ITEMS = {
       tone: 'info',
       parts: [
         { text: '클리어 계산 탭', strong: true },
-        { text: '의 참고 영상에서 [확인함] 표시가 있는 곡은 클리어 지점 2초 전부터, [예측] 표시가 있는 곡은 영상 중간부터 시작합니다.' },
-      ],
-    },
-    {
-      badge: 'INFO',
-      tone: 'info',
-      parts: [
-        { text: '클리어 계산 탭', strong: true },
-        { text: '에서는 [확인함/예측] 곡 모두 참고 영상을 볼 수 있고, ' },
-        { text: '악곡 검색 탭', strong: true },
-        { text: '에서는 [확인함] 곡만 영상 링크가 제공됩니다.' },
+        { text: '의 참고 영상은 클리어 지점 2초 전부터, [예측] 표시가 있는 곡은 영상 중간부터 시작합니다.' },
       ],
     },
     {
@@ -55,11 +45,6 @@ export const NOTICE_ITEMS = {
       tone: 'note',
       parts: [{ text: '💗 타 사이트에 홍보 환영 💗' }],
     },
-    {
-      badge: 'WISH',
-      tone: 'wish',
-      parts: [{ text: '오토 내놔' }],
-    },
   ],
   ja: [
     {
@@ -77,9 +62,7 @@ export const NOTICE_ITEMS = {
       tone: 'info',
       parts: [
         { text: 'クリア予測タブ', strong: true },
-        { text: 'の参考動画は、' },
-        { text: '確認済み', strong: true },
-        { text: '表示がある楽曲はクリア地点の2秒前から、' },
+        { text: 'の参考動画はクリア地点の2秒前から、' },
         { text: '予測値', strong: true },
         { text: '表示がある楽曲は動画の中間から再生されます。' },
       ],
@@ -121,11 +104,6 @@ export const NOTICE_ITEMS = {
       tone: 'note',
       parts: [{ text: '💗 他サイトでの紹介歓迎 💗' }],
     },
-    {
-      badge: 'WISH',
-      tone: 'wish',
-      parts: [{ text: 'オート機能ほしい' }],
-    },
   ],
   en: [
     {
@@ -143,7 +121,7 @@ export const NOTICE_ITEMS = {
       tone: 'info',
       parts: [
         { text: 'Calculator', strong: true },
-        { text: ' reference videos start 2 seconds before the clear point for measured songs, and around the middle for predicted songs.' },
+        { text: ' reference videos start 2 seconds before the clear point. For predicted songs, they start around the middle.' },
       ],
     },
     {
@@ -183,11 +161,6 @@ export const NOTICE_ITEMS = {
       badge: 'NOTE',
       tone: 'note',
       parts: [{ text: '💗 Feel free to share this on other sites 💗' }],
-    },
-    {
-      badge: 'WISH',
-      tone: 'wish',
-      parts: [{ text: 'auto plz' }],
     },
   ],
 };

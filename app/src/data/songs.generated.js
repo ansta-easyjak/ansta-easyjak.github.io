@@ -2213,8 +2213,8 @@ const SONGS = [
     "etEnd": 74,
     "measured": 61,
     "category": "cosmic",
-    "video": "https://youtu.be/5FeV2Qqwl34",
-    "videoClear": "https://youtu.be/5FeV2Qqwl34?t=64",
+    "video": "https://youtu.be/r2n_1fWV_L8",
+    "videoClear": "https://youtu.be/r2n_1fWV_L8?t=64",
     "predicted": 60
   },
   {
@@ -2323,8 +2323,8 @@ const SONGS = [
     "etEnd": 98,
     "measured": 66,
     "category": "cosmic",
-    "video": "https://youtu.be/qzX_1S2Jh2s",
-    "videoClear": "https://youtu.be/qzX_1S2Jh2s?t=88",
+    "video": "https://youtu.be/mOw7D0tfX5o",
+    "videoClear": "https://youtu.be/mOw7D0tfX5o?t=88",
     "predicted": 66
   },
   {

@@ -119,7 +119,7 @@ function MobileSongCard({ song, locale, t, activeThumbnailKey, onTitleTap }) {
   const colors = TYPE_COLOR[song.type] ?? TYPE_COLOR.All;
   const clearValue = getClearValue(song);
   const songKey = getSongKey(song);
-  const hasMeasuredVideo = song.measured !== null && song.video;
+  const hasVideo = song.video;
   const thumbnailOpen = activeThumbnailKey === songKey;
 
   return (
@@ -129,7 +129,7 @@ function MobileSongCard({ song, locale, t, activeThumbnailKey, onTitleTap }) {
           <span className="type-badge" style={{ background: colors.bg, color: colors.color }}>{song.type}</span>
           <span className="mobile-song-unit">{getUnitName(song.unit, locale)}</span>
         </div>
-        {hasMeasuredVideo
+        {hasVideo
           ? (
             <a
               className="mobile-video-link"
@@ -537,7 +537,7 @@ export function SongTableTab({ songs, locale, t }) {
               {pageData.items.map((song) => {
                 const colors = TYPE_COLOR[song.type] ?? TYPE_COLOR.All;
                 const clearValue = getClearValue(song);
-                const hasMeasuredVideo = song.measured !== null && song.video;
+                const hasVideo = song.measured !== null && song.video;
                 return (
                   <tr key={getSongKey(song)}>
                     <td className="col-type" data-label={t('col.type')}>
@@ -564,7 +564,7 @@ export function SongTableTab({ songs, locale, t }) {
                       {clearValue}
                     </td>
                     <td className="col-video" data-label={t('col.video')}>
-                      {hasMeasuredVideo
+                      {hasVideo
                         ? (
                           <a
                             href={song.video}
