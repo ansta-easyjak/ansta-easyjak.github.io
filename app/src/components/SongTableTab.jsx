@@ -537,7 +537,7 @@ export function SongTableTab({ songs, locale, t }) {
               {pageData.items.map((song) => {
                 const colors = TYPE_COLOR[song.type] ?? TYPE_COLOR.All;
                 const clearValue = getClearValue(song);
-                const hasVideo = song.measured !== null && song.video;
+                const hasVideo = song.video;
                 return (
                   <tr key={getSongKey(song)}>
                     <td className="col-type" data-label={t('col.type')}>
