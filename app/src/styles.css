@@ -1342,6 +1342,22 @@ h1 {
   grid-column: 1 / -1;
 }
 
+.my-youtube-label-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.my-youtube-label-row > span {
+  flex: 1;
+  text-align: right;
+}
+
+.my-youtube-error {
+  font-size: 12px;
+  color: #ef4444;
+}
+
 .my-youtube-remember {
   display: flex;
   align-items: center;

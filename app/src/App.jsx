@@ -349,25 +349,6 @@ export function App({ songData }) {
               />
             </label>
 
-            <div className="input-group my-youtube-group">
-              <span>{t('form.myVideo.label')}</span>
-              <input
-                type="text"
-                className={myYoutubeUrl && !myYoutubeValid ? 'num-input error' : 'num-input'}
-                value={myYoutubeUrl}
-                placeholder={myYoutubeRemember ? t('form.myVideo.placeholderSaved') : t('form.myVideo.placeholder')}
-                onChange={(e) => updateMyYoutubeUrl(e.target.value)}
-              />
-              <label className="my-youtube-remember">
-                <input
-                  type="checkbox"
-                  checked={myYoutubeRemember}
-                  onChange={(e) => toggleMyYoutubeRemember(e.target.checked)}
-                />
-                {t('form.myVideo.remember')}
-              </label>
-            </div>
-
             <label className="input-group et-combo-field">
               <span>{t('form.etStart')}</span>
               <input
@@ -391,6 +372,30 @@ export function App({ songData }) {
                 onChange={(event) => updateField('etEndRaw', event.target.value)}
               />
             </label>
+
+            <div className="input-group my-youtube-group">
+              <div className="my-youtube-label-row">
+                <span>{t('form.myVideo.label')}</span>
+                <label className="my-youtube-remember">
+                  <input
+                    type="checkbox"
+                    checked={myYoutubeRemember}
+                    onChange={(e) => toggleMyYoutubeRemember(e.target.checked)}
+                  />
+                  {t('form.myVideo.remember')}
+                </label>
+              </div>
+              <input
+                type="text"
+                className={myYoutubeUrl && !myYoutubeValid ? 'num-input error' : 'num-input'}
+                value={myYoutubeUrl}
+                placeholder={myYoutubeRemember ? t('form.myVideo.placeholderSaved') : t('form.myVideo.placeholder')}
+                onChange={(e) => updateMyYoutubeUrl(e.target.value)}
+              />
+              {myYoutubeUrl && !myYoutubeValid && (
+                <span className="my-youtube-error">{t('form.myVideo.invalid')}</span>
+              )}
+            </div>
 
             <button type="submit" className="predict-btn">{t('actions.calculate')}</button>
           </form>
