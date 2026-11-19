@@ -101,18 +101,7 @@ function getInitialLocale() {
 export function App({ songData }) {
   const { songs, modelParams } = songData;
   const [locale, setLocale] = useState(getInitialLocale);
-  const [form, setForm] = useState(() => {
-    // [remember-form] 제거 시 이 블록을 { notesRaw: '', etStartRaw: '', etEndRaw: '' } 로 교체
-    if (localStorage.getItem('easyjak-myVideoRemember') === 'true') {
-      return {
-        notesRaw: localStorage.getItem('easyjak-myFormNotes') ?? '',
-        etStartRaw: localStorage.getItem('easyjak-myFormEtStart') ?? '',
-        etEndRaw: localStorage.getItem('easyjak-myFormEtEnd') ?? '',
-      };
-    }
-    // [/remember-form]
-    return { notesRaw: '', etStartRaw: '', etEndRaw: '' };
-  });
+  const [form, setForm] = useState({ notesRaw: '', etStartRaw: '', etEndRaw: '' });
   const [selectedSong, setSelectedSong] = useState(null);
   const [prediction, setPrediction] = useState(null);
   const [error, setError] = useState(null);
@@ -150,22 +139,7 @@ export function App({ songData }) {
     }
   }, [myPoints, selectedSong]);
 
-  // [remember-form] 제거 시 이 useEffect 블록 전체 삭제
-  useEffect(() => {
-    if (!myYoutubeRemember) {
-      localStorage.removeItem('easyjak-myFormNotes');
-      localStorage.removeItem('easyjak-myFormEtStart');
-      localStorage.removeItem('easyjak-myFormEtEnd');
-      return;
-    }
-    if (form.notesRaw) localStorage.setItem('easyjak-myFormNotes', form.notesRaw);
-    else localStorage.removeItem('easyjak-myFormNotes');
-    if (form.etStartRaw) localStorage.setItem('easyjak-myFormEtStart', form.etStartRaw);
-    else localStorage.removeItem('easyjak-myFormEtStart');
-    if (form.etEndRaw) localStorage.setItem('easyjak-myFormEtEnd', form.etEndRaw);
-    else localStorage.removeItem('easyjak-myFormEtEnd');
-  }, [form, myYoutubeRemember]);
-  // [/remember-form]
+
 
   function addMyPoint() {
     if (myPoints.length >= 3) return;
@@ -181,7 +155,7 @@ export function App({ songData }) {
   function updateMyYoutubeUrl(url) {
     setMyYoutubeUrl(url);
     if (myYoutubeRemember) {
-      if (url) localStorage.setItem('easyjak-myVideoUrl', url);
+      if (url && extractYoutubeId(url)) localStorage.setItem('easyjak-myVideoUrl', url);
       else localStorage.removeItem('easyjak-myVideoUrl');
     }
   }
@@ -190,7 +164,7 @@ export function App({ songData }) {
     setMyYoutubeRemember(checked);
     localStorage.setItem('easyjak-myVideoRemember', String(checked));
     if (checked) {
-      if (myYoutubeUrl) localStorage.setItem('easyjak-myVideoUrl', myYoutubeUrl);
+      if (myYoutubeUrl && extractYoutubeId(myYoutubeUrl)) localStorage.setItem('easyjak-myVideoUrl', myYoutubeUrl);
     } else {
       localStorage.removeItem('easyjak-myVideoUrl');
     }
