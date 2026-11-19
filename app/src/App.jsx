@@ -107,6 +107,13 @@ export function App({ songData }) {
   const [error, setError] = useState(null);
   const [activeTab, setActiveTab] = useState('predict');
   const [myPoints, setMyPoints] = useState([]);
+  const [myYoutubeUrl, setMyYoutubeUrl] = useState(() => {
+    const remember = localStorage.getItem('easyjak-myVideoRemember') === 'true';
+    return remember ? (localStorage.getItem('easyjak-myVideoUrl') ?? '') : '';
+  });
+  const [myYoutubeRemember, setMyYoutubeRemember] = useState(() =>
+    localStorage.getItem('easyjak-myVideoRemember') === 'true'
+  );
 
   useEffect(() => {
     if (!selectedSong) { setMyPoints([]); return; }
@@ -142,6 +149,26 @@ export function App({ songData }) {
   function removeMyPoint(i) {
     setMyPoints((pts) => pts.filter((_, idx) => idx !== i));
   }
+
+  function updateMyYoutubeUrl(url) {
+    setMyYoutubeUrl(url);
+    if (myYoutubeRemember) {
+      if (url) localStorage.setItem('easyjak-myVideoUrl', url);
+      else localStorage.removeItem('easyjak-myVideoUrl');
+    }
+  }
+
+  function toggleMyYoutubeRemember(checked) {
+    setMyYoutubeRemember(checked);
+    localStorage.setItem('easyjak-myVideoRemember', String(checked));
+    if (checked) {
+      if (myYoutubeUrl) localStorage.setItem('easyjak-myVideoUrl', myYoutubeUrl);
+    } else {
+      localStorage.removeItem('easyjak-myVideoUrl');
+    }
+  }
+
+  const myYoutubeValid = !myYoutubeUrl || Boolean(extractYoutubeId(myYoutubeUrl));
   const t = useMemo(() => {
     const dictionary = messages[locale] ?? messages.ko;
     return (key) => dictionary[key] ?? messages.ko[key] ?? key;
@@ -322,6 +349,25 @@ export function App({ songData }) {
               />
             </label>
 
+            <div className="input-group my-youtube-group">
+              <span>{t('form.myVideo.label')}</span>
+              <input
+                type="text"
+                className={myYoutubeUrl && !myYoutubeValid ? 'num-input error' : 'num-input'}
+                value={myYoutubeUrl}
+                placeholder={myYoutubeRemember ? t('form.myVideo.placeholderSaved') : t('form.myVideo.placeholder')}
+                onChange={(e) => updateMyYoutubeUrl(e.target.value)}
+              />
+              <label className="my-youtube-remember">
+                <input
+                  type="checkbox"
+                  checked={myYoutubeRemember}
+                  onChange={(e) => toggleMyYoutubeRemember(e.target.checked)}
+                />
+                {t('form.myVideo.remember')}
+              </label>
+            </div>
+
             <label className="input-group et-combo-field">
               <span>{t('form.etStart')}</span>
               <input
@@ -441,6 +487,15 @@ export function App({ songData }) {
                   key={prediction.resultVideo}
                   url={prediction.resultVideo}
                   label={t('result.video')}
+                  playLabel={t('result.videoPlay')}
+                />
+              )}
+
+              {myYoutubeUrl && extractYoutubeId(myYoutubeUrl) && (
+                <ResultVideo
+                  key={myYoutubeUrl}
+                  url={myYoutubeUrl}
+                  label={t('result.myVideo')}
                   playLabel={t('result.videoPlay')}
                 />
               )}
