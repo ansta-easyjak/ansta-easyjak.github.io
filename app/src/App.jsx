@@ -228,6 +228,11 @@ export function App({ songData }) {
   function runPrediction(event) {
     event.preventDefault();
 
+    if (myYoutubeUrl && !myYoutubeValid) {
+      setError({ code: 'errYoutubeUrl', fields: ['myYoutubeUrl'] });
+      return;
+    }
+
     if (selectedSong) {
       setError(null);
       setPrediction({
@@ -392,9 +397,6 @@ export function App({ songData }) {
                 placeholder={myYoutubeRemember ? t('form.myVideo.placeholderSaved') : t('form.myVideo.placeholder')}
                 onChange={(e) => updateMyYoutubeUrl(e.target.value)}
               />
-              {myYoutubeUrl && !myYoutubeValid && (
-                <span className="my-youtube-error">{t('form.myVideo.invalid')}</span>
-              )}
             </div>
 
             <button type="submit" className="predict-btn">{t('actions.calculate')}</button>

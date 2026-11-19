@@ -13,7 +13,7 @@ import { getSongThumbnail } from '../lib/thumbnails.js';
 import { getUnitName, TYPE_COLOR, UNIT_FILTER_GROUPS } from '../lib/unitCatalog.js';
 
 const TYPE_FILTERS = [null, 'All', 'Sparkle', 'Brilliant', 'Glitter', 'Flash'];
-const DURATION_FILTERS = ['all', 'short', 'mid1', 'mid2', 'long'];
+const DURATION_FILTERS = ['all', 'short', 'mid1', 'mid2', 'long1', 'long2'];
 const SORT_KEYS = ['type', 'unit', 'totalNotes', 'durationSec', 'predicted'];
 const DESKTOP_THUMBNAIL_SIZE = 294;
 const DESKTOP_THUMBNAIL_GAP = 18;

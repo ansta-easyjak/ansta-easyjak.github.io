@@ -34,7 +34,8 @@ function matchesDuration(song, duration) {
   if (duration === 'short') return durationSec <= 140;
   if (duration === 'mid1') return durationSec >= 141 && durationSec <= 150;
   if (duration === 'mid2') return durationSec >= 151 && durationSec <= 160;
-  if (duration === 'long') return durationSec >= 161;
+  if (duration === 'long1') return durationSec >= 161 && durationSec <= 170;
+  if (duration === 'long2') return durationSec >= 171;
   return true;
 }
 
