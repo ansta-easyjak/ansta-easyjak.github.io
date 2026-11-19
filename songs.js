@@ -1,5 +1,5 @@
 // songs.js — easyjak 곡 데이터 & 모델 파라미터
-// 총 325곡 | R²=0.9803 | MAE=2.03콤보
+// 총 326곡 | R²=0.9803 | MAE=2.03콤보
 // ※ enstars_regression_v3.py 로 자동 생성 — 직접 수정 비권장
 
 const SONGS = [
@@ -4007,6 +4007,28 @@ const SONGS = [
     "video": "https://youtu.be/T89L92U4EFc",
     "videoClear": "https://youtu.be/T89L92U4EFc?t=89",
     "predicted": 104
+  },
+  {
+    "type": "Sparkle",
+    "unit": "Ra*bits",
+    "units": [
+      "Ra*bits"
+    ],
+    "title_ja": "HAO♡RABI",
+    "title_ja_reading": "はおらび",
+    "title_ko": "HAO♡RABI",
+    "title_ko_reading": "하오라비",
+    "title_en": "HAO♡RABI",
+    "title_en_reading": "HAORABI",
+    "totalNotes": 195,
+    "duration": "2:47",
+    "etStart": 69,
+    "etEnd": 110,
+    "measured": null,
+    "category": "rhythm_link",
+    "video": "https://youtu.be/IPVy40nZ6Mo",
+    "videoClear": "https://youtu.be/IPVy40nZ6Mo?t=81",
+    "predicted": 105
   },
   {
     "type": "Brilliant",

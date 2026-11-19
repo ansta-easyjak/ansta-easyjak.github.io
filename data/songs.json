@@ -4005,6 +4005,28 @@
     "predicted": 104
   },
   {
+    "type": "Sparkle",
+    "unit": "Ra*bits",
+    "units": [
+      "Ra*bits"
+    ],
+    "title_ja": "HAO♡RABI",
+    "title_ja_reading": "はおらび",
+    "title_ko": "HAO♡RABI",
+    "title_ko_reading": "하오라비",
+    "title_en": "HAO♡RABI",
+    "title_en_reading": "HAORABI",
+    "totalNotes": 195,
+    "duration": "2:47",
+    "etStart": 69,
+    "etEnd": 110,
+    "measured": null,
+    "category": "rhythm_link",
+    "video": "https://youtu.be/IPVy40nZ6Mo",
+    "videoClear": "https://youtu.be/IPVy40nZ6Mo?t=81",
+    "predicted": 105
+  },
+  {
     "type": "Brilliant",
     "unit": "홍월",
     "units": [
