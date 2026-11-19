@@ -27,6 +27,16 @@ export const NOTICE_ITEMS = {
       badge: 'INFO',
       tone: 'info',
       parts: [
+        { text: '나의 유튜브 URL(기억하기)', strong: true },
+        { text: ' 및 ' },
+        { text: '나의 시작점', strong: true },
+        { text: '은 브라우저 캐시에 저장됩니다. 캐시 삭제 시 초기화됩니다.' },
+      ],
+    },
+    {
+      badge: 'INFO',
+      tone: 'info',
+      parts: [
         { text: '전체 수록곡 수는 ' },
         { text: '클리어 계산 탭', strong: true },
         { text: ' 기준이 맞습니다. 악곡 검색 탭은 Dear World가 두 버전으로 등록되어 1곡 더 많이 표시됩니다.' },
@@ -86,6 +96,16 @@ export const NOTICE_ITEMS = {
       badge: 'INFO',
       tone: 'info',
       parts: [
+        { text: 'My YouTube URL(次回も記憶する)', strong: true },
+        { text: 'と' },
+        { text: 'マイ開始点', strong: true },
+        { text: 'はブラウザのキャッシュに保存されます。キャッシュを削除すると初期化されます。' },
+      ],
+    },
+    {
+      badge: 'INFO',
+      tone: 'info',
+      parts: [
         { text: '総楽曲数は' },
         { text: 'クリア予測タブ', strong: true },
         { text: 'の表示が正しい数です。楽曲検索タブはDear Worldが2バージョンで登録されているため、1曲多く表示されます。' },
@@ -138,6 +158,16 @@ export const NOTICE_ITEMS = {
       badge: 'INFO',
       tone: 'info',
       parts: [{ text: 'For unlisted songs, enter total notes and Ensemble Time combo values manually to estimate the clear start.' }],
+    },
+    {
+      badge: 'INFO',
+      tone: 'info',
+      parts: [
+        { text: 'My YouTube URL (Remember)', strong: true },
+        { text: ' and ' },
+        { text: 'My start points', strong: true },
+        { text: ' are saved in your browser cache. Clearing cache will reset them.' },
+      ],
     },
     {
       badge: 'INFO',

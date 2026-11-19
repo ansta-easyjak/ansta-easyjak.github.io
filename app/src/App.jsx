@@ -378,7 +378,7 @@ export function App({ songData }) {
               />
             </label>
 
-            <div className="input-group my-youtube-group">
+            {!getResultVideo(selectedSong) && <div className="input-group my-youtube-group">
               <div className="my-youtube-label-row">
                 <span>{t('form.myVideo.label')}</span>
                 <label className="my-youtube-remember">
@@ -390,14 +390,19 @@ export function App({ songData }) {
                   {t('form.myVideo.remember')}
                 </label>
               </div>
-              <input
-                type="text"
-                className={myYoutubeUrl && !myYoutubeValid ? 'num-input error' : 'num-input'}
-                value={myYoutubeUrl}
-                placeholder={myYoutubeRemember ? t('form.myVideo.placeholderSaved') : t('form.myVideo.placeholder')}
-                onChange={(e) => updateMyYoutubeUrl(e.target.value)}
-              />
-            </div>
+              <div className="my-youtube-input-wrap">
+                <input
+                  type="text"
+                  className={myYoutubeUrl && !myYoutubeValid ? 'num-input error' : 'num-input'}
+                  value={myYoutubeUrl}
+                  placeholder={myYoutubeRemember ? t('form.myVideo.placeholderSaved') : t('form.myVideo.placeholder')}
+                  onChange={(e) => updateMyYoutubeUrl(e.target.value)}
+                />
+                {myYoutubeUrl && (
+                  <button type="button" className="my-youtube-clear" onClick={() => updateMyYoutubeUrl('')} aria-label="clear">×</button>
+                )}
+              </div>
+            </div>}
 
             <button type="submit" className="predict-btn">{t('actions.calculate')}</button>
           </form>
@@ -498,7 +503,7 @@ export function App({ songData }) {
                 />
               )}
 
-              {myYoutubeUrl && extractYoutubeId(myYoutubeUrl) && (
+              {!prediction.resultVideo && myYoutubeUrl && extractYoutubeId(myYoutubeUrl) && (
                 <ResultVideo
                   key={myYoutubeUrl}
                   url={myYoutubeUrl}

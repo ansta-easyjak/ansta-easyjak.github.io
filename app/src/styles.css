@@ -1342,6 +1342,35 @@ h1 {
   grid-column: 1 / -1;
 }
 
+.my-youtube-input-wrap {
+  position: relative;
+}
+
+.my-youtube-input-wrap .num-input {
+  padding-right: 36px;
+}
+
+.my-youtube-clear {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 22px;
+  height: 22px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+  transform: translateY(-50%);
+}
+
+.my-youtube-clear:hover {
+  color: var(--navy);
+  background: var(--navy-pale);
+}
+
 .my-youtube-label-row {
   display: flex;
   align-items: center;
