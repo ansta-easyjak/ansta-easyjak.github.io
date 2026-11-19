@@ -27,10 +27,7 @@ export const NOTICE_ITEMS = {
       badge: 'INFO',
       tone: 'info',
       parts: [
-        { text: '나의 유튜브 URL(기억하기)', strong: true },
-        { text: ' 및 ' },
-        { text: '나의 시작점', strong: true },
-        { text: '은 브라우저 캐시에 저장됩니다. 캐시 삭제 시 초기화됩니다.' },
+        { text: '[나의 유튜브 URL(기억하기)] 및 [나의 시작점]은 브라우저 캐시에 저장됩니다. 캐시 삭제 시 초기화됩니다.' },
       ],
     },
     {
@@ -96,10 +93,7 @@ export const NOTICE_ITEMS = {
       badge: 'INFO',
       tone: 'info',
       parts: [
-        { text: 'My YouTube URL(次回も記憶する)', strong: true },
-        { text: 'と' },
-        { text: 'マイ開始点', strong: true },
-        { text: 'はブラウザのキャッシュに保存されます。キャッシュを削除すると初期化されます。' },
+        { text: '[My YouTube URL(次回も記憶する)] と [マイ開始点] はブラウザのキャッシュに保存されます。キャッシュを削除すると初期化されます。' },
       ],
     },
     {
@@ -163,10 +157,7 @@ export const NOTICE_ITEMS = {
       badge: 'INFO',
       tone: 'info',
       parts: [
-        { text: 'My YouTube URL (Remember)', strong: true },
-        { text: ' and ' },
-        { text: 'My start points', strong: true },
-        { text: ' are saved in your browser cache. Clearing cache will reset them.' },
+        { text: '[My YouTube URL (Remember)] and [My start points] are saved in your browser cache. Clearing cache will reset them.' },
       ],
     },
     {
