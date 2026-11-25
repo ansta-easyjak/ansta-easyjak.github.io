@@ -1351,6 +1351,10 @@ h1 {
   padding-right: 36px;
 }
 
+.my-youtube-input-wrap .num-input::placeholder {
+  font-size: 12px;
+}
+
 .my-youtube-clear {
   position: absolute;
   top: 50%;
