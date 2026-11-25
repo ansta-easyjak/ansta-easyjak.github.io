@@ -987,7 +987,8 @@ h1 {
   font-weight: 600;
 }
 
-.input-group.et-combo-field span {
+.input-group.et-combo-field span,
+.input-group.my-youtube-group span {
   font-weight: 400;
 }
 
