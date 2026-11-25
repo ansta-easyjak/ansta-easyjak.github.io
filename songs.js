@@ -1,5 +1,5 @@
 // songs.js — easyjak 곡 데이터 & 모델 파라미터
-// 총 326곡 | R²=0.9803 | MAE=2.03콤보
+// 총 327곡 | R²=0.9803 | MAE=2.03콤보
 // ※ enstars_regression_v3.py 로 자동 생성 — 직접 수정 비권장
 
 const SONGS = [
@@ -1949,8 +1949,8 @@ const SONGS = [
     "etEnd": 140,
     "measured": 87,
     "category": "cosmic",
-    "video": "https://youtu.be/F9-sXx1Q7YU",
-    "videoClear": "https://youtu.be/F9-sXx1Q7YU?t=78",
+    "video": "https://youtu.be/D1CRVsR2a4Y",
+    "videoClear": "https://youtu.be/D1CRVsR2a4Y?t=78",
     "predicted": 86
   },
   {
@@ -2900,8 +2900,8 @@ const SONGS = [
     "etEnd": 92,
     "measured": 73,
     "category": "cosmic",
-    "video": "https://youtu.be/w2ZdiwEa0lQ",
-    "videoClear": "https://youtu.be/w2ZdiwEa0lQ?t=70",
+    "video": "https://youtu.be/1kWyLZtyGis",
+    "videoClear": "https://youtu.be/1kWyLZtyGis?t=70",
     "predicted": 70
   },
   {
@@ -3231,8 +3231,8 @@ const SONGS = [
     "etEnd": 146,
     "measured": 99,
     "category": "cosmic",
-    "video": "https://youtu.be/Sag56BWbyBM",
-    "videoClear": "https://youtu.be/Sag56BWbyBM?t=62",
+    "video": "https://youtu.be/dtN3zklHi-k",
+    "videoClear": "https://youtu.be/dtN3zklHi-k?t=62",
     "predicted": 99
   },
   {
@@ -4026,8 +4026,8 @@ const SONGS = [
     "etEnd": 110,
     "measured": null,
     "category": "rhythm_link",
-    "video": "https://youtu.be/IPVy40nZ6Mo",
-    "videoClear": "https://youtu.be/IPVy40nZ6Mo?t=81",
+    "video": "https://youtu.be/stcKcvqKbho",
+    "videoClear": "https://youtu.be/stcKcvqKbho?t=81",
     "predicted": 105
   },
   {
@@ -7197,6 +7197,28 @@ const SONGS = [
     "video": "https://youtu.be/G-VoWY_NDgM",
     "videoClear": "https://youtu.be/G-VoWY_NDgM?t=80",
     "predicted": 77
+  },
+  {
+    "type": "Brilliant",
+    "unit": "기타",
+    "units": [
+      "기타"
+    ],
+    "title_ja": "ソロメドレー (ライカ·ニキ·ユメ·光)",
+    "title_ja_reading": "そろめどれー (らいか·にき·ゆめ·みつる)",
+    "title_ko": "솔로메들리 (라이카·니키·유메·미츠루)",
+    "title_ko_reading": null,
+    "title_en": "Solo Medley (Raika·Niki·Yume·Mitsuru)",
+    "title_en_reading": null,
+    "totalNotes": 184,
+    "duration": "2:49",
+    "etStart": 0,
+    "etEnd": 0,
+    "measured": null,
+    "category": "others",
+    "video": "https://youtu.be/hmZJXkDE8NY",
+    "videoClear": "https://youtu.be/hmZJXkDE8NY?t=82",
+    "predicted": 100
   }
 ];
 

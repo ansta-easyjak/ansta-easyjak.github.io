@@ -28,7 +28,7 @@ function ResetIcon() {
 }
 
 function PredictNoticeCard({ t }) {
-  const notices = ['predictNotice.coverVideo', 'predictNotice.enSearch'];
+  const notices = ['predictNotice.enSearch'];
 
   return (
     <section className="predict-notice-card" aria-label={t('predictNotice.label')}>

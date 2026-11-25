@@ -26,6 +26,11 @@ export const NOTICE_ITEMS = {
     {
       badge: 'INFO',
       tone: 'info',
+      parts: [{ text: '기간 한정 곡은 참고 영상이 없습니다.' }],
+    },
+    {
+      badge: 'INFO',
+      tone: 'info',
       parts: [
         { text: '[나의 유튜브 URL(기억하기)] 및 [나의 시작점]은 브라우저 캐시에 저장됩니다. 캐시 삭제 시 초기화됩니다.' },
       ],
@@ -92,6 +97,11 @@ export const NOTICE_ITEMS = {
     {
       badge: 'INFO',
       tone: 'info',
+      parts: [{ text: 'カバー曲と期間限定曲には参考動画がありません。' }],
+    },
+    {
+      badge: 'INFO',
+      tone: 'info',
       parts: [
         { text: '[My YouTube URL(次回も記憶する)] と [マイ開始点] はブラウザのキャッシュに保存されます。キャッシュを削除すると初期化されます。' },
       ],
@@ -152,6 +162,11 @@ export const NOTICE_ITEMS = {
       badge: 'INFO',
       tone: 'info',
       parts: [{ text: 'For unlisted songs, enter total notes and Ensemble Time combo values manually to estimate the clear start.' }],
+    },
+    {
+      badge: 'INFO',
+      tone: 'info',
+      parts: [{ text: 'Cover songs and limited-time songs do not have reference videos.' }],
     },
     {
       badge: 'INFO',
